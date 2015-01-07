@@ -16,6 +16,10 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
+    tutorial
+    project
+    code
+.. pages rst to add ??? in this section ABOVE
 
 
 Indices and tables

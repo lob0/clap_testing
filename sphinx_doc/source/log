@@ -1,0 +1,5 @@
+trabalhar com sphinx (mais tarde podem ser atribuidos como commit):
+
+trocado os sys.path no conf.py para definir restaurants como main directory.
+
+acrescentados tutorial, code ao index.rst
