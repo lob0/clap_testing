@@ -10,6 +10,10 @@ The fucking documentation for this project is here!!
 
 the requirements are to be announced.
 
+A tutorial
+
+The code will be here, with source
+
 
 Contents:
 
