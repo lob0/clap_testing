@@ -1,5 +1,5 @@
 Automated Generated Code
 ========================
 
-.. automodule:: views.py
+.. automodule:: views.py 
    :members:
