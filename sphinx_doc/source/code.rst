@@ -1,5 +1,5 @@
 Automated Generated Code
 ========================
 
-.. automodule:: manage.py
+.. automodule:: views.py
    :members:

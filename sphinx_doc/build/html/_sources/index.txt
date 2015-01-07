@@ -18,12 +18,11 @@ The code will be here, with source
 Contents:
 
 .. toctree::
-   :maxdepth: 2
+	:maxdepth: 2
 
-    tutorial
-    project
-    code
-.. pages rst to add ??? in this section ABOVE
+	project
+	tutorial
+	code
 
 
 Indices and tables
