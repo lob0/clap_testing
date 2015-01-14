@@ -1,7 +1,0 @@
-trabalhar com sphinx (mais tarde podem ser atribuidos como commit):
-
-trocado os sys.path no conf.py para definir restaurants como main directory.
-
-acrescentados tutorial, code ao index.rst
-
-não está a adicionar nos contents, nem esta a adicionar os files ao code.rst
