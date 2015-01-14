@@ -3,7 +3,7 @@ restaurants package
 
 Subpackages
 -----------
-
+..
 .. toctree::
 
     restaurants.migrations
