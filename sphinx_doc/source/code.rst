@@ -1,5 +1,5 @@
 Auto Generated Documentation
 ============================
 
-.. automodule:: restaurants.crypto
+.. automodule:: restaurants
    :show-inheritance:
