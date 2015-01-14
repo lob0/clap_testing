@@ -1,5 +1,10 @@
-Automated Generated Code
-========================
+Auto Generated Documentation
+============================
 
-.. automodule:: views
-	:members: 
+.. automodule:: restaurants.crypto
+   :show-inheritance:
+
+.. toctree::
+   :maxdepth: 2
+
+
