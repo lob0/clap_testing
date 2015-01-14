@@ -2,8 +2,10 @@ import unittest
 import random
 from key_exchange import *
 
+""" """
+
 def random_string(n):
-    " Generates a random string with n characters "
+    """ Generates a random string with n characters """
     res=[]
     for x in range(0,n):
         res.append(chr(random.randint(0,255)))
@@ -11,7 +13,7 @@ def random_string(n):
     return ''.join(res)
 
 def random_text(n):
-    " Generates a random text (characters between 'a' and 'z') with n characters "
+    """ Generates a random text (characters between 'a' and 'z') with n characters """
 
     res=[]
     for x in range(0,n):
@@ -23,7 +25,7 @@ class TestClass(unittest.TestCase):
 
     def setUp(self):
         
-        " Generate random keys (16,24 and 32 bytes) "
+        """ Generate random keys (16,24 and 32 bytes) """
         self.tk=[]
         for x in range(0,10):
             self.tk.append([random_string(16),random_string(16)])
@@ -32,18 +34,18 @@ class TestClass(unittest.TestCase):
         for x in range(20,30):
             self.tk.append([random_string(32),random_string(32)])
 
-        " Generate random IVs "
+        """ Generate random IVs """
         self.tiv=[]
         for x in range(0,10):
             self.tiv.append(random_string(16))
 
-        " Generate random messages "
+        """ Generate random messages """
         self.tm=["","mensagem_com$#caracteres!&especiais -.,="]
         for x in range(2,10):
             self.tm.append(random_text(x*50))
 
     def testEncryptCorrection(self):
-        " Test the correction of the encrypt and decrypt function, which depends on the cipher and hmac functions "
+        """ Test the correction of the encrypt and decrypt function, which depends on the cipher and hmac functions """
 
         for x in range(0,10):
             ct=encrypt(self.tk[x][0],self.tk[x][1],self.tm[x],self.tiv[x])
