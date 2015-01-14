@@ -1,4 +1,5 @@
 Automated Generated Code
 ========================
 
-.. automodule:: './restaurants/views.py' 
+.. automodule:: views
+	:members: 

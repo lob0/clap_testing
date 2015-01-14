@@ -20,9 +20,9 @@ Contents:
 .. toctree::
 	:maxdepth: 2
 
-	project
-	tutorial
-	code
+	project.rst
+	tutorial.rst
+	code.rst
 
 
 Indices and tables
