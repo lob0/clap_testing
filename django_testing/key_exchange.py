@@ -24,7 +24,7 @@ class PKCS7Encoder():
     def __init__(self, block_size=16):
         " The argument is the block size used by the encoder (in bytes) "
         if block_size!=16:
-            raise PKCS7Encoder.InvalidBlockSizeError('The block size must be between 2 and 255, inclusive')
+            raise PKCS7Encoder.InvalidBlockSizeError('The block size must be 16')
         self.block_size = block_size
 
     def encode(self, text):
@@ -114,9 +114,9 @@ def decrypt(k1, k2, iv, ct, tag):
         m = decipher(k1, ct, iv)
         return (m)
     else:
-        print (hmac(k2, iv+ct)).encode('hex')
-        print tag.encode('hex')
-        print 'Invalid tag!'
+        "print (hmac(k2, iv+ct)).encode('hex')"
+        "print tag.encode('hex')"
+        "print 'Invalid tag!'"
 
 def parse_ct(ct):
     """ Parses a ciphertext and returns the iv, ciphered message and tag, (WARNING:) when the string has been converted to hexadecimal """
