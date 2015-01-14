@@ -13,7 +13,7 @@ Contents:
 
    tutorial
    project
-   code
+   restaurants
 
 Indices and tables
 ==================
