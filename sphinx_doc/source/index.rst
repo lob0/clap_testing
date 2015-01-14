@@ -13,6 +13,7 @@ Contents:
 
    tutorial
    project
+   code
 
 Indices and tables
 ==================

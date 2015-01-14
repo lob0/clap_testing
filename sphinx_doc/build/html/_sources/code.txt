@@ -1,5 +1,5 @@
-Automated Generated Code
-========================
+Auto Generated Documentation
+============================
 
-.. automodule:: views
-	:members: 
+.. automodule:: restaurants
+   :show-inheritance:
