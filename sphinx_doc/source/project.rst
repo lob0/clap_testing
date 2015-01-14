@@ -1,16 +1,14 @@
-Project Description/Summary cenas
-=================================
+Project Summary
+===============
 
-Goals in Release 1.0
---------------------
+Goals
+-----
 
-goal 1
-goal 2
+to be completed..
 
+Sponsors and Partnerships
+--------------------------
 
-Funtionalities Available in CLAP
---------------------------------
+to be completed..
 
-Func 1 
-func 2
 
