@@ -1,17 +1,10 @@
 restaurants package
 ===================
 
-Subpackages
------------
-..
-.. toctree::
-
-    restaurants.migrations
-
 Submodules
 ----------
 
-restaurants.admin module
+Administration Modules
 ------------------------
 
 .. automodule:: restaurants.admin
