@@ -1,0 +1,234 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>restaurants.key_exchange &mdash; clap 0.1 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="top" title="clap 0.1 documentation" href="../../index.html" />
+    <link rel="up" title="Module code" href="../index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li><a href="../../index.html">clap 0.1 documentation</a> &raquo;</li>
+          <li><a href="../index.html" accesskey="U">Module code</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <h1>Source code for restaurants.key_exchange</h1><div class="highlight"><pre>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">struct</span>
+
+<span class="kn">from</span> <span class="nn">Crypto.Cipher</span> <span class="kn">import</span> <span class="n">AES</span>
+<span class="kn">from</span> <span class="nn">Crypto.Hash</span> <span class="kn">import</span> <span class="n">HMAC</span><span class="p">,</span> <span class="n">SHA256</span><span class="p">,</span> <span class="n">SHA512</span>
+<span class="kn">import</span> <span class="nn">hashlib</span>
+
+<span class="kn">import</span> <span class="nn">random</span>
+
+<span class="n">q</span> <span class="o">=</span> <span class="mi">99494096650139337106186933977618513974146274831566768179581759037259788798151499814653951492724365471316253651463342255785311748602922458795201382445323499931625451272600173180136123245441204133515800495917242011863558721723303661523372572477211620144038809673692512025566673746993593384600667047373692203583</span>
+
+<span class="n">g</span> <span class="o">=</span> <span class="mi">44157404837960328768872680677686802650999163226766694797650810379076416463147265401084491113667624054557335394761604876882446924929840681990106974314935015501571333024773172440352475358750668213444607353872754650805031912866692119819377041901642732455911509867728218394542745330014071040326856846990119719675</span>
+
+<div class="viewcode-block" id="PKCS7Encoder"><a class="viewcode-back" href="../../restaurants.html#restaurants.key_exchange.PKCS7Encoder">[docs]</a><span class="k">class</span> <span class="nc">PKCS7Encoder</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot; Technique for padding a string as defined in RFC 2315, section 10.3, note #2 &quot;&quot;&quot;</span>
+<div class="viewcode-block" id="PKCS7Encoder.InvalidBlockSizeError"><a class="viewcode-back" href="../../restaurants.html#restaurants.key_exchange.PKCS7Encoder.InvalidBlockSizeError">[docs]</a>    <span class="k">class</span> <span class="nc">InvalidBlockSizeError</span><span class="p">(</span><span class="ne">Exception</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Raised for invalid block sizes&quot;&quot;&quot;</span>
+        <span class="k">pass</span>
+</div>
+    <span class="sd">&quot;&quot;&quot; This class is used in order to coordinate the JavaScript and Python libraries.</span>
+<span class="sd">        JavaScript uses a standard block size of 16 bytes, and uses padding. Python does not.</span>
+<span class="sd">        This library makes the padding process automatically, in accordance with the JavaScript standard &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">block_size</span><span class="o">=</span><span class="mi">16</span><span class="p">):</span>
+        <span class="s">&quot; The argument is the block size used by the encoder (in bytes) &quot;</span>
+        <span class="k">if</span> <span class="n">block_size</span><span class="o">!=</span><span class="mi">16</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">PKCS7Encoder</span><span class="o">.</span><span class="n">InvalidBlockSizeError</span><span class="p">(</span><span class="s">&#39;The block size must be between 2 and 255, inclusive&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">block_size</span> <span class="o">=</span> <span class="n">block_size</span>
+
+<div class="viewcode-block" id="PKCS7Encoder.encode"><a class="viewcode-back" href="../../restaurants.html#restaurants.key_exchange.PKCS7Encoder.encode">[docs]</a>    <span class="k">def</span> <span class="nf">encode</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">text</span><span class="p">):</span>
+        <span class="s">&quot; The text is the STRING to be encoded &quot;</span>
+        <span class="n">text_length</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+        <span class="n">amount_to_pad</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">block_size</span> <span class="o">-</span> <span class="p">(</span><span class="n">text_length</span> <span class="o">%</span> <span class="bp">self</span><span class="o">.</span><span class="n">block_size</span><span class="p">)</span>
+        <span class="s">&quot; The text must be padded in order to be a multiple of the block size &quot;</span>
+        <span class="k">if</span> <span class="n">amount_to_pad</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">amount_to_pad</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">block_size</span>
+        <span class="n">pad</span> <span class="o">=</span> <span class="nb">chr</span><span class="p">(</span><span class="n">amount_to_pad</span><span class="p">)</span>
+        <span class="s">&quot; The last character of the text will never be the padding one (i.e. will never have an ASCII value between 1 and 16) &quot;</span>
+        <span class="k">return</span> <span class="n">text</span> <span class="o">+</span> <span class="n">pad</span> <span class="o">*</span> <span class="n">amount_to_pad</span>
+</div>
+<div class="viewcode-block" id="PKCS7Encoder.decode"><a class="viewcode-back" href="../../restaurants.html#restaurants.key_exchange.PKCS7Encoder.decode">[docs]</a>    <span class="k">def</span> <span class="nf">decode</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">text</span><span class="p">):</span>
+        <span class="n">pad</span> <span class="o">=</span> <span class="nb">ord</span><span class="p">(</span><span class="n">text</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+        <span class="k">return</span> <span class="n">text</span><span class="p">[:</span><span class="o">-</span><span class="n">pad</span><span class="p">]</span>
+</div></div>
+<div class="viewcode-block" id="sha256"><a class="viewcode-back" href="../../restaurants.html#restaurants.key_exchange.sha256">[docs]</a><span class="k">def</span> <span class="nf">sha256</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Computes the SHA256 checksum of the given data, using the SHA256 library &quot;&quot;&quot;</span>
+    <span class="n">h</span> <span class="o">=</span> <span class="n">SHA256</span><span class="o">.</span><span class="n">new</span><span class="p">()</span>
+    <span class="n">h</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+    <span class="k">return</span> <span class="p">(</span><span class="n">h</span><span class="o">.</span><span class="n">digest</span><span class="p">())</span>
+</div>
+<div class="viewcode-block" id="sha512"><a class="viewcode-back" href="../../restaurants.html#restaurants.key_exchange.sha512">[docs]</a><span class="k">def</span> <span class="nf">sha512</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Computes the SHA512 checksum of the given data, using the SHA512 library &quot;&quot;&quot;</span>
+    <span class="n">h</span> <span class="o">=</span> <span class="n">SHA512</span><span class="o">.</span><span class="n">new</span><span class="p">()</span>
+    <span class="n">h</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+    <span class="k">return</span> <span class="p">(</span><span class="n">h</span><span class="o">.</span><span class="n">digest</span><span class="p">())</span>
+</div>
+<span class="sd">&quot;&quot;&quot; On what follows, the key (k) and initialization vectors are strings.</span>
+<span class="sd">    As the key is an AES key, it must be 16, 24 or 32 bytes (characters) long.</span>
+<span class="sd">    The iv must be 16 bytes (characters) long, as that is the block size. &quot;&quot;&quot;</span>
+
+<div class="viewcode-block" id="cipher"><a class="viewcode-back" href="../../restaurants.html#restaurants.key_exchange.cipher">[docs]</a><span class="k">def</span> <span class="nf">cipher</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="n">m</span><span class="p">,</span> <span class="n">iv</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Ciphers a message &#39;m&#39; , with the key &#39;k&#39; and using the initialization vector &#39;iv&#39;, using the AES library &quot;&quot;&quot;</span>
+
+    <span class="n">obj</span> <span class="o">=</span> <span class="n">AES</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="n">AES</span><span class="o">.</span><span class="n">MODE_CBC</span><span class="p">,</span> <span class="n">iv</span><span class="p">)</span>
+    <span class="n">encoder</span> <span class="o">=</span> <span class="n">PKCS7Encoder</span><span class="p">()</span>
+
+    <span class="n">padded_value</span> <span class="o">=</span> <span class="n">encoder</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+    <span class="sd">&quot;&quot;&quot; The text must be padded before it is encrypted, as explained above &quot;&quot;&quot;</span>
+    <span class="n">ct</span> <span class="o">=</span> <span class="n">obj</span><span class="o">.</span><span class="n">encrypt</span><span class="p">(</span><span class="n">padded_value</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="p">(</span><span class="n">ct</span><span class="p">)</span>
+</div>
+<div class="viewcode-block" id="decipher"><a class="viewcode-back" href="../../restaurants.html#restaurants.key_exchange.decipher">[docs]</a><span class="k">def</span> <span class="nf">decipher</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="n">ct</span><span class="p">,</span> <span class="n">iv</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Deciphers a ciphertext &#39;ct&#39;, with the key &#39;k&#39; and using the initialization vector &#39;iv&#39;, using the AES library &quot;&quot;&quot;</span>
+
+    <span class="n">obj</span> <span class="o">=</span> <span class="n">AES</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="n">AES</span><span class="o">.</span><span class="n">MODE_CBC</span><span class="p">,</span> <span class="n">iv</span><span class="p">)</span>
+    <span class="n">encoder</span> <span class="o">=</span> <span class="n">PKCS7Encoder</span><span class="p">()</span>
+
+    <span class="n">padded_value</span> <span class="o">=</span> <span class="n">obj</span><span class="o">.</span><span class="n">decrypt</span><span class="p">(</span><span class="n">ct</span><span class="p">)</span>
+    <span class="sd">&quot;&quot;&quot; Having decrypted the text, the unpadding must be done &quot;&quot;&quot;</span>
+    <span class="n">m</span> <span class="o">=</span> <span class="n">encoder</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="n">padded_value</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="p">(</span><span class="n">m</span><span class="p">)</span>
+</div>
+<div class="viewcode-block" id="hmac"><a class="viewcode-back" href="../../restaurants.html#restaurants.key_exchange.hmac">[docs]</a><span class="k">def</span> <span class="nf">hmac</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Authenticates some value &#39;x&#39;, with the key &#39;k&#39;, using the HMAC library. I returns a value of 32 bytes &quot;&quot;&quot;</span>
+    <span class="s">&quot;print &#39;value: &#39; + x.encode(&#39;hex&#39;)&quot;</span>
+    <span class="n">obj</span> <span class="o">=</span> <span class="n">HMAC</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="n">digestmod</span><span class="o">=</span><span class="n">SHA256</span><span class="p">)</span>
+    <span class="n">obj</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="p">(</span><span class="n">obj</span><span class="o">.</span><span class="n">digest</span><span class="p">())</span>
+</div>
+<div class="viewcode-block" id="verifies"><a class="viewcode-back" href="../../restaurants.html#restaurants.key_exchange.verifies">[docs]</a><span class="k">def</span> <span class="nf">verifies</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">tag</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Verifies the MAC (if the tag &#39;tag&#39; is correct for the value &#39;x&#39; with the key &#39;k&#39;) &quot;&quot;&quot;</span>
+
+    <span class="n">tag_to_check</span> <span class="o">=</span> <span class="n">hmac</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="p">(</span><span class="n">tag_to_check</span> <span class="o">==</span> <span class="n">tag</span><span class="p">)</span>
+</div>
+<div class="viewcode-block" id="encrypt"><a class="viewcode-back" href="../../restaurants.html#restaurants.key_exchange.encrypt">[docs]</a><span class="k">def</span> <span class="nf">encrypt</span><span class="p">(</span><span class="n">k1</span><span class="p">,</span> <span class="n">k2</span><span class="p">,</span> <span class="n">m</span><span class="p">,</span> <span class="n">iv</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Encrypts under the encrypt-then-mac assumption &quot;&quot;&quot;</span>
+
+    <span class="n">ct</span> <span class="o">=</span> <span class="n">cipher</span><span class="p">(</span><span class="n">k1</span><span class="p">,</span> <span class="n">m</span><span class="p">,</span> <span class="n">iv</span><span class="p">)</span>
+    <span class="n">tag</span> <span class="o">=</span> <span class="n">hmac</span><span class="p">(</span><span class="n">k2</span><span class="p">,</span> <span class="n">iv</span> <span class="o">+</span> <span class="n">ct</span><span class="p">)</span>
+
+    <span class="s">&quot;print &#39;iv : &#39; + iv.encode(&#39;hex&#39;) + &#39;</span><span class="se">\n</span><span class="s">ct: &#39; + ct.encode(&#39;hex&#39;)&quot;</span>
+
+    <span class="k">return</span> <span class="p">(</span><span class="n">iv</span> <span class="o">+</span> <span class="n">ct</span> <span class="o">+</span> <span class="n">tag</span><span class="p">)</span>
+</div>
+<div class="viewcode-block" id="decrypt"><a class="viewcode-back" href="../../restaurants.html#restaurants.key_exchange.decrypt">[docs]</a><span class="k">def</span> <span class="nf">decrypt</span><span class="p">(</span><span class="n">k1</span><span class="p">,</span> <span class="n">k2</span><span class="p">,</span> <span class="n">iv</span><span class="p">,</span> <span class="n">ct</span><span class="p">,</span> <span class="n">tag</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Decrypts under the encrypt-then-mac assumption &quot;&quot;&quot;</span>
+
+    <span class="k">if</span> <span class="p">(</span><span class="n">verifies</span><span class="p">(</span><span class="n">k2</span><span class="p">,</span> <span class="n">iv</span><span class="o">+</span><span class="n">ct</span><span class="p">,</span> <span class="n">tag</span><span class="p">)):</span>
+        <span class="n">m</span> <span class="o">=</span> <span class="n">decipher</span><span class="p">(</span><span class="n">k1</span><span class="p">,</span> <span class="n">ct</span><span class="p">,</span> <span class="n">iv</span><span class="p">)</span>
+        <span class="k">return</span> <span class="p">(</span><span class="n">m</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">print</span> <span class="p">(</span><span class="n">hmac</span><span class="p">(</span><span class="n">k2</span><span class="p">,</span> <span class="n">iv</span><span class="o">+</span><span class="n">ct</span><span class="p">))</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s">&#39;hex&#39;</span><span class="p">)</span>
+        <span class="k">print</span> <span class="n">tag</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s">&#39;hex&#39;</span><span class="p">)</span>
+        <span class="k">print</span> <span class="s">&#39;Invalid tag!&#39;</span>
+</div>
+<div class="viewcode-block" id="parse_ct"><a class="viewcode-back" href="../../restaurants.html#restaurants.key_exchange.parse_ct">[docs]</a><span class="k">def</span> <span class="nf">parse_ct</span><span class="p">(</span><span class="n">ct</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Parses a ciphertext and returns the iv, ciphered message and tag, (WARNING:) when the string has been converted to hexadecimal &quot;&quot;&quot;</span>
+    <span class="n">iv</span> <span class="o">=</span> <span class="n">ct</span><span class="p">[:</span><span class="mi">32</span><span class="p">]</span>
+    <span class="n">c</span> <span class="o">=</span> <span class="n">ct</span><span class="p">[</span><span class="mi">32</span><span class="p">:(</span><span class="nb">len</span><span class="p">(</span><span class="n">ct</span><span class="p">)</span><span class="o">-</span><span class="mi">64</span><span class="p">)]</span>
+    <span class="n">tag</span> <span class="o">=</span> <span class="n">ct</span><span class="p">[(</span><span class="nb">len</span><span class="p">(</span><span class="n">ct</span><span class="p">)</span><span class="o">-</span><span class="mi">64</span><span class="p">):]</span>
+    
+    <span class="k">return</span> <span class="p">(</span><span class="n">iv</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">tag</span><span class="p">)</span>
+</div>
+<div class="viewcode-block" id="parse_ct_original"><a class="viewcode-back" href="../../restaurants.html#restaurants.key_exchange.parse_ct_original">[docs]</a><span class="k">def</span> <span class="nf">parse_ct_original</span><span class="p">(</span><span class="n">ct</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Parses a ciphertext when it is on its original form &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="p">(</span><span class="n">ct</span><span class="p">[:</span><span class="mi">16</span><span class="p">],</span><span class="n">ct</span><span class="p">[</span><span class="mi">16</span><span class="p">:</span><span class="o">-</span><span class="mi">32</span><span class="p">],</span><span class="n">ct</span><span class="p">[</span><span class="o">-</span><span class="mi">32</span><span class="p">:])</span>
+</div>
+<div class="viewcode-block" id="computeSecret"><a class="viewcode-back" href="../../restaurants.html#restaurants.key_exchange.computeSecret">[docs]</a><span class="k">def</span> <span class="nf">computeSecret</span><span class="p">(</span><span class="n">g</span><span class="p">,</span> <span class="n">q</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Computes the challenge to be used in the key exchange protocol &quot;&quot;&quot;</span>
+    <span class="n">r</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">urandom</span><span class="p">(</span><span class="mi">128</span><span class="p">)</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s">&#39;hex&#39;</span><span class="p">),</span> <span class="mi">16</span><span class="p">)</span> <span class="o">%</span> <span class="n">q</span>
+    <span class="n">sec</span> <span class="o">=</span> <span class="nb">pow</span><span class="p">(</span><span class="n">g</span><span class="p">,</span><span class="n">r</span><span class="p">,</span><span class="n">q</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">sec</span>
+</div>
+<div class="viewcode-block" id="createChallenge"><a class="viewcode-back" href="../../restaurants.html#restaurants.key_exchange.createChallenge">[docs]</a><span class="k">def</span> <span class="nf">createChallenge</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot; Computes the challenge to be used in the key exchange protocol &quot;&quot;&quot;</span>
+    <span class="n">cha</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">urandom</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s">&#39;hex&#39;</span><span class="p">),</span> <span class="mi">16</span><span class="p">))</span>
+    <span class="k">return</span> <span class="n">cha</span></div>
+</pre></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li><a href="../../index.html">clap 0.1 documentation</a> &raquo;</li>
+          <li><a href="../index.html" >Module code</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2015, Clap Development Team.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.2.
+    </div>
+  </body>
+</html>
