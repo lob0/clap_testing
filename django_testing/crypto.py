@@ -22,7 +22,7 @@ class PKCS7Encoder():
 
     " Technique for padding a string as defined in RFC 2315, section 10.3, note #2 "
     class InvalidBlockSizeError(Exception):
-        "Raised for invalid block sizes"
+        """Raised for invalid block sizes"""
         pass
 
     def __init__(self, block_size=16):
