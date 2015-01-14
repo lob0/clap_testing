@@ -1,8 +1,7 @@
-CLAP Tutorial
-=============
+CLAP's Tutorial
+===============
 
-dividir isto por secções, para:
+Get yourself acquainted with CLAP project.
+------------------------------------------
 
-users
-menagers
-etc
+Take a brief tour

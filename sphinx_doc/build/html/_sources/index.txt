@@ -1,29 +1,17 @@
-.. CLAP documentation master file, created by
-   sphinx-quickstart on Wed Jan  7 11:32:58 2015.
+.. clap documentation master file, created by
+   sphinx-quickstart on Wed Jan 14 11:36:25 2015.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to CLAP's documentation!
+Welcome to clap's documentation!
 ================================
-
-The fucking documentation for this project is here!!
-
-the requirements are to be announced.
-
-A tutorial
-
-The code will be here, with source
-
 
 Contents:
 
 .. toctree::
-	:maxdepth: 2
+   :maxdepth: 2
 
-	project.rst
-	tutorial.rst
-	code.rst
-
+   tutorial
 
 Indices and tables
 ==================
