@@ -1,4 +1,4 @@
-restaurants package
+Restaurants package
 ===================
 
 Submodules
