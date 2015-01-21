@@ -24,6 +24,7 @@
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <link rel="top" title="clap 0.1 documentation" href="index.html" />
+    <link rel="next" title="Built-In Namespace _global_" href="_global_.html" />
     <link rel="prev" title="Project Summary" href="project.html" /> 
   </head>
   <body>
@@ -36,6 +37,9 @@
         <li class="right" >
           <a href="py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
+        <li class="right" >
+          <a href="_global_.html" title="Built-In Namespace _global_"
+             accesskey="N">next</a> |</li>
         <li class="right" >
           <a href="project.html" title="Project Summary"
              accesskey="P">previous</a> |</li>
@@ -55,86 +59,6 @@
 </div>
 <div class="section" id="administration-modules">
 <h2>Administration Modules<a class="headerlink" href="#administration-modules" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="module-restaurants.crypto">
-<span id="restaurants-crypto-module"></span><h2>restaurants.crypto module<a class="headerlink" href="#module-restaurants.crypto" title="Permalink to this headline">¶</a></h2>
-<p>Cripto.py works as a library</p>
-<dl class="docutils">
-<dt>Classes:</dt>
-<dd>PKCS7Encoder
-InvalidBlockSizeError</dd>
-</dl>
-<dl class="class">
-<dt id="restaurants.crypto.PKCS7Encoder">
-<em class="property">class </em><tt class="descclassname">restaurants.crypto.</tt><tt class="descname">PKCS7Encoder</tt><big>(</big><em>block_size=16</em><big>)</big><a class="reference internal" href="_modules/restaurants/crypto.html#PKCS7Encoder"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#restaurants.crypto.PKCS7Encoder" title="Permalink to this definition">¶</a></dt>
-<dd><p>Technique for padding a string as defined in RFC 2315, section 10.3, note #2</p>
-<dl class="exception">
-<dt id="restaurants.crypto.PKCS7Encoder.InvalidBlockSizeError">
-<em class="property">exception </em><tt class="descname">InvalidBlockSizeError</tt><a class="reference internal" href="_modules/restaurants/crypto.html#PKCS7Encoder.InvalidBlockSizeError"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#restaurants.crypto.PKCS7Encoder.InvalidBlockSizeError" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference external" href="http://docs.python.org/library/exceptions.html#exceptions.Exception" title="(in Python v2.7)"><tt class="xref py py-class docutils literal"><span class="pre">exceptions.Exception</span></tt></a></p>
-<p>Raised for invalid block sizes</p>
-</dd></dl>
-
-<dl class="method">
-<dt id="restaurants.crypto.PKCS7Encoder.encode">
-<tt class="descclassname">PKCS7Encoder.</tt><tt class="descname">encode</tt><big>(</big><em>text</em><big>)</big><a class="reference internal" href="_modules/restaurants/crypto.html#PKCS7Encoder.encode"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#restaurants.crypto.PKCS7Encoder.encode" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="method">
-<dt id="restaurants.crypto.PKCS7Encoder.decode">
-<tt class="descclassname">PKCS7Encoder.</tt><tt class="descname">decode</tt><big>(</big><em>text</em><big>)</big><a class="reference internal" href="_modules/restaurants/crypto.html#PKCS7Encoder.decode"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#restaurants.crypto.PKCS7Encoder.decode" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-</dd></dl>
-
-<dl class="function">
-<dt id="restaurants.crypto.sha256">
-<tt class="descclassname">restaurants.crypto.</tt><tt class="descname">sha256</tt><big>(</big><em>x</em><big>)</big><a class="reference internal" href="_modules/restaurants/crypto.html#sha256"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#restaurants.crypto.sha256" title="Permalink to this definition">¶</a></dt>
-<dd><p>Computes the SHA256 checksum of the given data</p>
-</dd></dl>
-
-<dl class="function">
-<dt id="restaurants.crypto.sha512">
-<tt class="descclassname">restaurants.crypto.</tt><tt class="descname">sha512</tt><big>(</big><em>x</em><big>)</big><a class="reference internal" href="_modules/restaurants/crypto.html#sha512"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#restaurants.crypto.sha512" title="Permalink to this definition">¶</a></dt>
-<dd><p>Computes the SHA512 checksum of the given data</p>
-</dd></dl>
-
-<dl class="function">
-<dt id="restaurants.crypto.cipher">
-<tt class="descclassname">restaurants.crypto.</tt><tt class="descname">cipher</tt><big>(</big><em>k</em>, <em>m</em>, <em>iv</em><big>)</big><a class="reference internal" href="_modules/restaurants/crypto.html#cipher"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#restaurants.crypto.cipher" title="Permalink to this definition">¶</a></dt>
-<dd><p>Encrypts a message</p>
-</dd></dl>
-
-<dl class="function">
-<dt id="restaurants.crypto.decipher">
-<tt class="descclassname">restaurants.crypto.</tt><tt class="descname">decipher</tt><big>(</big><em>k</em>, <em>ct</em>, <em>iv</em><big>)</big><a class="reference internal" href="_modules/restaurants/crypto.html#decipher"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#restaurants.crypto.decipher" title="Permalink to this definition">¶</a></dt>
-<dd><p>Decrypts a ciphertext</p>
-</dd></dl>
-
-<dl class="function">
-<dt id="restaurants.crypto.hmac">
-<tt class="descclassname">restaurants.crypto.</tt><tt class="descname">hmac</tt><big>(</big><em>k</em>, <em>x</em><big>)</big><a class="reference internal" href="_modules/restaurants/crypto.html#hmac"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#restaurants.crypto.hmac" title="Permalink to this definition">¶</a></dt>
-<dd><p>Authenticates some value</p>
-</dd></dl>
-
-<dl class="function">
-<dt id="restaurants.crypto.verifies">
-<tt class="descclassname">restaurants.crypto.</tt><tt class="descname">verifies</tt><big>(</big><em>k</em>, <em>x</em>, <em>tag</em><big>)</big><a class="reference internal" href="_modules/restaurants/crypto.html#verifies"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#restaurants.crypto.verifies" title="Permalink to this definition">¶</a></dt>
-<dd><p>Verifies the MAC</p>
-</dd></dl>
-
-<dl class="function">
-<dt id="restaurants.crypto.encrypt">
-<tt class="descclassname">restaurants.crypto.</tt><tt class="descname">encrypt</tt><big>(</big><em>k1</em>, <em>k2</em>, <em>m</em>, <em>iv</em><big>)</big><a class="reference internal" href="_modules/restaurants/crypto.html#encrypt"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#restaurants.crypto.encrypt" title="Permalink to this definition">¶</a></dt>
-<dd><p>Encrypts under the encrypt-then-mac assumption</p>
-</dd></dl>
-
-<dl class="function">
-<dt id="restaurants.crypto.decrypt">
-<tt class="descclassname">restaurants.crypto.</tt><tt class="descname">decrypt</tt><big>(</big><em>k1</em>, <em>k2</em>, <em>iv</em>, <em>ct</em>, <em>tag</em><big>)</big><a class="reference internal" href="_modules/restaurants/crypto.html#decrypt"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#restaurants.crypto.decrypt" title="Permalink to this definition">¶</a></dt>
-<dd><p>Decrypts under the encrypt-then-mac assumption</p>
-</dd></dl>
-
 </div>
 <div class="section" id="module-restaurants.key_exchange">
 <span id="restaurants-key-exchange-module"></span><h2>restaurants.key_exchange module<a class="headerlink" href="#module-restaurants.key_exchange" title="Permalink to this headline">¶</a></h2>
@@ -345,7 +269,6 @@ Implicitly, it also tests the parse_ct_original function</p>
 <li><a class="reference internal" href="#">Restaurants package</a><ul>
 <li><a class="reference internal" href="#submodules">Submodules</a></li>
 <li><a class="reference internal" href="#administration-modules">Administration Modules</a></li>
-<li><a class="reference internal" href="#module-restaurants.crypto">restaurants.crypto module</a></li>
 <li><a class="reference internal" href="#module-restaurants.key_exchange">restaurants.key_exchange module</a></li>
 <li><a class="reference internal" href="#restaurants-models-module">restaurants.models module</a></li>
 <li><a class="reference internal" href="#module-restaurants.test">restaurants.test module</a></li>
@@ -361,6 +284,9 @@ Implicitly, it also tests the parse_ct_original function</p>
   <h4>Previous topic</h4>
   <p class="topless"><a href="project.html"
                         title="previous chapter">Project Summary</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="_global_.html"
+                        title="next chapter">Built-In Namespace _global_</a></p>
   <h3>This Page</h3>
   <ul class="this-page-menu">
     <li><a href="_sources/restaurants.txt"
@@ -392,6 +318,9 @@ Implicitly, it also tests the parse_ct_original function</p>
         <li class="right" >
           <a href="py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
+        <li class="right" >
+          <a href="_global_.html" title="Built-In Namespace _global_"
+             >next</a> |</li>
         <li class="right" >
           <a href="project.html" title="Project Summary"
              >previous</a> |</li>

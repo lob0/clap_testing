@@ -12,14 +12,6 @@ Administration Modules
     :undoc-members:
     :show-inheritance:
 
-restaurants.crypto module
--------------------------
-
-.. automodule:: restaurants.crypto
-    :members:
-    :undoc-members:
-    :show-inheritance:
-
 restaurants.key_exchange module
 -------------------------------
 
