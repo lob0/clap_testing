@@ -1,78 +1,2719 @@
 .
-├── build
-│   ├── doctrees
-│   │   ├── code.doctree
-│   │   ├── environment.pickle
-│   │   ├── index.doctree
-│   │   ├── modules.doctree
-│   │   ├── project.doctree
-│   │   ├── restaurants.doctree
-│   │   ├── restaurants.migrations.doctree
-│   │   └── tutorial.doctree
-│   └── html
-│       ├── code.html
-│       ├── genindex.html
-│       ├── index.html
-│       ├── _modules
-│       │   ├── index.html
-│       │   └── restaurants
-│       │       ├── crypto.html
-│       │       ├── key_exchange.html
-│       │       ├── test.html
-│       │       ├── tests.html
-│       │       └── utils.html
-│       ├── modules.html
-│       ├── objects.inv
-│       ├── project.html
-│       ├── py-modindex.html
-│       ├── restaurants.html
-│       ├── restaurants.migrations.html
-│       ├── search.html
-│       ├── searchindex.js
-│       ├── _sources
-│       │   ├── code.txt
-│       │   ├── index.txt
-│       │   ├── modules.txt
-│       │   ├── project.txt
-│       │   ├── restaurants.migrations.txt
-│       │   ├── restaurants.txt
-│       │   └── tutorial.txt
+├── allssh
+├── betaCLAP
+│   ├── __init__.py
+│   ├── __init__.pyc
+│   ├── models.py
+│   ├── settings.py
+│   ├── settings.pyc
+│   ├── template
+│   │   ├── assets
+│   │   │   ├── css
+│   │   │   │   ├── bootstrap.css
+│   │   │   │   ├── style.css
+│   │   │   │   ├── style-responsive.css
+│   │   │   │   ├── table-responsive.css
+│   │   │   │   ├── to-do.css
+│   │   │   │   └── zabuto_calendar.css
+│   │   │   ├── font-awesome
+│   │   │   │   ├── css
+│   │   │   │   │   └── font-awesome.css
+│   │   │   │   └── fonts
+│   │   │   │       ├── FontAwesome.otf
+│   │   │   │       ├── fontawesome-webfont.eot
+│   │   │   │       ├── fontawesome-webfont.svg
+│   │   │   │       ├── fontawesome-webfont.ttf
+│   │   │   │       └── fontawesome-webfont.woff
+│   │   │   ├── fonts
+│   │   │   │   ├── glyphicons-halflings-regular.eot
+│   │   │   │   ├── glyphicons-halflings-regular.svg
+│   │   │   │   ├── glyphicons-halflings-regular.ttf
+│   │   │   │   └── glyphicons-halflings-regular.woff
+│   │   │   ├── img
+│   │   │   │   ├── blog-bg.jpg
+│   │   │   │   ├── checkbox-gray.png
+│   │   │   │   ├── friends
+│   │   │   │   │   ├── fr-01.jpg
+│   │   │   │   │   ├── fr-02.jpg
+│   │   │   │   │   ├── fr-03.jpg
+│   │   │   │   │   ├── fr-04.jpg
+│   │   │   │   │   ├── fr-05.jpg
+│   │   │   │   │   ├── fr-06.jpg
+│   │   │   │   │   ├── fr-07.jpg
+│   │   │   │   │   ├── fr-08.jpg
+│   │   │   │   │   ├── fr-09.jpg
+│   │   │   │   │   ├── fr-10.jpg
+│   │   │   │   │   └── fr-11.jpg
+│   │   │   │   ├── instagram.jpg
+│   │   │   │   ├── login-bg.jpg
+│   │   │   │   ├── logo.png
+│   │   │   │   ├── lorde.jpg
+│   │   │   │   ├── mask.png
+│   │   │   │   ├── ny.jpg
+│   │   │   │   ├── portfolio
+│   │   │   │   │   ├── port01.jpg
+│   │   │   │   │   ├── port02.jpg
+│   │   │   │   │   ├── port03.jpg
+│   │   │   │   │   ├── port04.jpg
+│   │   │   │   │   ├── port05.jpg
+│   │   │   │   │   └── port06.jpg
+│   │   │   │   ├── product.jpg
+│   │   │   │   ├── product.png
+│   │   │   │   ├── profile-01.jpg
+│   │   │   │   ├── profile-02.jpg
+│   │   │   │   ├── radio-gray.png
+│   │   │   │   ├── ui-danro.jpg
+│   │   │   │   ├── ui-divya.jpg
+│   │   │   │   ├── ui-sam.jpg
+│   │   │   │   ├── ui-sherman.jpg
+│   │   │   │   ├── ui-zac.jpg
+│   │   │   │   ├── weather.jpg
+│   │   │   │   └── zoom.png
+│   │   │   ├── js
+│   │   │   │   ├── bootstrap-inputmask
+│   │   │   │   │   └── bootstrap-inputmask.min.js
+│   │   │   │   ├── bootstrap.min.js
+│   │   │   │   ├── bootstrap-switch.js
+│   │   │   │   ├── calendar-conf-events.js
+│   │   │   │   ├── chartjs-conf.js
+│   │   │   │   ├── chart-master
+│   │   │   │   │   └── Chart.js
+│   │   │   │   ├── common-scripts.js
+│   │   │   │   ├── easy-pie-chart.js
+│   │   │   │   ├── fancybox
+│   │   │   │   │   ├── jquery.fancybox.css
+│   │   │   │   │   └── jquery.fancybox.js
+│   │   │   │   ├── form-component.js
+│   │   │   │   ├── fullcalendar
+│   │   │   │   │   ├── bootstrap-fullcalendar.css
+│   │   │   │   │   └── fullcalendar.min.js
+│   │   │   │   ├── gritter
+│   │   │   │   │   ├── css
+│   │   │   │   │   │   ├── jquery.gritter0.css
+│   │   │   │   │   │   └── jquery.gritter.css
+│   │   │   │   │   ├── images
+│   │   │   │   │   │   ├── gritter-light.png
+│   │   │   │   │   │   ├── gritter-long.png
+│   │   │   │   │   │   ├── gritter.png
+│   │   │   │   │   │   └── ie-spacer.gif
+│   │   │   │   │   └── js
+│   │   │   │   │       └── jquery.gritter.js
+│   │   │   │   ├── gritter-conf.js
+│   │   │   │   ├── jquery-1.8.3.min.js
+│   │   │   │   ├── jquery.backstretch.min.js
+│   │   │   │   ├── jquery.dcjqaccordion.2.7.js
+│   │   │   │   ├── jquery-easy-pie-chart
+│   │   │   │   │   ├── jquery.easy-pie-chart.css
+│   │   │   │   │   └── jquery.easy-pie-chart.js
+│   │   │   │   ├── jquery.js
+│   │   │   │   ├── jquery.nicescroll.js
+│   │   │   │   ├── jquery.scrollTo.min.js
+│   │   │   │   ├── jquery.sparkline.js
+│   │   │   │   ├── jquery.tagsinput.js
+│   │   │   │   ├── jquery-ui-1.9.2.custom.min.js
+│   │   │   │   ├── jquery.ui.touch-punch.min.js
+│   │   │   │   ├── morris-conf.js
+│   │   │   │   ├── sparkline-chart.js
+│   │   │   │   ├── tasks.js
+│   │   │   │   └── zabuto_calendar.js
+│   │   │   └── lineicons
+│   │   │       ├── fonts
+│   │   │       │   ├── linecons.eot
+│   │   │       │   ├── linecons.svg
+│   │   │       │   ├── linecons.ttf
+│   │   │       │   └── linecons.woff
+│   │   │       ├── index.html
+│   │   │       ├── lte-ie7.js
+│   │   │       └── style.css
+│   │   ├── first_time
+│   │   │   ├── assets
+│   │   │   │   ├── css
+│   │   │   │   │   ├── bootstrap.css
+│   │   │   │   │   ├── style.css
+│   │   │   │   │   ├── style-responsive.css
+│   │   │   │   │   ├── table-responsive.css
+│   │   │   │   │   ├── to-do.css
+│   │   │   │   │   └── zabuto_calendar.css
+│   │   │   │   ├── font-awesome
+│   │   │   │   │   ├── css
+│   │   │   │   │   │   └── font-awesome.css
+│   │   │   │   │   └── fonts
+│   │   │   │   │       ├── FontAwesome.otf
+│   │   │   │   │       ├── fontawesome-webfont.eot
+│   │   │   │   │       ├── fontawesome-webfont.svg
+│   │   │   │   │       ├── fontawesome-webfont.ttf
+│   │   │   │   │       └── fontawesome-webfont.woff
+│   │   │   │   ├── fonts
+│   │   │   │   │   ├── glyphicons-halflings-regular.eot
+│   │   │   │   │   ├── glyphicons-halflings-regular.svg
+│   │   │   │   │   ├── glyphicons-halflings-regular.ttf
+│   │   │   │   │   └── glyphicons-halflings-regular.woff
+│   │   │   │   ├── img
+│   │   │   │   │   ├── blog-bg.jpg
+│   │   │   │   │   ├── checkbox-gray.png
+│   │   │   │   │   ├── friends
+│   │   │   │   │   │   ├── fr-01.jpg
+│   │   │   │   │   │   ├── fr-02.jpg
+│   │   │   │   │   │   ├── fr-03.jpg
+│   │   │   │   │   │   ├── fr-04.jpg
+│   │   │   │   │   │   ├── fr-05.jpg
+│   │   │   │   │   │   ├── fr-06.jpg
+│   │   │   │   │   │   ├── fr-07.jpg
+│   │   │   │   │   │   ├── fr-08.jpg
+│   │   │   │   │   │   ├── fr-09.jpg
+│   │   │   │   │   │   ├── fr-10.jpg
+│   │   │   │   │   │   └── fr-11.jpg
+│   │   │   │   │   ├── instagram.jpg
+│   │   │   │   │   ├── login-bg.jpg
+│   │   │   │   │   ├── logo.png
+│   │   │   │   │   ├── lorde.jpg
+│   │   │   │   │   ├── mask.png
+│   │   │   │   │   ├── ny.jpg
+│   │   │   │   │   ├── portfolio
+│   │   │   │   │   │   ├── port01.jpg
+│   │   │   │   │   │   ├── port02.jpg
+│   │   │   │   │   │   ├── port03.jpg
+│   │   │   │   │   │   ├── port04.jpg
+│   │   │   │   │   │   ├── port05.jpg
+│   │   │   │   │   │   └── port06.jpg
+│   │   │   │   │   ├── product.jpg
+│   │   │   │   │   ├── product.png
+│   │   │   │   │   ├── profile-01.jpg
+│   │   │   │   │   ├── profile-02.jpg
+│   │   │   │   │   ├── radio-gray.png
+│   │   │   │   │   ├── ui-danro.jpg
+│   │   │   │   │   ├── ui-divya.jpg
+│   │   │   │   │   ├── ui-sam.jpg
+│   │   │   │   │   ├── ui-sherman.jpg
+│   │   │   │   │   ├── ui-zac.jpg
+│   │   │   │   │   ├── weather.jpg
+│   │   │   │   │   └── zoom.png
+│   │   │   │   ├── js
+│   │   │   │   │   ├── bootstrap-inputmask
+│   │   │   │   │   │   └── bootstrap-inputmask.min.js
+│   │   │   │   │   ├── bootstrap.min.js
+│   │   │   │   │   ├── bootstrap-switch.js
+│   │   │   │   │   ├── calendar-conf-events.js
+│   │   │   │   │   ├── chartjs-conf.js
+│   │   │   │   │   ├── chart-master
+│   │   │   │   │   │   └── Chart.js
+│   │   │   │   │   ├── common-scripts.js
+│   │   │   │   │   ├── easy-pie-chart.js
+│   │   │   │   │   ├── fancybox
+│   │   │   │   │   │   ├── jquery.fancybox.css
+│   │   │   │   │   │   └── jquery.fancybox.js
+│   │   │   │   │   ├── form-component.js
+│   │   │   │   │   ├── fullcalendar
+│   │   │   │   │   │   ├── bootstrap-fullcalendar.css
+│   │   │   │   │   │   └── fullcalendar.min.js
+│   │   │   │   │   ├── gritter
+│   │   │   │   │   │   ├── css
+│   │   │   │   │   │   │   ├── jquery.gritter0.css
+│   │   │   │   │   │   │   └── jquery.gritter.css
+│   │   │   │   │   │   ├── images
+│   │   │   │   │   │   │   ├── gritter-light.png
+│   │   │   │   │   │   │   ├── gritter-long.png
+│   │   │   │   │   │   │   ├── gritter.png
+│   │   │   │   │   │   │   └── ie-spacer.gif
+│   │   │   │   │   │   └── js
+│   │   │   │   │   │       └── jquery.gritter.js
+│   │   │   │   │   ├── gritter-conf.js
+│   │   │   │   │   ├── jquery-1.8.3.min.js
+│   │   │   │   │   ├── jquery.backstretch.min.js
+│   │   │   │   │   ├── jquery.dcjqaccordion.2.7.js
+│   │   │   │   │   ├── jquery-easy-pie-chart
+│   │   │   │   │   │   ├── jquery.easy-pie-chart.css
+│   │   │   │   │   │   └── jquery.easy-pie-chart.js
+│   │   │   │   │   ├── jquery.js
+│   │   │   │   │   ├── jquery.nicescroll.js
+│   │   │   │   │   ├── jquery.scrollTo.min.js
+│   │   │   │   │   ├── jquery.sparkline.js
+│   │   │   │   │   ├── jquery.tagsinput.js
+│   │   │   │   │   ├── jquery-ui-1.9.2.custom.min.js
+│   │   │   │   │   ├── jquery.ui.touch-punch.min.js
+│   │   │   │   │   ├── morris-conf.js
+│   │   │   │   │   ├── sparkline-chart.js
+│   │   │   │   │   ├── tasks.js
+│   │   │   │   │   └── zabuto_calendar.js
+│   │   │   │   └── lineicons
+│   │   │   │       ├── fonts
+│   │   │   │       │   ├── linecons.eot
+│   │   │   │       │   ├── linecons.svg
+│   │   │   │       │   ├── linecons.ttf
+│   │   │   │       │   └── linecons.woff
+│   │   │   │       ├── index.html
+│   │   │   │       ├── lte-ie7.js
+│   │   │   │       └── style.css
+│   │   │   ├── basic_table.html
+│   │   │   ├── blank.html
+│   │   │   ├── buttons.html
+│   │   │   ├── calendar.html
+│   │   │   ├── chartjs.html
+│   │   │   ├── form_component.html
+│   │   │   ├── gallery.html
+│   │   │   ├── general.html
+│   │   │   ├── index.html
+│   │   │   ├── lock_screen.html
+│   │   │   ├── morris.html
+│   │   │   ├── panels.html
+│   │   │   ├── responsive_table.html
+│   │   │   ├── todo_list.html
+│   │   │   └── univ_info.html
+│   │   ├── restaurant_manager
+│   │   │   ├── assets
+│   │   │   │   ├── css
+│   │   │   │   │   ├── bootstrap.css
+│   │   │   │   │   ├── style.css
+│   │   │   │   │   ├── style-responsive.css
+│   │   │   │   │   ├── table-responsive.css
+│   │   │   │   │   ├── to-do.css
+│   │   │   │   │   └── zabuto_calendar.css
+│   │   │   │   ├── font-awesome
+│   │   │   │   │   ├── css
+│   │   │   │   │   │   └── font-awesome.css
+│   │   │   │   │   └── fonts
+│   │   │   │   │       ├── FontAwesome.otf
+│   │   │   │   │       ├── fontawesome-webfont.eot
+│   │   │   │   │       ├── fontawesome-webfont.svg
+│   │   │   │   │       ├── fontawesome-webfont.ttf
+│   │   │   │   │       └── fontawesome-webfont.woff
+│   │   │   │   ├── fonts
+│   │   │   │   │   ├── glyphicons-halflings-regular.eot
+│   │   │   │   │   ├── glyphicons-halflings-regular.svg
+│   │   │   │   │   ├── glyphicons-halflings-regular.ttf
+│   │   │   │   │   └── glyphicons-halflings-regular.woff
+│   │   │   │   ├── img
+│   │   │   │   │   ├── blog-bg.jpg
+│   │   │   │   │   ├── checkbox-gray.png
+│   │   │   │   │   ├── friends
+│   │   │   │   │   │   ├── fr-01.jpg
+│   │   │   │   │   │   ├── fr-02.jpg
+│   │   │   │   │   │   ├── fr-03.jpg
+│   │   │   │   │   │   ├── fr-04.jpg
+│   │   │   │   │   │   ├── fr-05.jpg
+│   │   │   │   │   │   ├── fr-06.jpg
+│   │   │   │   │   │   ├── fr-07.jpg
+│   │   │   │   │   │   ├── fr-08.jpg
+│   │   │   │   │   │   ├── fr-09.jpg
+│   │   │   │   │   │   ├── fr-10.jpg
+│   │   │   │   │   │   └── fr-11.jpg
+│   │   │   │   │   ├── instagram.jpg
+│   │   │   │   │   ├── login-bg.jpg
+│   │   │   │   │   ├── logo.png
+│   │   │   │   │   ├── lorde.jpg
+│   │   │   │   │   ├── mask.png
+│   │   │   │   │   ├── ny.jpg
+│   │   │   │   │   ├── portfolio
+│   │   │   │   │   │   ├── port01.jpg
+│   │   │   │   │   │   ├── port02.jpg
+│   │   │   │   │   │   ├── port03.jpg
+│   │   │   │   │   │   ├── port04.jpg
+│   │   │   │   │   │   ├── port05.jpg
+│   │   │   │   │   │   └── port06.jpg
+│   │   │   │   │   ├── product.jpg
+│   │   │   │   │   ├── product.png
+│   │   │   │   │   ├── profile-01.jpg
+│   │   │   │   │   ├── profile-02.jpg
+│   │   │   │   │   ├── radio-gray.png
+│   │   │   │   │   ├── ui-danro.jpg
+│   │   │   │   │   ├── ui-divya.jpg
+│   │   │   │   │   ├── ui-sam.jpg
+│   │   │   │   │   ├── ui-sherman.jpg
+│   │   │   │   │   ├── ui-zac.jpg
+│   │   │   │   │   ├── weather.jpg
+│   │   │   │   │   └── zoom.png
+│   │   │   │   ├── js
+│   │   │   │   │   ├── bootstrap-inputmask
+│   │   │   │   │   │   └── bootstrap-inputmask.min.js
+│   │   │   │   │   ├── bootstrap.min.js
+│   │   │   │   │   ├── bootstrap-switch.js
+│   │   │   │   │   ├── calendar-conf-events.js
+│   │   │   │   │   ├── chartjs-conf.js
+│   │   │   │   │   ├── chart-master
+│   │   │   │   │   │   └── Chart.js
+│   │   │   │   │   ├── common-scripts.js
+│   │   │   │   │   ├── easy-pie-chart.js
+│   │   │   │   │   ├── fancybox
+│   │   │   │   │   │   ├── jquery.fancybox.css
+│   │   │   │   │   │   └── jquery.fancybox.js
+│   │   │   │   │   ├── form-component.js
+│   │   │   │   │   ├── fullcalendar
+│   │   │   │   │   │   ├── bootstrap-fullcalendar.css
+│   │   │   │   │   │   └── fullcalendar.min.js
+│   │   │   │   │   ├── gritter
+│   │   │   │   │   │   ├── css
+│   │   │   │   │   │   │   ├── jquery.gritter0.css
+│   │   │   │   │   │   │   └── jquery.gritter.css
+│   │   │   │   │   │   ├── images
+│   │   │   │   │   │   │   ├── gritter-light.png
+│   │   │   │   │   │   │   ├── gritter-long.png
+│   │   │   │   │   │   │   ├── gritter.png
+│   │   │   │   │   │   │   └── ie-spacer.gif
+│   │   │   │   │   │   └── js
+│   │   │   │   │   │       └── jquery.gritter.js
+│   │   │   │   │   ├── gritter-conf.js
+│   │   │   │   │   ├── jquery-1.8.3.min.js
+│   │   │   │   │   ├── jquery.backstretch.min.js
+│   │   │   │   │   ├── jquery.dcjqaccordion.2.7.js
+│   │   │   │   │   ├── jquery-easy-pie-chart
+│   │   │   │   │   │   ├── jquery.easy-pie-chart.css
+│   │   │   │   │   │   └── jquery.easy-pie-chart.js
+│   │   │   │   │   ├── jquery.js
+│   │   │   │   │   ├── jquery.nicescroll.js
+│   │   │   │   │   ├── jquery.scrollTo.min.js
+│   │   │   │   │   ├── jquery.sparkline.js
+│   │   │   │   │   ├── jquery.tagsinput.js
+│   │   │   │   │   ├── jquery-ui-1.9.2.custom.min.js
+│   │   │   │   │   ├── jquery.ui.touch-punch.min.js
+│   │   │   │   │   ├── morris-conf.js
+│   │   │   │   │   ├── sparkline-chart.js
+│   │   │   │   │   ├── tasks.js
+│   │   │   │   │   └── zabuto_calendar.js
+│   │   │   │   └── lineicons
+│   │   │   │       ├── fonts
+│   │   │   │       │   ├── linecons.eot
+│   │   │   │       │   ├── linecons.svg
+│   │   │   │       │   ├── linecons.ttf
+│   │   │   │       │   └── linecons.woff
+│   │   │   │       ├── index.html
+│   │   │   │       ├── lte-ie7.js
+│   │   │   │       └── style.css
+│   │   │   ├── basic_table.html
+│   │   │   ├── blank.html
+│   │   │   ├── buttons.html
+│   │   │   ├── chartjs.html
+│   │   │   ├── details.html
+│   │   │   ├── ementas.html
+│   │   │   ├── form_component.html
+│   │   │   ├── gallery.html
+│   │   │   ├── general.html
+│   │   │   ├── index.html
+│   │   │   ├── lock_screen.html
+│   │   │   ├── morris.html
+│   │   │   ├── panels.html
+│   │   │   ├── README.txt
+│   │   │   ├── responsive_table.html
+│   │   │   ├── stats.html
+│   │   │   └── todo_list.html
+│   │   └── user
+│   │       ├── assets
+│   │       │   ├── css
+│   │       │   │   ├── bootstrap.css
+│   │       │   │   ├── style.css
+│   │       │   │   ├── style-responsive.css
+│   │       │   │   ├── table-responsive.css
+│   │       │   │   ├── to-do.css
+│   │       │   │   └── zabuto_calendar.css
+│   │       │   ├── font-awesome
+│   │       │   │   ├── css
+│   │       │   │   │   └── font-awesome.css
+│   │       │   │   └── fonts
+│   │       │   │       ├── FontAwesome.otf
+│   │       │   │       ├── fontawesome-webfont.eot
+│   │       │   │       ├── fontawesome-webfont.svg
+│   │       │   │       ├── fontawesome-webfont.ttf
+│   │       │   │       └── fontawesome-webfont.woff
+│   │       │   ├── fonts
+│   │       │   │   ├── glyphicons-halflings-regular.eot
+│   │       │   │   ├── glyphicons-halflings-regular.svg
+│   │       │   │   ├── glyphicons-halflings-regular.ttf
+│   │       │   │   └── glyphicons-halflings-regular.woff
+│   │       │   ├── img
+│   │       │   │   ├── blog-bg.jpg
+│   │       │   │   ├── checkbox-gray.png
+│   │       │   │   ├── friends
+│   │       │   │   │   ├── fr-01.jpg
+│   │       │   │   │   ├── fr-02.jpg
+│   │       │   │   │   ├── fr-03.jpg
+│   │       │   │   │   ├── fr-04.jpg
+│   │       │   │   │   ├── fr-05.jpg
+│   │       │   │   │   ├── fr-06.jpg
+│   │       │   │   │   ├── fr-07.jpg
+│   │       │   │   │   ├── fr-08.jpg
+│   │       │   │   │   ├── fr-09.jpg
+│   │       │   │   │   ├── fr-10.jpg
+│   │       │   │   │   └── fr-11.jpg
+│   │       │   │   ├── instagram.jpg
+│   │       │   │   ├── login-bg.jpg
+│   │       │   │   ├── logo.png
+│   │       │   │   ├── lorde.jpg
+│   │       │   │   ├── mask.png
+│   │       │   │   ├── ny.jpg
+│   │       │   │   ├── portfolio
+│   │       │   │   │   ├── port01.jpg
+│   │       │   │   │   ├── port02.jpg
+│   │       │   │   │   ├── port03.jpg
+│   │       │   │   │   ├── port04.jpg
+│   │       │   │   │   ├── port05.jpg
+│   │       │   │   │   └── port06.jpg
+│   │       │   │   ├── product.jpg
+│   │       │   │   ├── product.png
+│   │       │   │   ├── profile-01.jpg
+│   │       │   │   ├── profile-02.jpg
+│   │       │   │   ├── radio-gray.png
+│   │       │   │   ├── ui-danro.jpg
+│   │       │   │   ├── ui-divya.jpg
+│   │       │   │   ├── ui-sam.jpg
+│   │       │   │   ├── ui-sherman.jpg
+│   │       │   │   ├── ui-zac.jpg
+│   │       │   │   ├── weather.jpg
+│   │       │   │   └── zoom.png
+│   │       │   ├── js
+│   │       │   │   ├── bootstrap-inputmask
+│   │       │   │   │   └── bootstrap-inputmask.min.js
+│   │       │   │   ├── bootstrap.min.js
+│   │       │   │   ├── bootstrap-switch.js
+│   │       │   │   ├── calendar-conf-events.js
+│   │       │   │   ├── chartjs-conf.js
+│   │       │   │   ├── chart-master
+│   │       │   │   │   └── Chart.js
+│   │       │   │   ├── common-scripts.js
+│   │       │   │   ├── easy-pie-chart.js
+│   │       │   │   ├── fancybox
+│   │       │   │   │   ├── jquery.fancybox.css
+│   │       │   │   │   └── jquery.fancybox.js
+│   │       │   │   ├── form-component.js
+│   │       │   │   ├── fullcalendar
+│   │       │   │   │   ├── bootstrap-fullcalendar.css
+│   │       │   │   │   └── fullcalendar.min.js
+│   │       │   │   ├── gritter
+│   │       │   │   │   ├── css
+│   │       │   │   │   │   ├── jquery.gritter0.css
+│   │       │   │   │   │   └── jquery.gritter.css
+│   │       │   │   │   ├── images
+│   │       │   │   │   │   ├── gritter-light.png
+│   │       │   │   │   │   ├── gritter-long.png
+│   │       │   │   │   │   ├── gritter.png
+│   │       │   │   │   │   └── ie-spacer.gif
+│   │       │   │   │   └── js
+│   │       │   │   │       └── jquery.gritter.js
+│   │       │   │   ├── gritter-conf.js
+│   │       │   │   ├── jquery-1.8.3.min.js
+│   │       │   │   ├── jquery.backstretch.min.js
+│   │       │   │   ├── jquery.dcjqaccordion.2.7.js
+│   │       │   │   ├── jquery-easy-pie-chart
+│   │       │   │   │   ├── jquery.easy-pie-chart.css
+│   │       │   │   │   └── jquery.easy-pie-chart.js
+│   │       │   │   ├── jquery.js
+│   │       │   │   ├── jquery.nicescroll.js
+│   │       │   │   ├── jquery.scrollTo.min.js
+│   │       │   │   ├── jquery.sparkline.js
+│   │       │   │   ├── jquery.tagsinput.js
+│   │       │   │   ├── jquery-ui-1.9.2.custom.min.js
+│   │       │   │   ├── jquery.ui.touch-punch.min.js
+│   │       │   │   ├── morris-conf.js
+│   │       │   │   ├── sparkline-chart.js
+│   │       │   │   ├── tasks.js
+│   │       │   │   └── zabuto_calendar.js
+│   │       │   └── lineicons
+│   │       │       ├── fonts
+│   │       │       │   ├── linecons.eot
+│   │       │       │   ├── linecons.svg
+│   │       │       │   ├── linecons.ttf
+│   │       │       │   └── linecons.woff
+│   │       │       ├── index.html
+│   │       │       ├── lte-ie7.js
+│   │       │       └── style.css
+│   │       ├── basic_table.html
+│   │       ├── blank.html
+│   │       ├── buttons.html
+│   │       ├── calendar.html
+│   │       ├── chartjs.html
+│   │       ├── form_component.html
+│   │       ├── gallery.html
+│   │       ├── general.html
+│   │       ├── index.html
+│   │       ├── lock_screen.html
+│   │       ├── morris.html
+│   │       ├── panels.html
+│   │       ├── README.txt
+│   │       ├── responsive_table.html
+│   │       └── todo_list.html
+│   ├── urls.py
+│   ├── urls.pyc
+│   ├── views.py
+│   ├── views.pyc
+│   ├── wsgi.py
+│   └── wsgi.pyc
+├── clap_testing
+│   ├── allssh
+│   ├── Angular Testing
+│   │   ├── Agency
+│   │   │   ├── angular.min.js
+│   │   │   ├── apontamentos.html
+│   │   │   ├── app.js
+│   │   │   ├── app.js~
+│   │   │   ├── call-to-action.html
+│   │   │   ├── index.html
+│   │   │   ├── location_gooo.html
+│   │   │   ├── location.html
+│   │   │   ├── main_assets
+│   │   │   │   ├── ajax_restaurants.js
+│   │   │   │   ├── assets
+│   │   │   │   │   ├── css
+│   │   │   │   │   │   ├── bootstrap.css
+│   │   │   │   │   │   ├── font-awesome.min.css
+│   │   │   │   │   │   ├── footer.css
+│   │   │   │   │   │   ├── main.css
+│   │   │   │   │   │   └── style_ap.css
+│   │   │   │   │   ├── fonts
+│   │   │   │   │   │   ├── FontAwesome.otf
+│   │   │   │   │   │   ├── fontawesome-webfont.eot
+│   │   │   │   │   │   ├── fontawesome-webfont.svg
+│   │   │   │   │   │   ├── fontawesome-webfont.ttf
+│   │   │   │   │   │   ├── fontawesome-webfont.woff
+│   │   │   │   │   │   ├── glyphicons-halflings-regular.eot
+│   │   │   │   │   │   ├── glyphicons-halflings-regular.svg
+│   │   │   │   │   │   ├── glyphicons-halflings-regular.ttf
+│   │   │   │   │   │   └── glyphicons-halflings-regular.woff
+│   │   │   │   │   ├── img
+│   │   │   │   │   │   ├── about-bg.jpg
+│   │   │   │   │   │   ├── chart.png
+│   │   │   │   │   │   ├── clients
+│   │   │   │   │   │   │   ├── c01.gif
+│   │   │   │   │   │   │   ├── c02.gif
+│   │   │   │   │   │   │   ├── c03.gif
+│   │   │   │   │   │   │   ├── c04.gif
+│   │   │   │   │   │   │   └── c05.gif
+│   │   │   │   │   │   ├── header-bg1.jpg
+│   │   │   │   │   │   ├── header-bg3.jpg
+│   │   │   │   │   │   ├── logo_um.jpg
+│   │   │   │   │   │   ├── portfolio
+│   │   │   │   │   │   │   ├── 10.png
+│   │   │   │   │   │   │   ├── 11.png
+│   │   │   │   │   │   │   ├── 12.png
+│   │   │   │   │   │   │   ├── 13.png
+│   │   │   │   │   │   │   ├── 14.png
+│   │   │   │   │   │   │   ├── 1.jpg
+│   │   │   │   │   │   │   ├── 2.jpg
+│   │   │   │   │   │   │   ├── 3.jpg
+│   │   │   │   │   │   │   ├── 4.jpg
+│   │   │   │   │   │   │   ├── 5.jpg
+│   │   │   │   │   │   │   ├── 6.jpg
+│   │   │   │   │   │   │   ├── 7.jpg
+│   │   │   │   │   │   │   ├── 8.jpg
+│   │   │   │   │   │   │   ├── 9.jpg
+│   │   │   │   │   │   │   ├── apontamentos400x640.png
+│   │   │   │   │   │   │   ├── apontamentos400x640.xcf
+│   │   │   │   │   │   │   ├── cafe400x300.png
+│   │   │   │   │   │   │   ├── ementas400x640.png
+│   │   │   │   │   │   │   ├── ementas400x640.xcf
+│   │   │   │   │   │   │   ├── map_linguas400x640.png
+│   │   │   │   │   │   │   ├── map_linguas.png
+│   │   │   │   │   │   │   ├── servicos400x250.png
+│   │   │   │   │   │   │   └── servicosdoc400x650.png
+│   │   │   │   │   │   ├── portfolio-bg.jpg
+│   │   │   │   │   │   ├── post01.jpg
+│   │   │   │   │   │   ├── post02.jpg
+│   │   │   │   │   │   ├── post03.jpg
+│   │   │   │   │   │   ├── process
+│   │   │   │   │   │   │   ├── pro01.png
+│   │   │   │   │   │   │   ├── pro02.png
+│   │   │   │   │   │   │   ├── pro03.png
+│   │   │   │   │   │   │   └── pro04.png
+│   │   │   │   │   │   ├── restaurantes
+│   │   │   │   │   │   │   ├── cantina.jpg
+│   │   │   │   │   │   │   ├── dieci.jpg
+│   │   │   │   │   │   │   ├── griil.jpg
+│   │   │   │   │   │   │   ├── montealegrense.png
+│   │   │   │   │   │   │   ├── sabor_fruta.jpg
+│   │   │   │   │   │   │   ├── tasq_bracacrense_main.jpg
+│   │   │   │   │   │   │   └── tasq_bracarense_after.jpg
+│   │   │   │   │   │   ├── services-bg.jpg
+│   │   │   │   │   │   ├── sp
+│   │   │   │   │   │   │   ├── p01.png
+│   │   │   │   │   │   │   ├── p02.png
+│   │   │   │   │   │   │   ├── p03.png
+│   │   │   │   │   │   │   └── p04.png
+│   │   │   │   │   │   ├── spot.png
+│   │   │   │   │   │   ├── sp-standout-bg.jpg
+│   │   │   │   │   │   └── team
+│   │   │   │   │   │       ├── gianni.png
+│   │   │   │   │   │       ├── rebecca.png
+│   │   │   │   │   │       └── william.png
+│   │   │   │   │   └── js
+│   │   │   │   │       ├── AnimOnScroll.js
+│   │   │   │   │       ├── bootstrap.min.js
+│   │   │   │   │       ├── classie.js
+│   │   │   │   │       ├── flip
+│   │   │   │   │       │   ├── jquery.flip.js
+│   │   │   │   │       │   ├── jquery.flip.min.js
+│   │   │   │   │       │   └── README
+│   │   │   │   │       ├── imagesloaded.js
+│   │   │   │   │       ├── main.js
+│   │   │   │   │       ├── masonry.pkgd.min.js
+│   │   │   │   │       └── modernizr.custom.js
+│   │   │   │   ├── assets_helios
+│   │   │   │   │   ├── css
+│   │   │   │   │   │   ├── font-awesome.min.css
+│   │   │   │   │   │   ├── ie
+│   │   │   │   │   │   │   ├── backgroundsize.min.htc
+│   │   │   │   │   │   │   ├── html5shiv.js
+│   │   │   │   │   │   │   ├── PIE.htc
+│   │   │   │   │   │   │   └── v8.css
+│   │   │   │   │   │   ├── images
+│   │   │   │   │   │   │   └── arrow.svg
+│   │   │   │   │   │   ├── skel.css
+│   │   │   │   │   │   ├── style.css
+│   │   │   │   │   │   ├── style-mobile.css
+│   │   │   │   │   │   ├── style-narrow.css
+│   │   │   │   │   │   ├── style-narrower.css
+│   │   │   │   │   │   ├── style-normal.css
+│   │   │   │   │   │   ├── style-noscript.css
+│   │   │   │   │   │   └── style-wide.css
+│   │   │   │   │   ├── fonts
+│   │   │   │   │   │   ├── FontAwesome.otf
+│   │   │   │   │   │   ├── fontawesome-webfont.eot
+│   │   │   │   │   │   ├── fontawesome-webfont.svg
+│   │   │   │   │   │   ├── fontawesome-webfont.ttf
+│   │   │   │   │   │   └── fontawesome-webfont.woff
+│   │   │   │   │   ├── images
+│   │   │   │   │   │   ├── beer368x256.png
+│   │   │   │   │   │   ├── burger368x256.jpg
+│   │   │   │   │   │   ├── chips368x256.jpg
+│   │   │   │   │   │   ├── header.jpg
+│   │   │   │   │   │   ├── pic01.jpg
+│   │   │   │   │   │   ├── pic02.jpg
+│   │   │   │   │   │   ├── pic03.jpg
+│   │   │   │   │   │   ├── pic04.jpg
+│   │   │   │   │   │   ├── pic05.jpg
+│   │   │   │   │   │   ├── pic06.jpg
+│   │   │   │   │   │   ├── pic07.jpg
+│   │   │   │   │   │   ├── pic08.jpg
+│   │   │   │   │   │   ├── pic09.jpg
+│   │   │   │   │   │   ├── pic10.jpg
+│   │   │   │   │   │   ├── pic11.jpg
+│   │   │   │   │   │   ├── pic12.jpg
+│   │   │   │   │   │   ├── pic13.jpg
+│   │   │   │   │   │   ├── pic14.jpg
+│   │   │   │   │   │   └── pic15.jpg
+│   │   │   │   │   └── js
+│   │   │   │   │       ├── init.js
+│   │   │   │   │       ├── jquery.dropotron.min.js
+│   │   │   │   │       ├── jquery.min.js
+│   │   │   │   │       ├── jquery.onvisible.min.js
+│   │   │   │   │       ├── jquery.scrolly.min.js
+│   │   │   │   │       ├── skel-layers.min.js
+│   │   │   │   │       └── skel.min.js
+│   │   │   │   ├── assets_shield
+│   │   │   │   │   ├── css
+│   │   │   │   │   │   ├── animate-custom.css
+│   │   │   │   │   │   ├── bootstrap.css
+│   │   │   │   │   │   ├── icomoon
+│   │   │   │   │   │   │   ├── icomoon-.eot
+│   │   │   │   │   │   │   ├── icomoon.eot
+│   │   │   │   │   │   │   ├── icomoon.svg
+│   │   │   │   │   │   │   ├── icomoon.ttf
+│   │   │   │   │   │   │   └── icomoon.woff
+│   │   │   │   │   │   ├── icomoon.css
+│   │   │   │   │   │   └── main.css
+│   │   │   │   │   ├── fonts
+│   │   │   │   │   │   ├── glyphicons-halflings-regular.eot
+│   │   │   │   │   │   ├── glyphicons-halflings-regular.svg
+│   │   │   │   │   │   ├── glyphicons-halflings-regular.ttf
+│   │   │   │   │   │   └── glyphicons-halflings-regular.woff
+│   │   │   │   │   ├── img
+│   │   │   │   │   │   ├── bg
+│   │   │   │   │   │   │   ├── divider1.jpg
+│   │   │   │   │   │   │   ├── divider2.jpg
+│   │   │   │   │   │   │   ├── divider3.jpg
+│   │   │   │   │   │   │   ├── divider4.jpg
+│   │   │   │   │   │   │   └── divider6.jpg
+│   │   │   │   │   │   ├── header_bg.jpg
+│   │   │   │   │   │   ├── iphone.png
+│   │   │   │   │   │   ├── macbook.png
+│   │   │   │   │   │   ├── portfolio
+│   │   │   │   │   │   │   ├── folio01.jpg
+│   │   │   │   │   │   │   ├── folio02.jpg
+│   │   │   │   │   │   │   ├── folio03.jpg
+│   │   │   │   │   │   │   ├── folio04.jpg
+│   │   │   │   │   │   │   ├── folio05.jpg
+│   │   │   │   │   │   │   ├── folio06.jpg
+│   │   │   │   │   │   │   ├── folio07.jpg
+│   │   │   │   │   │   │   ├── folio08.jpg
+│   │   │   │   │   │   │   └── folio09.jpg
+│   │   │   │   │   │   └── team
+│   │   │   │   │   │       ├── team01.jpg
+│   │   │   │   │   │       ├── team02.jpg
+│   │   │   │   │   │       ├── team03.jpg
+│   │   │   │   │   │       └── team04.jpg
+│   │   │   │   │   └── js
+│   │   │   │   │       ├── bootstrap.js
+│   │   │   │   │       ├── bootstrap.min.js
+│   │   │   │   │       ├── interact.js
+│   │   │   │   │       ├── jquery.easing.1.3.js
+│   │   │   │   │       ├── jquery-func.js
+│   │   │   │   │       ├── jquery.min.js
+│   │   │   │   │       ├── modernizr.custom.js
+│   │   │   │   │       ├── retina.js
+│   │   │   │   │       └── smoothscroll.js
+│   │   │   │   ├── assets_solid
+│   │   │   │   │   ├── css
+│   │   │   │   │   │   ├── bootstrap.css
+│   │   │   │   │   │   ├── font-awesome.min.css
+│   │   │   │   │   │   ├── hoverex-all.css
+│   │   │   │   │   │   ├── images
+│   │   │   │   │   │   │   └── prettyPhoto
+│   │   │   │   │   │   │       ├── dark_rounded
+│   │   │   │   │   │   │       │   ├── btnNext.png
+│   │   │   │   │   │   │       │   ├── btnPrevious.png
+│   │   │   │   │   │   │       │   ├── contentPattern.png
+│   │   │   │   │   │   │       │   ├── loader.gif
+│   │   │   │   │   │   │       │   └── sprite.png
+│   │   │   │   │   │   │       ├── dark_square
+│   │   │   │   │   │   │       │   ├── btnNext.png
+│   │   │   │   │   │   │       │   ├── btnPrevious.png
+│   │   │   │   │   │   │       │   ├── loader.gif
+│   │   │   │   │   │   │       │   └── sprite.png
+│   │   │   │   │   │   │       ├── default
+│   │   │   │   │   │   │       │   ├── default_thumb.png
+│   │   │   │   │   │   │       │   ├── loader.gif
+│   │   │   │   │   │   │       │   ├── sprite_next.png
+│   │   │   │   │   │   │       │   ├── sprite.png
+│   │   │   │   │   │   │       │   ├── sprite_prev.png
+│   │   │   │   │   │   │       │   ├── sprite_x.png
+│   │   │   │   │   │   │       │   └── sprite_y.png
+│   │   │   │   │   │   │       ├── facebook
+│   │   │   │   │   │   │       │   ├── btnNext.png
+│   │   │   │   │   │   │       │   ├── btnPrevious.png
+│   │   │   │   │   │   │       │   ├── contentPatternBottom.png
+│   │   │   │   │   │   │       │   ├── contentPatternLeft.png
+│   │   │   │   │   │   │       │   ├── contentPatternRight.png
+│   │   │   │   │   │   │       │   ├── contentPatternTop.png
+│   │   │   │   │   │   │       │   ├── default_thumbnail.gif
+│   │   │   │   │   │   │       │   ├── loader.gif
+│   │   │   │   │   │   │       │   └── sprite.png
+│   │   │   │   │   │   │       ├── light_rounded
+│   │   │   │   │   │   │       │   ├── btnNext.png
+│   │   │   │   │   │   │       │   ├── btnPrevious.png
+│   │   │   │   │   │   │       │   ├── loader.gif
+│   │   │   │   │   │   │       │   └── sprite.png
+│   │   │   │   │   │   │       └── light_square
+│   │   │   │   │   │   │           ├── btnNext.png
+│   │   │   │   │   │   │           ├── btnPrevious.png
+│   │   │   │   │   │   │           └── sprite.png
+│   │   │   │   │   │   ├── prettyPhoto.css
+│   │   │   │   │   │   └── style.css
+│   │   │   │   │   ├── fonts
+│   │   │   │   │   │   ├── FontAwesome.otf
+│   │   │   │   │   │   ├── fontawesome-webfont.eot
+│   │   │   │   │   │   ├── fontawesome-webfont.svg
+│   │   │   │   │   │   ├── fontawesome-webfont.ttf
+│   │   │   │   │   │   ├── fontawesome-webfont.woff
+│   │   │   │   │   │   ├── glyphicons-halflings-regular.eot
+│   │   │   │   │   │   ├── glyphicons-halflings-regular.svg
+│   │   │   │   │   │   ├── glyphicons-halflings-regular.ttf
+│   │   │   │   │   │   └── glyphicons-halflings-regular.woff
+│   │   │   │   │   ├── img
+│   │   │   │   │   │   ├── agency.jpg
+│   │   │   │   │   │   ├── browser.png
+│   │   │   │   │   │   ├── clients
+│   │   │   │   │   │   │   ├── client01.png
+│   │   │   │   │   │   │   ├── client02.png
+│   │   │   │   │   │   │   ├── client03.png
+│   │   │   │   │   │   │   └── client04.png
+│   │   │   │   │   │   ├── contact.jpg
+│   │   │   │   │   │   ├── portfolio
+│   │   │   │   │   │   │   ├── portfolio_01.jpg
+│   │   │   │   │   │   │   ├── portfolio_02.jpg
+│   │   │   │   │   │   │   ├── portfolio_03.jpg
+│   │   │   │   │   │   │   ├── portfolio_04.jpg
+│   │   │   │   │   │   │   ├── portfolio_05.jpg
+│   │   │   │   │   │   │   ├── portfolio_06.jpg
+│   │   │   │   │   │   │   ├── portfolio_07.jpg
+│   │   │   │   │   │   │   ├── portfolio_08.jpg
+│   │   │   │   │   │   │   ├── portfolio_09.jpg
+│   │   │   │   │   │   │   ├── portfolio_10.jpg
+│   │   │   │   │   │   │   ├── single01.jpg
+│   │   │   │   │   │   │   ├── single02.jpg
+│   │   │   │   │   │   │   └── single03.jpg
+│   │   │   │   │   │   ├── post01.jpg
+│   │   │   │   │   │   ├── post02.jpg
+│   │   │   │   │   │   ├── post03.jpg
+│   │   │   │   │   │   ├── t-back.jpg
+│   │   │   │   │   │   ├── team
+│   │   │   │   │   │   │   ├── team01.jpg
+│   │   │   │   │   │   │   ├── team02.jpg
+│   │   │   │   │   │   │   ├── team03.jpg
+│   │   │   │   │   │   │   └── team04.jpg
+│   │   │   │   │   │   ├── thumb01.jpg
+│   │   │   │   │   │   ├── thumb02.jpg
+│   │   │   │   │   │   ├── thumb03.jpg
+│   │   │   │   │   │   └── thumb04.jpg
+│   │   │   │   │   └── js
+│   │   │   │   │       ├── bootstrap.min.js
+│   │   │   │   │       ├── custom.js
+│   │   │   │   │       ├── jquery.hoverdir.js
+│   │   │   │   │       ├── jquery.hoverex.min.js
+│   │   │   │   │       ├── jquery.isotope.min.js
+│   │   │   │   │       ├── jquery.prettyPhoto.js
+│   │   │   │   │       └── retina-1.1.0.js
+│   │   │   │   ├── bottom_menu_functs.js
+│   │   │   │   ├── bottom_menu.js
+│   │   │   │   ├── food_menus.js
+│   │   │   │   ├── load_base_css.js
+│   │   │   │   ├── load_base.js
+│   │   │   │   ├── load_base_js.js
+│   │   │   │   ├── load_helios.js
+│   │   │   │   ├── load_shield.js
+│   │   │   │   ├── portfolio_functs.js
+│   │   │   │   ├── portfolio.js
+│   │   │   │   ├── top_menu_functs.js
+│   │   │   │   └── top_menu.js
+│   │   │   ├── main-menu.html
+│   │   │   ├── menu_quadradinhos_v2.html
+│   │   │   ├── new_page.html
+│   │   │   ├── news.html
+│   │   │   ├── OUTROS
+│   │   │   │   ├── about.html
+│   │   │   │   ├── index.html
+│   │   │   │   ├── initial_page.html
+│   │   │   │   ├── menu_quadradinhos_v1.html
+│   │   │   │   ├── portfolio.html
+│   │   │   │   ├── services.html
+│   │   │   │   └── singleproject.html
+│   │   │   ├── restaurant-filter.html
+│   │   │   ├── restaurants-portfolio.html
+│   │   │   ├── rest_ind_template.html
+│   │   │   ├── tenho_fome.html
+│   │   │   └── top-menu.html
+│   │   ├── angular.min.js
+│   │   ├── app.js
+│   │   ├── bootstrap.min.css
+│   │   ├── index.html
+│   │   ├── level01.pdf
+│   │   ├── level02.pdf
+│   │   ├── level03.pdf
+│   │   ├── level04.pdf
+│   │   ├── level05.pdf
+│   │   ├── product-description.html
+│   │   ├── product-gallery.html
+│   │   ├── product-reviews.html
+│   │   ├── products.js
+│   │   ├── product-specs.html
+│   │   ├── product-tabs.html
+│   │   ├── restaurantService.html
+│   │   ├── restaurantService.js
+│   │   └── restaurantService.js~
+│   ├── django_testing
+│   │   ├── crypto.py
+│   │   ├── key_exchange.py
+│   │   ├── key_exchange.pyc
+│   │   ├── tests.py
+│   │   └── utils.py
+│   ├── doc.py
+│   ├── example.py
+│   ├── jasmine
+│   │   ├── lib
+│   │   │   └── jasmine-2.1.2
+│   │   │       ├── boot.js
+│   │   │       ├── console.js
+│   │   │       ├── jasmine.css
+│   │   │       ├── jasmine_favicon.png
+│   │   │       ├── jasmine-html.js
+│   │   │       └── jasmine.js
+│   │   ├── MIT.LICENSE
+│   │   ├── spec
+│   │   │   ├── PlayerSpec.js
+│   │   │   └── SpecHelper.js
+│   │   ├── SpecRunner.html
+│   │   └── src
+│   │       ├── Player.js
+│   │       └── Song.js
+│   ├── javascripts
+│   ├── readme_test.txt
+│   ├── sphinx_doc
+│   │   ├── allssh
+│   │   ├── build
+│   │   │   ├── doctrees
+│   │   │   │   ├── code.doctree
+│   │   │   │   ├── environment.pickle
+│   │   │   │   ├── index.doctree
+│   │   │   │   ├── modules.doctree
+│   │   │   │   ├── project.doctree
+│   │   │   │   ├── restaurants.doctree
+│   │   │   │   ├── restaurants.migrations.doctree
+│   │   │   │   └── tutorial.doctree
+│   │   │   └── html
+│   │   │       ├── code.html
+│   │   │       ├── genindex.html
+│   │   │       ├── index.html
+│   │   │       ├── _modules
+│   │   │       │   ├── index.html
+│   │   │       │   └── restaurants
+│   │   │       │       ├── crypto.html
+│   │   │       │       ├── key_exchange.html
+│   │   │       │       ├── test.html
+│   │   │       │       ├── tests.html
+│   │   │       │       └── utils.html
+│   │   │       ├── modules.html
+│   │   │       ├── objects.inv
+│   │   │       ├── project.html
+│   │   │       ├── py-modindex.html
+│   │   │       ├── restaurants.html
+│   │   │       ├── restaurants.migrations.html
+│   │   │       ├── search.html
+│   │   │       ├── searchindex.js
+│   │   │       ├── _sources
+│   │   │       │   ├── code.txt
+│   │   │       │   ├── index.txt
+│   │   │       │   ├── modules.txt
+│   │   │       │   ├── project.txt
+│   │   │       │   ├── restaurants.migrations.txt
+│   │   │       │   ├── restaurants.txt
+│   │   │       │   └── tutorial.txt
+│   │   │       ├── _static
+│   │   │       │   ├── ajax-loader.gif
+│   │   │       │   ├── basic.css
+│   │   │       │   ├── comment-bright.png
+│   │   │       │   ├── comment-close.png
+│   │   │       │   ├── comment.png
+│   │   │       │   ├── default.css
+│   │   │       │   ├── doctools.js
+│   │   │       │   ├── down.png
+│   │   │       │   ├── down-pressed.png
+│   │   │       │   ├── file.png
+│   │   │       │   ├── jquery.js
+│   │   │       │   ├── minus.png
+│   │   │       │   ├── plus.png
+│   │   │       │   ├── pygments.css
+│   │   │       │   ├── searchtools.js
+│   │   │       │   ├── sidebar.js
+│   │   │       │   ├── underscore.js
+│   │   │       │   ├── up.png
+│   │   │       │   ├── up-pressed.png
+│   │   │       │   └── websupport.js
+│   │   │       └── tutorial.html
+│   │   ├── conf.py
+│   │   ├── javasc
+│   │   └── source
+│   │       ├── code.rst
+│   │       ├── conf.py
+│   │       ├── index.rst
+│   │       ├── modules.rst
+│   │       ├── project.rst
+│   │       ├── res.old
+│   │       ├── restaurants.migrations.rst
+│   │       ├── restaurants.rst
+│   │       ├── _static
+│   │       ├── _templates
+│   │       └── tutorial.rst
+│   └── tree.txt
+├── docs
+│   ├── build
+│   │   ├── doctrees
+│   │   │   ├── code.doctree
+│   │   │   ├── environment.pickle
+│   │   │   ├── index.doctree
+│   │   │   ├── modules.doctree
+│   │   │   ├── project.doctree
+│   │   │   ├── restaurants.doctree
+│   │   │   ├── restaurants.migrations.doctree
+│   │   │   └── tutorial.doctree
+│   │   └── html
+│   │       ├── code.html
+│   │       ├── genindex.html
+│   │       ├── index.html
+│   │       ├── _modules
+│   │       │   ├── index.html
+│   │       │   └── restaurants
+│   │       │       ├── crypto.html
+│   │       │       ├── key_exchange.html
+│   │       │       ├── test.html
+│   │       │       ├── tests.html
+│   │       │       └── utils.html
+│   │       ├── modules.html
+│   │       ├── objects.inv
+│   │       ├── project.html
+│   │       ├── py-modindex.html
+│   │       ├── restaurants.html
+│   │       ├── restaurants.migrations.html
+│   │       ├── search.html
+│   │       ├── searchindex.js
+│   │       ├── _sources
+│   │       │   ├── code.txt
+│   │       │   ├── index.txt
+│   │       │   ├── modules.txt
+│   │       │   ├── project.txt
+│   │       │   ├── restaurants.migrations.txt
+│   │       │   ├── restaurants.txt
+│   │       │   └── tutorial.txt
+│   │       ├── _static
+│   │       │   ├── ajax-loader.gif
+│   │       │   ├── basic.css
+│   │       │   ├── comment-bright.png
+│   │       │   ├── comment-close.png
+│   │       │   ├── comment.png
+│   │       │   ├── default.css
+│   │       │   ├── doctools.js
+│   │       │   ├── down.png
+│   │       │   ├── down-pressed.png
+│   │       │   ├── file.png
+│   │       │   ├── jquery.js
+│   │       │   ├── minus.png
+│   │       │   ├── plus.png
+│   │       │   ├── pygments.css
+│   │       │   ├── searchtools.js
+│   │       │   ├── sidebar.js
+│   │       │   ├── underscore.js
+│   │       │   ├── up.png
+│   │       │   ├── up-pressed.png
+│   │       │   └── websupport.js
+│   │       └── tutorial.html
+│   ├── javasc
+│   ├── make.bat
+│   ├── Makefile
+│   └── source
+│       ├── code.rst
+│       ├── conf.py
+│       ├── index.rst
+│       ├── modules.rst
+│       ├── project.rst
+│       ├── res.old
+│       ├── restaurants.migrations.rst
+│       ├── restaurants.rst
 │       ├── _static
-│       │   ├── ajax-loader.gif
-│       │   ├── basic.css
-│       │   ├── comment-bright.png
-│       │   ├── comment-close.png
-│       │   ├── comment.png
-│       │   ├── default.css
-│       │   ├── doctools.js
-│       │   ├── down.png
-│       │   ├── down-pressed.png
-│       │   ├── file.png
-│       │   ├── jquery.js
-│       │   ├── minus.png
-│       │   ├── plus.png
-│       │   ├── pygments.css
-│       │   ├── searchtools.js
-│       │   ├── sidebar.js
-│       │   ├── underscore.js
-│       │   ├── up.png
-│       │   ├── up-pressed.png
-│       │   └── websupport.js
-│       └── tutorial.html
+│       ├── _templates
+│       └── tutorial.rst
 ├── javasc
-├── make.bat
-├── Makefile
-└── source
-    ├── code.rst
-    ├── conf.py
-    ├── index.rst
-    ├── modules.rst
-    ├── project.rst
-    ├── res.old
-    ├── restaurants.migrations.rst
-    ├── restaurants.rst
-    ├── _static
-    ├── _templates
-    └── tutorial.rst
+├── manage.py
+├── manage.pyc
+├── requirements.txt
+├── restaurants
+│   ├── admin.py
+│   ├── admin.pyc
+│   ├── crypto.py
+│   ├── crypto.py~
+│   ├── crypto.pyc
+│   ├── __init__.py
+│   ├── __init__.pyc
+│   ├── key_exchange.py
+│   ├── key_exchange.py~
+│   ├── key_exchange.pyc
+│   ├── locat
+│   │   └── angular.min.js
+│   ├── migrations
+│   │   ├── 0001_initial.py
+│   │   ├── 0001_initial.pyc
+│   │   ├── 0002_auto_20150115_1706.py
+│   │   ├── 0002_auto_20150115_1706.pyc
+│   │   ├── 0003_auto_20150119_1434.py
+│   │   ├── 0003_auto_20150119_1434.pyc
+│   │   ├── __init__.py
+│   │   └── __init__.pyc
+│   ├── models.py
+│   ├── models.py~
+│   ├── models.pyc
+│   ├── models.py.save
+│   ├── static
+│   │   ├── restaurants
+│   │   │   ├── css
+│   │   │   │   ├── bootstrap.css
+│   │   │   │   ├── bootstrap-tour.min.css
+│   │   │   │   ├── bootstrap-tour-standalone.css
+│   │   │   │   ├── bootstrap-tour-standalone.min.css
+│   │   │   │   ├── style.css
+│   │   │   │   ├── style-responsive.css
+│   │   │   │   ├── table-responsive.css
+│   │   │   │   ├── to-do.css
+│   │   │   │   └── zabuto_calendar.css
+│   │   │   ├── font-awesome
+│   │   │   │   ├── css
+│   │   │   │   │   └── font-awesome.css
+│   │   │   │   └── fonts
+│   │   │   │       ├── FontAwesome.otf
+│   │   │   │       ├── fontawesome-webfont.eot
+│   │   │   │       ├── fontawesome-webfont.svg
+│   │   │   │       ├── fontawesome-webfont.ttf
+│   │   │   │       └── fontawesome-webfont.woff
+│   │   │   ├── fonts
+│   │   │   │   ├── glyphicons-halflings-regular.eot
+│   │   │   │   ├── glyphicons-halflings-regular.svg
+│   │   │   │   ├── glyphicons-halflings-regular.ttf
+│   │   │   │   └── glyphicons-halflings-regular.woff
+│   │   │   ├── img
+│   │   │   │   ├── blog-bg.jpg
+│   │   │   │   ├── cantina.jpg
+│   │   │   │   ├── checkbox-gray.png
+│   │   │   │   ├── dieci.jpg
+│   │   │   │   ├── friends
+│   │   │   │   │   ├── fr-01.jpg
+│   │   │   │   │   ├── fr-02.jpg
+│   │   │   │   │   ├── fr-03.jpg
+│   │   │   │   │   ├── fr-04.jpg
+│   │   │   │   │   ├── fr-05.jpg
+│   │   │   │   │   ├── fr-06.jpg
+│   │   │   │   │   ├── fr-07.jpg
+│   │   │   │   │   ├── fr-08.jpg
+│   │   │   │   │   ├── fr-09.jpg
+│   │   │   │   │   ├── fr-10.jpg
+│   │   │   │   │   └── fr-11.jpg
+│   │   │   │   ├── griil.jpg
+│   │   │   │   ├── instagram.jpg
+│   │   │   │   ├── login-bg.jpg
+│   │   │   │   ├── logo.png
+│   │   │   │   ├── lorde.jpg
+│   │   │   │   ├── mask.png
+│   │   │   │   ├── montealegrense.png
+│   │   │   │   ├── ny.jpg
+│   │   │   │   ├── portfolio
+│   │   │   │   │   ├── port01.jpg
+│   │   │   │   │   ├── port02.jpg
+│   │   │   │   │   ├── port03.jpg
+│   │   │   │   │   ├── port04.jpg
+│   │   │   │   │   ├── port05.jpg
+│   │   │   │   │   └── port06.jpg
+│   │   │   │   ├── product.jpg
+│   │   │   │   ├── product.png
+│   │   │   │   ├── profile-01.jpg
+│   │   │   │   ├── profile-02.jpg
+│   │   │   │   ├── radio-gray.png
+│   │   │   │   ├── sabor_fruta.jpg
+│   │   │   │   ├── tasq_bracacrense_main.jpg
+│   │   │   │   ├── tasq_bracarense_after.jpg
+│   │   │   │   ├── ui-danro.jpg
+│   │   │   │   ├── ui-divya.jpg
+│   │   │   │   ├── ui-sam.jpg
+│   │   │   │   ├── ui-sherman.jpg
+│   │   │   │   ├── ui-zac.jpg
+│   │   │   │   ├── weather.jpg
+│   │   │   │   └── zoom.png
+│   │   │   ├── js
+│   │   │   │   ├── angular.min.js
+│   │   │   │   ├── bootstrap-inputmask
+│   │   │   │   │   └── bootstrap-inputmask.min.js
+│   │   │   │   ├── bootstrap.min.js
+│   │   │   │   ├── bootstrap-switch.js
+│   │   │   │   ├── bootstrap-tour.min.js
+│   │   │   │   ├── bootstrap-tour-standalone.js
+│   │   │   │   ├── bootstrap-tour-standalone.min.js
+│   │   │   │   ├── calendar-conf-events.js
+│   │   │   │   ├── chartjs-conf.js
+│   │   │   │   ├── chart-master
+│   │   │   │   │   └── Chart.js
+│   │   │   │   ├── common-scripts.js
+│   │   │   │   ├── dash.js
+│   │   │   │   ├── easy-pie-chart.js
+│   │   │   │   ├── fancybox
+│   │   │   │   │   ├── jquery.fancybox.css
+│   │   │   │   │   └── jquery.fancybox.js
+│   │   │   │   ├── form-component.js
+│   │   │   │   ├── fullcalendar
+│   │   │   │   │   ├── bootstrap-fullcalendar.css
+│   │   │   │   │   └── fullcalendar.min.js
+│   │   │   │   ├── gritter
+│   │   │   │   │   ├── css
+│   │   │   │   │   │   ├── jquery.gritter0.css
+│   │   │   │   │   │   └── jquery.gritter.css
+│   │   │   │   │   ├── images
+│   │   │   │   │   │   ├── gritter-light.png
+│   │   │   │   │   │   ├── gritter-long.png
+│   │   │   │   │   │   ├── gritter.png
+│   │   │   │   │   │   └── ie-spacer.gif
+│   │   │   │   │   └── js
+│   │   │   │   │       └── jquery.gritter.js
+│   │   │   │   ├── gritter-conf.js
+│   │   │   │   ├── jquery-1.8.3.min.js
+│   │   │   │   ├── jquery.backstretch.min.js
+│   │   │   │   ├── jquery.dcjqaccordion.2.7.js
+│   │   │   │   ├── jquery-easy-pie-chart
+│   │   │   │   │   ├── jquery.easy-pie-chart.css
+│   │   │   │   │   └── jquery.easy-pie-chart.js
+│   │   │   │   ├── jquery.js
+│   │   │   │   ├── jquery.nicescroll.js
+│   │   │   │   ├── jquery.scrollTo.min.js
+│   │   │   │   ├── jquery.sparkline.js
+│   │   │   │   ├── jquery.tagsinput.js
+│   │   │   │   ├── jquery-ui-1.9.2.custom.min.js
+│   │   │   │   ├── jquery.ui.touch-punch.min.js
+│   │   │   │   ├── morris-conf.js
+│   │   │   │   ├── script_for_tour.js
+│   │   │   │   ├── script.js
+│   │   │   │   ├── sparkline-chart.js
+│   │   │   │   ├── tasks.js
+│   │   │   │   └── zabuto_calendar.js
+│   │   │   └── lineicons
+│   │   │       ├── fonts
+│   │   │       │   ├── linecons.eot
+│   │   │       │   ├── linecons.svg
+│   │   │       │   ├── linecons.ttf
+│   │   │       │   └── linecons.woff
+│   │   │       ├── index.html
+│   │   │       ├── lte-ie7.js
+│   │   │       └── style.css
+│   │   └── restaurants.old
+│   │       ├── angular.min.js
+│   │       ├── cantina.jpg
+│   │       ├── dieci.jpg
+│   │       ├── griil.jpg
+│   │       ├── montealegrense.png
+│   │       ├── sabor_fruta.jpg
+│   │       ├── tasq_bracacrense_main.jpg
+│   │       └── tasq_bracarense_after.jpg
+│   ├── templates
+│   │   ├── assets
+│   │   │   ├── css
+│   │   │   │   ├── bootstrap.css
+│   │   │   │   ├── bootstrap-tour.min.css
+│   │   │   │   ├── bootstrap-tour-standalone.css
+│   │   │   │   ├── bootstrap-tour-standalone.min.css
+│   │   │   │   ├── style.css
+│   │   │   │   ├── style-responsive.css
+│   │   │   │   ├── table-responsive.css
+│   │   │   │   ├── to-do.css
+│   │   │   │   └── zabuto_calendar.css
+│   │   │   ├── font-awesome
+│   │   │   │   ├── css
+│   │   │   │   │   └── font-awesome.css
+│   │   │   │   └── fonts
+│   │   │   │       ├── FontAwesome.otf
+│   │   │   │       ├── fontawesome-webfont.eot
+│   │   │   │       ├── fontawesome-webfont.svg
+│   │   │   │       ├── fontawesome-webfont.ttf
+│   │   │   │       └── fontawesome-webfont.woff
+│   │   │   ├── fonts
+│   │   │   │   ├── glyphicons-halflings-regular.eot
+│   │   │   │   ├── glyphicons-halflings-regular.svg
+│   │   │   │   ├── glyphicons-halflings-regular.ttf
+│   │   │   │   └── glyphicons-halflings-regular.woff
+│   │   │   ├── img
+│   │   │   │   ├── blog-bg.jpg
+│   │   │   │   ├── checkbox-gray.png
+│   │   │   │   ├── friends
+│   │   │   │   │   ├── fr-01.jpg
+│   │   │   │   │   ├── fr-02.jpg
+│   │   │   │   │   ├── fr-03.jpg
+│   │   │   │   │   ├── fr-04.jpg
+│   │   │   │   │   ├── fr-05.jpg
+│   │   │   │   │   ├── fr-06.jpg
+│   │   │   │   │   ├── fr-07.jpg
+│   │   │   │   │   ├── fr-08.jpg
+│   │   │   │   │   ├── fr-09.jpg
+│   │   │   │   │   ├── fr-10.jpg
+│   │   │   │   │   └── fr-11.jpg
+│   │   │   │   ├── instagram.jpg
+│   │   │   │   ├── login-bg.jpg
+│   │   │   │   ├── logo.png
+│   │   │   │   ├── lorde.jpg
+│   │   │   │   ├── mask.png
+│   │   │   │   ├── ny.jpg
+│   │   │   │   ├── portfolio
+│   │   │   │   │   ├── port01.jpg
+│   │   │   │   │   ├── port02.jpg
+│   │   │   │   │   ├── port03.jpg
+│   │   │   │   │   ├── port04.jpg
+│   │   │   │   │   ├── port05.jpg
+│   │   │   │   │   └── port06.jpg
+│   │   │   │   ├── product.jpg
+│   │   │   │   ├── product.png
+│   │   │   │   ├── profile-01.jpg
+│   │   │   │   ├── profile-02.jpg
+│   │   │   │   ├── radio-gray.png
+│   │   │   │   ├── ui-danro.jpg
+│   │   │   │   ├── ui-divya.jpg
+│   │   │   │   ├── ui-sam.jpg
+│   │   │   │   ├── ui-sherman.jpg
+│   │   │   │   ├── ui-zac.jpg
+│   │   │   │   ├── weather.jpg
+│   │   │   │   └── zoom.png
+│   │   │   ├── js
+│   │   │   │   ├── bootstrap-inputmask
+│   │   │   │   │   └── bootstrap-inputmask.min.js
+│   │   │   │   ├── bootstrap.min.js
+│   │   │   │   ├── bootstrap-switch.js
+│   │   │   │   ├── bootstrap-tour.min.js
+│   │   │   │   ├── bootstrap-tour-standalone.js
+│   │   │   │   ├── bootstrap-tour-standalone.min.js
+│   │   │   │   ├── calendar-conf-events.js
+│   │   │   │   ├── calendar-conf-events.js.old
+│   │   │   │   ├── chartjs-conf.js
+│   │   │   │   ├── chart-master
+│   │   │   │   │   └── Chart.js
+│   │   │   │   ├── common-scripts.js
+│   │   │   │   ├── easy-pie-chart.js
+│   │   │   │   ├── fancybox
+│   │   │   │   │   ├── jquery.fancybox.css
+│   │   │   │   │   └── jquery.fancybox.js
+│   │   │   │   ├── form-component.js
+│   │   │   │   ├── fullcalendar
+│   │   │   │   │   ├── bootstrap-fullcalendar.css
+│   │   │   │   │   └── fullcalendar.min.js
+│   │   │   │   ├── gritter
+│   │   │   │   │   ├── css
+│   │   │   │   │   │   ├── jquery.gritter0.css
+│   │   │   │   │   │   └── jquery.gritter.css
+│   │   │   │   │   ├── images
+│   │   │   │   │   │   ├── gritter-light.png
+│   │   │   │   │   │   ├── gritter-long.png
+│   │   │   │   │   │   ├── gritter.png
+│   │   │   │   │   │   └── ie-spacer.gif
+│   │   │   │   │   └── js
+│   │   │   │   │       └── jquery.gritter.js
+│   │   │   │   ├── gritter-conf.js
+│   │   │   │   ├── jquery-1.8.3.min.js
+│   │   │   │   ├── jquery.backstretch.min.js
+│   │   │   │   ├── jquery.dcjqaccordion.2.7.js
+│   │   │   │   ├── jquery-easy-pie-chart
+│   │   │   │   │   ├── jquery.easy-pie-chart.css
+│   │   │   │   │   └── jquery.easy-pie-chart.js
+│   │   │   │   ├── jquery.js
+│   │   │   │   ├── jquery.nicescroll.js
+│   │   │   │   ├── jquery.scrollTo.min.js
+│   │   │   │   ├── jquery.sparkline.js
+│   │   │   │   ├── jquery.tagsinput.js
+│   │   │   │   ├── jquery-ui-1.9.2.custom.min.js
+│   │   │   │   ├── jquery.ui.touch-punch.min.js
+│   │   │   │   ├── morris-conf.js
+│   │   │   │   ├── sparkline-chart.js
+│   │   │   │   ├── tasks.js
+│   │   │   │   └── zabuto_calendar.js
+│   │   │   └── lineicons
+│   │   │       ├── fonts
+│   │   │       │   ├── linecons.eot
+│   │   │       │   ├── linecons.svg
+│   │   │       │   ├── linecons.ttf
+│   │   │       │   └── linecons.woff
+│   │   │       ├── index.html
+│   │   │       ├── lte-ie7.js
+│   │   │       └── style.css
+│   │   ├── clap_uminho
+│   │   │   └── index.html
+│   │   ├── Dash
+│   │   │   ├── aside-menu.html
+│   │   │   ├── dashboard-content.html
+│   │   │   ├── dash-footer.html
+│   │   │   ├── dash-header.html
+│   │   │   ├── details-content.html
+│   │   │   ├── details.html
+│   │   │   ├── ementas-content.html
+│   │   │   ├── ementas.html
+│   │   │   ├── gallery-content.html
+│   │   │   ├── gallery.html
+│   │   │   ├── index.html
+│   │   │   ├── stats-content.html
+│   │   │   ├── stats.html
+│   │   │   └── teste.html
+│   │   ├── README.txt
+│   │   ├── restaurant_manager
+│   │   └── restaurant_manager.zip
+│   ├── templates.old
+│   │   ├── agency
+│   │   │   ├── main_assets
+│   │   │   │   ├── ajax_restaurants.js
+│   │   │   │   ├── assets
+│   │   │   │   │   ├── css
+│   │   │   │   │   │   ├── bootstrap.css
+│   │   │   │   │   │   ├── font-awesome.min.css
+│   │   │   │   │   │   ├── footer.css
+│   │   │   │   │   │   ├── main.css
+│   │   │   │   │   │   └── style_ap.css
+│   │   │   │   │   ├── fonts
+│   │   │   │   │   │   ├── FontAwesome.otf
+│   │   │   │   │   │   ├── fontawesome-webfont.eot
+│   │   │   │   │   │   ├── fontawesome-webfont.svg
+│   │   │   │   │   │   ├── fontawesome-webfont.ttf
+│   │   │   │   │   │   ├── fontawesome-webfont.woff
+│   │   │   │   │   │   ├── glyphicons-halflings-regular.eot
+│   │   │   │   │   │   ├── glyphicons-halflings-regular.svg
+│   │   │   │   │   │   ├── glyphicons-halflings-regular.ttf
+│   │   │   │   │   │   └── glyphicons-halflings-regular.woff
+│   │   │   │   │   ├── img
+│   │   │   │   │   │   ├── about-bg.jpg
+│   │   │   │   │   │   ├── chart.png
+│   │   │   │   │   │   ├── clients
+│   │   │   │   │   │   │   ├── c01.gif
+│   │   │   │   │   │   │   ├── c02.gif
+│   │   │   │   │   │   │   ├── c03.gif
+│   │   │   │   │   │   │   ├── c04.gif
+│   │   │   │   │   │   │   └── c05.gif
+│   │   │   │   │   │   ├── header-bg1.jpg
+│   │   │   │   │   │   ├── header-bg3.jpg
+│   │   │   │   │   │   ├── logo_um.jpg
+│   │   │   │   │   │   ├── portfolio
+│   │   │   │   │   │   │   ├── 10.png
+│   │   │   │   │   │   │   ├── 11.png
+│   │   │   │   │   │   │   ├── 12.png
+│   │   │   │   │   │   │   ├── 13.png
+│   │   │   │   │   │   │   ├── 14.png
+│   │   │   │   │   │   │   ├── 1.jpg
+│   │   │   │   │   │   │   ├── 2.jpg
+│   │   │   │   │   │   │   ├── 3.jpg
+│   │   │   │   │   │   │   ├── 4.jpg
+│   │   │   │   │   │   │   ├── 5.jpg
+│   │   │   │   │   │   │   ├── 6.jpg
+│   │   │   │   │   │   │   ├── 7.jpg
+│   │   │   │   │   │   │   ├── 8.jpg
+│   │   │   │   │   │   │   ├── 9.jpg
+│   │   │   │   │   │   │   ├── apontamentos400x640.png
+│   │   │   │   │   │   │   ├── apontamentos400x640.xcf
+│   │   │   │   │   │   │   ├── cafe400x300.png
+│   │   │   │   │   │   │   ├── ementas400x640.png
+│   │   │   │   │   │   │   ├── ementas400x640.xcf
+│   │   │   │   │   │   │   ├── map_linguas400x640.png
+│   │   │   │   │   │   │   ├── map_linguas.png
+│   │   │   │   │   │   │   ├── servicos400x250.png
+│   │   │   │   │   │   │   └── servicosdoc400x650.png
+│   │   │   │   │   │   ├── portfolio-bg.jpg
+│   │   │   │   │   │   ├── post01.jpg
+│   │   │   │   │   │   ├── post02.jpg
+│   │   │   │   │   │   ├── post03.jpg
+│   │   │   │   │   │   ├── process
+│   │   │   │   │   │   │   ├── pro01.png
+│   │   │   │   │   │   │   ├── pro02.png
+│   │   │   │   │   │   │   ├── pro03.png
+│   │   │   │   │   │   │   └── pro04.png
+│   │   │   │   │   │   ├── restaurantes
+│   │   │   │   │   │   │   ├── cantina.jpg
+│   │   │   │   │   │   │   ├── dieci.jpg
+│   │   │   │   │   │   │   ├── griil.jpg
+│   │   │   │   │   │   │   ├── montealegrense.png
+│   │   │   │   │   │   │   ├── sabor_fruta.jpg
+│   │   │   │   │   │   │   ├── tasq_bracacrense_main.jpg
+│   │   │   │   │   │   │   └── tasq_bracarense_after.jpg
+│   │   │   │   │   │   ├── services-bg.jpg
+│   │   │   │   │   │   ├── sp
+│   │   │   │   │   │   │   ├── p01.png
+│   │   │   │   │   │   │   ├── p02.png
+│   │   │   │   │   │   │   ├── p03.png
+│   │   │   │   │   │   │   └── p04.png
+│   │   │   │   │   │   ├── spot.png
+│   │   │   │   │   │   ├── sp-standout-bg.jpg
+│   │   │   │   │   │   └── team
+│   │   │   │   │   │       ├── gianni.png
+│   │   │   │   │   │       ├── rebecca.png
+│   │   │   │   │   │       └── william.png
+│   │   │   │   │   └── js
+│   │   │   │   │       ├── AnimOnScroll.js
+│   │   │   │   │       ├── bootstrap.min.js
+│   │   │   │   │       ├── classie.js
+│   │   │   │   │       ├── flip
+│   │   │   │   │       │   ├── jquery.flip.js
+│   │   │   │   │       │   ├── jquery.flip.min.js
+│   │   │   │   │       │   └── README
+│   │   │   │   │       ├── imagesloaded.js
+│   │   │   │   │       ├── main.js
+│   │   │   │   │       ├── masonry.pkgd.min.js
+│   │   │   │   │       └── modernizr.custom.js
+│   │   │   │   ├── assets_helios
+│   │   │   │   │   ├── css
+│   │   │   │   │   │   ├── font-awesome.min.css
+│   │   │   │   │   │   ├── ie
+│   │   │   │   │   │   │   ├── backgroundsize.min.htc
+│   │   │   │   │   │   │   ├── html5shiv.js
+│   │   │   │   │   │   │   ├── PIE.htc
+│   │   │   │   │   │   │   └── v8.css
+│   │   │   │   │   │   ├── images
+│   │   │   │   │   │   │   └── arrow.svg
+│   │   │   │   │   │   ├── skel.css
+│   │   │   │   │   │   ├── style.css
+│   │   │   │   │   │   ├── style-mobile.css
+│   │   │   │   │   │   ├── style-narrow.css
+│   │   │   │   │   │   ├── style-narrower.css
+│   │   │   │   │   │   ├── style-normal.css
+│   │   │   │   │   │   ├── style-noscript.css
+│   │   │   │   │   │   └── style-wide.css
+│   │   │   │   │   ├── fonts
+│   │   │   │   │   │   ├── FontAwesome.otf
+│   │   │   │   │   │   ├── fontawesome-webfont.eot
+│   │   │   │   │   │   ├── fontawesome-webfont.svg
+│   │   │   │   │   │   ├── fontawesome-webfont.ttf
+│   │   │   │   │   │   └── fontawesome-webfont.woff
+│   │   │   │   │   ├── images
+│   │   │   │   │   │   ├── beer368x256.png
+│   │   │   │   │   │   ├── burger368x256.jpg
+│   │   │   │   │   │   ├── chips368x256.jpg
+│   │   │   │   │   │   ├── header.jpg
+│   │   │   │   │   │   ├── pic01.jpg
+│   │   │   │   │   │   ├── pic02.jpg
+│   │   │   │   │   │   ├── pic03.jpg
+│   │   │   │   │   │   ├── pic04.jpg
+│   │   │   │   │   │   ├── pic05.jpg
+│   │   │   │   │   │   ├── pic06.jpg
+│   │   │   │   │   │   ├── pic07.jpg
+│   │   │   │   │   │   ├── pic08.jpg
+│   │   │   │   │   │   ├── pic09.jpg
+│   │   │   │   │   │   ├── pic10.jpg
+│   │   │   │   │   │   ├── pic11.jpg
+│   │   │   │   │   │   ├── pic12.jpg
+│   │   │   │   │   │   ├── pic13.jpg
+│   │   │   │   │   │   ├── pic14.jpg
+│   │   │   │   │   │   └── pic15.jpg
+│   │   │   │   │   └── js
+│   │   │   │   │       ├── init.js
+│   │   │   │   │       ├── jquery.dropotron.min.js
+│   │   │   │   │       ├── jquery.min.js
+│   │   │   │   │       ├── jquery.onvisible.min.js
+│   │   │   │   │       ├── jquery.scrolly.min.js
+│   │   │   │   │       ├── skel-layers.min.js
+│   │   │   │   │       └── skel.min.js
+│   │   │   │   ├── assets_shield
+│   │   │   │   │   ├── css
+│   │   │   │   │   │   ├── animate-custom.css
+│   │   │   │   │   │   ├── bootstrap.css
+│   │   │   │   │   │   ├── icomoon
+│   │   │   │   │   │   │   ├── icomoon-.eot
+│   │   │   │   │   │   │   ├── icomoon.eot
+│   │   │   │   │   │   │   ├── icomoon.svg
+│   │   │   │   │   │   │   ├── icomoon.ttf
+│   │   │   │   │   │   │   └── icomoon.woff
+│   │   │   │   │   │   ├── icomoon.css
+│   │   │   │   │   │   └── main.css
+│   │   │   │   │   ├── fonts
+│   │   │   │   │   │   ├── glyphicons-halflings-regular.eot
+│   │   │   │   │   │   ├── glyphicons-halflings-regular.svg
+│   │   │   │   │   │   ├── glyphicons-halflings-regular.ttf
+│   │   │   │   │   │   └── glyphicons-halflings-regular.woff
+│   │   │   │   │   ├── img
+│   │   │   │   │   │   ├── bg
+│   │   │   │   │   │   │   ├── divider1.jpg
+│   │   │   │   │   │   │   ├── divider2.jpg
+│   │   │   │   │   │   │   ├── divider3.jpg
+│   │   │   │   │   │   │   ├── divider4.jpg
+│   │   │   │   │   │   │   └── divider6.jpg
+│   │   │   │   │   │   ├── header_bg.jpg
+│   │   │   │   │   │   ├── iphone.png
+│   │   │   │   │   │   ├── macbook.png
+│   │   │   │   │   │   ├── portfolio
+│   │   │   │   │   │   │   ├── folio01.jpg
+│   │   │   │   │   │   │   ├── folio02.jpg
+│   │   │   │   │   │   │   ├── folio03.jpg
+│   │   │   │   │   │   │   ├── folio04.jpg
+│   │   │   │   │   │   │   ├── folio05.jpg
+│   │   │   │   │   │   │   ├── folio06.jpg
+│   │   │   │   │   │   │   ├── folio07.jpg
+│   │   │   │   │   │   │   ├── folio08.jpg
+│   │   │   │   │   │   │   └── folio09.jpg
+│   │   │   │   │   │   └── team
+│   │   │   │   │   │       ├── team01.jpg
+│   │   │   │   │   │       ├── team02.jpg
+│   │   │   │   │   │       ├── team03.jpg
+│   │   │   │   │   │       └── team04.jpg
+│   │   │   │   │   └── js
+│   │   │   │   │       ├── bootstrap.js
+│   │   │   │   │       ├── bootstrap.min.js
+│   │   │   │   │       ├── interact.js
+│   │   │   │   │       ├── jquery.easing.1.3.js
+│   │   │   │   │       ├── jquery-func.js
+│   │   │   │   │       ├── jquery.min.js
+│   │   │   │   │       ├── modernizr.custom.js
+│   │   │   │   │       ├── retina.js
+│   │   │   │   │       └── smoothscroll.js
+│   │   │   │   ├── assets_solid
+│   │   │   │   │   ├── css
+│   │   │   │   │   │   ├── bootstrap.css
+│   │   │   │   │   │   ├── font-awesome.min.css
+│   │   │   │   │   │   ├── hoverex-all.css
+│   │   │   │   │   │   ├── images
+│   │   │   │   │   │   │   ├── prettyphoto
+│   │   │   │   │   │   │   │   ├── dark_rounded
+│   │   │   │   │   │   │   │   │   ├── btnNext.png
+│   │   │   │   │   │   │   │   │   ├── btnPrevious.png
+│   │   │   │   │   │   │   │   │   ├── contentPattern.png
+│   │   │   │   │   │   │   │   │   ├── loader.gif
+│   │   │   │   │   │   │   │   │   └── sprite.png
+│   │   │   │   │   │   │   │   ├── dark_square
+│   │   │   │   │   │   │   │   │   ├── btnNext.png
+│   │   │   │   │   │   │   │   │   ├── btnPrevious.png
+│   │   │   │   │   │   │   │   │   ├── loader.gif
+│   │   │   │   │   │   │   │   │   └── sprite.png
+│   │   │   │   │   │   │   │   ├── default
+│   │   │   │   │   │   │   │   │   ├── default_thumb.png
+│   │   │   │   │   │   │   │   │   ├── loader.gif
+│   │   │   │   │   │   │   │   │   ├── sprite_next.png
+│   │   │   │   │   │   │   │   │   ├── sprite.png
+│   │   │   │   │   │   │   │   │   ├── sprite_prev.png
+│   │   │   │   │   │   │   │   │   ├── sprite_x.png
+│   │   │   │   │   │   │   │   │   └── sprite_y.png
+│   │   │   │   │   │   │   │   ├── facebook
+│   │   │   │   │   │   │   │   │   ├── btnNext.png
+│   │   │   │   │   │   │   │   │   ├── btnPrevious.png
+│   │   │   │   │   │   │   │   │   ├── contentPatternBottom.png
+│   │   │   │   │   │   │   │   │   ├── contentPatternLeft.png
+│   │   │   │   │   │   │   │   │   ├── contentPatternRight.png
+│   │   │   │   │   │   │   │   │   ├── contentPatternTop.png
+│   │   │   │   │   │   │   │   │   ├── default_thumbnail.gif
+│   │   │   │   │   │   │   │   │   ├── loader.gif
+│   │   │   │   │   │   │   │   │   └── sprite.png
+│   │   │   │   │   │   │   │   ├── light_rounded
+│   │   │   │   │   │   │   │   │   ├── btnNext.png
+│   │   │   │   │   │   │   │   │   ├── btnPrevious.png
+│   │   │   │   │   │   │   │   │   ├── loader.gif
+│   │   │   │   │   │   │   │   │   └── sprite.png
+│   │   │   │   │   │   │   │   └── light_square
+│   │   │   │   │   │   │   │       ├── btnNext.png
+│   │   │   │   │   │   │   │       ├── btnPrevious.png
+│   │   │   │   │   │   │   │       └── sprite.png
+│   │   │   │   │   │   │   └── prettyPhoto
+│   │   │   │   │   │   │       ├── dark_rounded
+│   │   │   │   │   │   │       ├── dark_square
+│   │   │   │   │   │   │       ├── default
+│   │   │   │   │   │   │       ├── facebook
+│   │   │   │   │   │   │       ├── light_rounded
+│   │   │   │   │   │   │       └── light_square
+│   │   │   │   │   │   ├── prettyPhoto.css
+│   │   │   │   │   │   └── style.css
+│   │   │   │   │   ├── fonts
+│   │   │   │   │   │   ├── FontAwesome.otf
+│   │   │   │   │   │   ├── fontawesome-webfont.eot
+│   │   │   │   │   │   ├── fontawesome-webfont.svg
+│   │   │   │   │   │   ├── fontawesome-webfont.ttf
+│   │   │   │   │   │   ├── fontawesome-webfont.woff
+│   │   │   │   │   │   ├── glyphicons-halflings-regular.eot
+│   │   │   │   │   │   ├── glyphicons-halflings-regular.svg
+│   │   │   │   │   │   ├── glyphicons-halflings-regular.ttf
+│   │   │   │   │   │   └── glyphicons-halflings-regular.woff
+│   │   │   │   │   ├── img
+│   │   │   │   │   │   ├── agency.jpg
+│   │   │   │   │   │   ├── browser.png
+│   │   │   │   │   │   ├── clients
+│   │   │   │   │   │   │   ├── client01.png
+│   │   │   │   │   │   │   ├── client02.png
+│   │   │   │   │   │   │   ├── client03.png
+│   │   │   │   │   │   │   └── client04.png
+│   │   │   │   │   │   ├── contact.jpg
+│   │   │   │   │   │   ├── portfolio
+│   │   │   │   │   │   │   ├── portfolio_01.jpg
+│   │   │   │   │   │   │   ├── portfolio_02.jpg
+│   │   │   │   │   │   │   ├── portfolio_03.jpg
+│   │   │   │   │   │   │   ├── portfolio_04.jpg
+│   │   │   │   │   │   │   ├── portfolio_05.jpg
+│   │   │   │   │   │   │   ├── portfolio_06.jpg
+│   │   │   │   │   │   │   ├── portfolio_07.jpg
+│   │   │   │   │   │   │   ├── portfolio_08.jpg
+│   │   │   │   │   │   │   ├── portfolio_09.jpg
+│   │   │   │   │   │   │   ├── portfolio_10.jpg
+│   │   │   │   │   │   │   ├── single01.jpg
+│   │   │   │   │   │   │   ├── single02.jpg
+│   │   │   │   │   │   │   └── single03.jpg
+│   │   │   │   │   │   ├── post01.jpg
+│   │   │   │   │   │   ├── post02.jpg
+│   │   │   │   │   │   ├── post03.jpg
+│   │   │   │   │   │   ├── t-back.jpg
+│   │   │   │   │   │   ├── team
+│   │   │   │   │   │   │   ├── team01.jpg
+│   │   │   │   │   │   │   ├── team02.jpg
+│   │   │   │   │   │   │   ├── team03.jpg
+│   │   │   │   │   │   │   └── team04.jpg
+│   │   │   │   │   │   ├── thumb01.jpg
+│   │   │   │   │   │   ├── thumb02.jpg
+│   │   │   │   │   │   ├── thumb03.jpg
+│   │   │   │   │   │   └── thumb04.jpg
+│   │   │   │   │   └── js
+│   │   │   │   │       ├── bootstrap.min.js
+│   │   │   │   │       ├── custom.js
+│   │   │   │   │       ├── jquery.hoverdir.js
+│   │   │   │   │       ├── jquery.hoverex.min.js
+│   │   │   │   │       ├── jquery.isotope.min.js
+│   │   │   │   │       ├── jquery.prettyPhoto.js
+│   │   │   │   │       └── retina-1.1.0.js
+│   │   │   │   ├── bottom_menu_functs.js
+│   │   │   │   ├── bottom_menu.js
+│   │   │   │   ├── food_menus.js
+│   │   │   │   ├── load_base_css.js
+│   │   │   │   ├── load_base.js
+│   │   │   │   ├── load_base_js.js
+│   │   │   │   ├── load_helios.js
+│   │   │   │   ├── load_shield.js
+│   │   │   │   ├── portfolio_functs.js
+│   │   │   │   ├── portfolio.js
+│   │   │   │   ├── top_menu_functs.js
+│   │   │   │   └── top_menu.js
+│   │   │   └── OUTROS
+│   │   │       ├── about.html
+│   │   │       ├── index.html
+│   │   │       ├── initial_page.html
+│   │   │       ├── menu_quadradinhos_v1.html
+│   │   │       ├── portfolio.html
+│   │   │       ├── services.html
+│   │   │       └── singleproject.html
+│   │   ├── Agency
+│   │   │   ├── angular.min.js
+│   │   │   ├── apontamentos.html
+│   │   │   ├── app.js
+│   │   │   ├── call-to-action.html
+│   │   │   ├── index.html
+│   │   │   ├── main_assets
+│   │   │   │   ├── ajax_restaurants.js
+│   │   │   │   ├── assets
+│   │   │   │   │   ├── css
+│   │   │   │   │   │   ├── bootstrap.css
+│   │   │   │   │   │   ├── font-awesome.min.css
+│   │   │   │   │   │   ├── footer.css
+│   │   │   │   │   │   ├── main.css
+│   │   │   │   │   │   └── style_ap.css
+│   │   │   │   │   ├── fonts
+│   │   │   │   │   │   ├── FontAwesome.otf
+│   │   │   │   │   │   ├── fontawesome-webfont.eot
+│   │   │   │   │   │   ├── fontawesome-webfont.svg
+│   │   │   │   │   │   ├── fontawesome-webfont.ttf
+│   │   │   │   │   │   ├── fontawesome-webfont.woff
+│   │   │   │   │   │   ├── glyphicons-halflings-regular.eot
+│   │   │   │   │   │   ├── glyphicons-halflings-regular.svg
+│   │   │   │   │   │   ├── glyphicons-halflings-regular.ttf
+│   │   │   │   │   │   └── glyphicons-halflings-regular.woff
+│   │   │   │   │   ├── img
+│   │   │   │   │   │   ├── about-bg.jpg
+│   │   │   │   │   │   ├── chart.png
+│   │   │   │   │   │   ├── clients
+│   │   │   │   │   │   │   ├── c01.gif
+│   │   │   │   │   │   │   ├── c02.gif
+│   │   │   │   │   │   │   ├── c03.gif
+│   │   │   │   │   │   │   ├── c04.gif
+│   │   │   │   │   │   │   └── c05.gif
+│   │   │   │   │   │   ├── header-bg1.jpg
+│   │   │   │   │   │   ├── header-bg3.jpg
+│   │   │   │   │   │   ├── logo_um.jpg
+│   │   │   │   │   │   ├── portfolio
+│   │   │   │   │   │   │   ├── 10.png
+│   │   │   │   │   │   │   ├── 11.png
+│   │   │   │   │   │   │   ├── 12.png
+│   │   │   │   │   │   │   ├── 13.png
+│   │   │   │   │   │   │   ├── 14.png
+│   │   │   │   │   │   │   ├── 1.jpg
+│   │   │   │   │   │   │   ├── 2.jpg
+│   │   │   │   │   │   │   ├── 3.jpg
+│   │   │   │   │   │   │   ├── 4.jpg
+│   │   │   │   │   │   │   ├── 5.jpg
+│   │   │   │   │   │   │   ├── 6.jpg
+│   │   │   │   │   │   │   ├── 7.jpg
+│   │   │   │   │   │   │   ├── 8.jpg
+│   │   │   │   │   │   │   ├── 9.jpg
+│   │   │   │   │   │   │   ├── apontamentos400x640.png
+│   │   │   │   │   │   │   ├── apontamentos400x640.xcf
+│   │   │   │   │   │   │   ├── cafe400x300.png
+│   │   │   │   │   │   │   ├── ementas400x640.png
+│   │   │   │   │   │   │   ├── ementas400x640.xcf
+│   │   │   │   │   │   │   ├── map_linguas400x640.png
+│   │   │   │   │   │   │   ├── map_linguas.png
+│   │   │   │   │   │   │   ├── servicos400x250.png
+│   │   │   │   │   │   │   └── servicosdoc400x650.png
+│   │   │   │   │   │   ├── portfolio-bg.jpg
+│   │   │   │   │   │   ├── post01.jpg
+│   │   │   │   │   │   ├── post02.jpg
+│   │   │   │   │   │   ├── post03.jpg
+│   │   │   │   │   │   ├── process
+│   │   │   │   │   │   │   ├── pro01.png
+│   │   │   │   │   │   │   ├── pro02.png
+│   │   │   │   │   │   │   ├── pro03.png
+│   │   │   │   │   │   │   └── pro04.png
+│   │   │   │   │   │   ├── restaurantes
+│   │   │   │   │   │   │   ├── cantina.jpg
+│   │   │   │   │   │   │   ├── dieci.jpg
+│   │   │   │   │   │   │   ├── griil.jpg
+│   │   │   │   │   │   │   ├── montealegrense.png
+│   │   │   │   │   │   │   ├── sabor_fruta.jpg
+│   │   │   │   │   │   │   ├── tasq_bracacrense_main.jpg
+│   │   │   │   │   │   │   └── tasq_bracarense_after.jpg
+│   │   │   │   │   │   ├── services-bg.jpg
+│   │   │   │   │   │   ├── sp
+│   │   │   │   │   │   │   ├── p01.png
+│   │   │   │   │   │   │   ├── p02.png
+│   │   │   │   │   │   │   ├── p03.png
+│   │   │   │   │   │   │   └── p04.png
+│   │   │   │   │   │   ├── spot.png
+│   │   │   │   │   │   ├── sp-standout-bg.jpg
+│   │   │   │   │   │   └── team
+│   │   │   │   │   │       ├── gianni.png
+│   │   │   │   │   │       ├── rebecca.png
+│   │   │   │   │   │       └── william.png
+│   │   │   │   │   └── js
+│   │   │   │   │       ├── AnimOnScroll.js
+│   │   │   │   │       ├── bootstrap.min.js
+│   │   │   │   │       ├── classie.js
+│   │   │   │   │       ├── flip
+│   │   │   │   │       │   ├── jquery.flip.js
+│   │   │   │   │       │   ├── jquery.flip.min.js
+│   │   │   │   │       │   └── README
+│   │   │   │   │       ├── imagesloaded.js
+│   │   │   │   │       ├── main.js
+│   │   │   │   │       ├── masonry.pkgd.min.js
+│   │   │   │   │       └── modernizr.custom.js
+│   │   │   │   ├── assets_helios
+│   │   │   │   │   ├── css
+│   │   │   │   │   │   ├── font-awesome.min.css
+│   │   │   │   │   │   ├── ie
+│   │   │   │   │   │   │   ├── backgroundsize.min.htc
+│   │   │   │   │   │   │   ├── html5shiv.js
+│   │   │   │   │   │   │   ├── PIE.htc
+│   │   │   │   │   │   │   └── v8.css
+│   │   │   │   │   │   ├── images
+│   │   │   │   │   │   │   └── arrow.svg
+│   │   │   │   │   │   ├── skel.css
+│   │   │   │   │   │   ├── style.css
+│   │   │   │   │   │   ├── style-mobile.css
+│   │   │   │   │   │   ├── style-narrow.css
+│   │   │   │   │   │   ├── style-narrower.css
+│   │   │   │   │   │   ├── style-normal.css
+│   │   │   │   │   │   ├── style-noscript.css
+│   │   │   │   │   │   └── style-wide.css
+│   │   │   │   │   ├── fonts
+│   │   │   │   │   │   ├── FontAwesome.otf
+│   │   │   │   │   │   ├── fontawesome-webfont.eot
+│   │   │   │   │   │   ├── fontawesome-webfont.svg
+│   │   │   │   │   │   ├── fontawesome-webfont.ttf
+│   │   │   │   │   │   └── fontawesome-webfont.woff
+│   │   │   │   │   ├── images
+│   │   │   │   │   │   ├── beer368x256.png
+│   │   │   │   │   │   ├── burger368x256.jpg
+│   │   │   │   │   │   ├── chips368x256.jpg
+│   │   │   │   │   │   ├── header.jpg
+│   │   │   │   │   │   ├── pic01.jpg
+│   │   │   │   │   │   ├── pic02.jpg
+│   │   │   │   │   │   ├── pic03.jpg
+│   │   │   │   │   │   ├── pic04.jpg
+│   │   │   │   │   │   ├── pic05.jpg
+│   │   │   │   │   │   ├── pic06.jpg
+│   │   │   │   │   │   ├── pic07.jpg
+│   │   │   │   │   │   ├── pic08.jpg
+│   │   │   │   │   │   ├── pic09.jpg
+│   │   │   │   │   │   ├── pic10.jpg
+│   │   │   │   │   │   ├── pic11.jpg
+│   │   │   │   │   │   ├── pic12.jpg
+│   │   │   │   │   │   ├── pic13.jpg
+│   │   │   │   │   │   ├── pic14.jpg
+│   │   │   │   │   │   └── pic15.jpg
+│   │   │   │   │   └── js
+│   │   │   │   │       ├── init.js
+│   │   │   │   │       ├── jquery.dropotron.min.js
+│   │   │   │   │       ├── jquery.min.js
+│   │   │   │   │       ├── jquery.onvisible.min.js
+│   │   │   │   │       ├── jquery.scrolly.min.js
+│   │   │   │   │       ├── skel-layers.min.js
+│   │   │   │   │       └── skel.min.js
+│   │   │   │   ├── assets_shield
+│   │   │   │   │   ├── css
+│   │   │   │   │   │   ├── animate-custom.css
+│   │   │   │   │   │   ├── bootstrap.css
+│   │   │   │   │   │   ├── icomoon
+│   │   │   │   │   │   │   ├── icomoon-.eot
+│   │   │   │   │   │   │   ├── icomoon.eot
+│   │   │   │   │   │   │   ├── icomoon.svg
+│   │   │   │   │   │   │   ├── icomoon.ttf
+│   │   │   │   │   │   │   └── icomoon.woff
+│   │   │   │   │   │   ├── icomoon.css
+│   │   │   │   │   │   └── main.css
+│   │   │   │   │   ├── fonts
+│   │   │   │   │   │   ├── glyphicons-halflings-regular.eot
+│   │   │   │   │   │   ├── glyphicons-halflings-regular.svg
+│   │   │   │   │   │   ├── glyphicons-halflings-regular.ttf
+│   │   │   │   │   │   └── glyphicons-halflings-regular.woff
+│   │   │   │   │   ├── img
+│   │   │   │   │   │   ├── bg
+│   │   │   │   │   │   │   ├── divider1.jpg
+│   │   │   │   │   │   │   ├── divider2.jpg
+│   │   │   │   │   │   │   ├── divider3.jpg
+│   │   │   │   │   │   │   ├── divider4.jpg
+│   │   │   │   │   │   │   └── divider6.jpg
+│   │   │   │   │   │   ├── header_bg.jpg
+│   │   │   │   │   │   ├── iphone.png
+│   │   │   │   │   │   ├── macbook.png
+│   │   │   │   │   │   ├── portfolio
+│   │   │   │   │   │   │   ├── folio01.jpg
+│   │   │   │   │   │   │   ├── folio02.jpg
+│   │   │   │   │   │   │   ├── folio03.jpg
+│   │   │   │   │   │   │   ├── folio04.jpg
+│   │   │   │   │   │   │   ├── folio05.jpg
+│   │   │   │   │   │   │   ├── folio06.jpg
+│   │   │   │   │   │   │   ├── folio07.jpg
+│   │   │   │   │   │   │   ├── folio08.jpg
+│   │   │   │   │   │   │   └── folio09.jpg
+│   │   │   │   │   │   └── team
+│   │   │   │   │   │       ├── team01.jpg
+│   │   │   │   │   │       ├── team02.jpg
+│   │   │   │   │   │       ├── team03.jpg
+│   │   │   │   │   │       └── team04.jpg
+│   │   │   │   │   └── js
+│   │   │   │   │       ├── bootstrap.js
+│   │   │   │   │       ├── bootstrap.min.js
+│   │   │   │   │       ├── interact.js
+│   │   │   │   │       ├── jquery.easing.1.3.js
+│   │   │   │   │       ├── jquery-func.js
+│   │   │   │   │       ├── jquery.min.js
+│   │   │   │   │       ├── modernizr.custom.js
+│   │   │   │   │       ├── retina.js
+│   │   │   │   │       └── smoothscroll.js
+│   │   │   │   ├── assets_solid
+│   │   │   │   │   ├── css
+│   │   │   │   │   │   ├── bootstrap.css
+│   │   │   │   │   │   ├── font-awesome.min.css
+│   │   │   │   │   │   ├── hoverex-all.css
+│   │   │   │   │   │   ├── images
+│   │   │   │   │   │   │   └── prettyPhoto
+│   │   │   │   │   │   │       ├── dark_rounded
+│   │   │   │   │   │   │       │   ├── btnNext.png
+│   │   │   │   │   │   │       │   ├── btnPrevious.png
+│   │   │   │   │   │   │       │   ├── contentPattern.png
+│   │   │   │   │   │   │       │   ├── loader.gif
+│   │   │   │   │   │   │       │   └── sprite.png
+│   │   │   │   │   │   │       ├── dark_square
+│   │   │   │   │   │   │       │   ├── btnNext.png
+│   │   │   │   │   │   │       │   ├── btnPrevious.png
+│   │   │   │   │   │   │       │   ├── loader.gif
+│   │   │   │   │   │   │       │   └── sprite.png
+│   │   │   │   │   │   │       ├── default
+│   │   │   │   │   │   │       │   ├── default_thumb.png
+│   │   │   │   │   │   │       │   ├── loader.gif
+│   │   │   │   │   │   │       │   ├── sprite_next.png
+│   │   │   │   │   │   │       │   ├── sprite.png
+│   │   │   │   │   │   │       │   ├── sprite_prev.png
+│   │   │   │   │   │   │       │   ├── sprite_x.png
+│   │   │   │   │   │   │       │   └── sprite_y.png
+│   │   │   │   │   │   │       ├── facebook
+│   │   │   │   │   │   │       │   ├── btnNext.png
+│   │   │   │   │   │   │       │   ├── btnPrevious.png
+│   │   │   │   │   │   │       │   ├── contentPatternBottom.png
+│   │   │   │   │   │   │       │   ├── contentPatternLeft.png
+│   │   │   │   │   │   │       │   ├── contentPatternRight.png
+│   │   │   │   │   │   │       │   ├── contentPatternTop.png
+│   │   │   │   │   │   │       │   ├── default_thumbnail.gif
+│   │   │   │   │   │   │       │   ├── loader.gif
+│   │   │   │   │   │   │       │   └── sprite.png
+│   │   │   │   │   │   │       ├── light_rounded
+│   │   │   │   │   │   │       │   ├── btnNext.png
+│   │   │   │   │   │   │       │   ├── btnPrevious.png
+│   │   │   │   │   │   │       │   ├── loader.gif
+│   │   │   │   │   │   │       │   └── sprite.png
+│   │   │   │   │   │   │       └── light_square
+│   │   │   │   │   │   │           ├── btnNext.png
+│   │   │   │   │   │   │           ├── btnPrevious.png
+│   │   │   │   │   │   │           └── sprite.png
+│   │   │   │   │   │   ├── prettyPhoto.css
+│   │   │   │   │   │   └── style.css
+│   │   │   │   │   ├── fonts
+│   │   │   │   │   │   ├── FontAwesome.otf
+│   │   │   │   │   │   ├── fontawesome-webfont.eot
+│   │   │   │   │   │   ├── fontawesome-webfont.svg
+│   │   │   │   │   │   ├── fontawesome-webfont.ttf
+│   │   │   │   │   │   ├── fontawesome-webfont.woff
+│   │   │   │   │   │   ├── glyphicons-halflings-regular.eot
+│   │   │   │   │   │   ├── glyphicons-halflings-regular.svg
+│   │   │   │   │   │   ├── glyphicons-halflings-regular.ttf
+│   │   │   │   │   │   └── glyphicons-halflings-regular.woff
+│   │   │   │   │   ├── img
+│   │   │   │   │   │   ├── agency.jpg
+│   │   │   │   │   │   ├── browser.png
+│   │   │   │   │   │   ├── clients
+│   │   │   │   │   │   │   ├── client01.png
+│   │   │   │   │   │   │   ├── client02.png
+│   │   │   │   │   │   │   ├── client03.png
+│   │   │   │   │   │   │   └── client04.png
+│   │   │   │   │   │   ├── contact.jpg
+│   │   │   │   │   │   ├── portfolio
+│   │   │   │   │   │   │   ├── portfolio_01.jpg
+│   │   │   │   │   │   │   ├── portfolio_02.jpg
+│   │   │   │   │   │   │   ├── portfolio_03.jpg
+│   │   │   │   │   │   │   ├── portfolio_04.jpg
+│   │   │   │   │   │   │   ├── portfolio_05.jpg
+│   │   │   │   │   │   │   ├── portfolio_06.jpg
+│   │   │   │   │   │   │   ├── portfolio_07.jpg
+│   │   │   │   │   │   │   ├── portfolio_08.jpg
+│   │   │   │   │   │   │   ├── portfolio_09.jpg
+│   │   │   │   │   │   │   ├── portfolio_10.jpg
+│   │   │   │   │   │   │   ├── single01.jpg
+│   │   │   │   │   │   │   ├── single02.jpg
+│   │   │   │   │   │   │   └── single03.jpg
+│   │   │   │   │   │   ├── post01.jpg
+│   │   │   │   │   │   ├── post02.jpg
+│   │   │   │   │   │   ├── post03.jpg
+│   │   │   │   │   │   ├── t-back.jpg
+│   │   │   │   │   │   ├── team
+│   │   │   │   │   │   │   ├── team01.jpg
+│   │   │   │   │   │   │   ├── team02.jpg
+│   │   │   │   │   │   │   ├── team03.jpg
+│   │   │   │   │   │   │   └── team04.jpg
+│   │   │   │   │   │   ├── thumb01.jpg
+│   │   │   │   │   │   ├── thumb02.jpg
+│   │   │   │   │   │   ├── thumb03.jpg
+│   │   │   │   │   │   └── thumb04.jpg
+│   │   │   │   │   └── js
+│   │   │   │   │       ├── bootstrap.min.js
+│   │   │   │   │       ├── custom.js
+│   │   │   │   │       ├── jquery.hoverdir.js
+│   │   │   │   │       ├── jquery.hoverex.min.js
+│   │   │   │   │       ├── jquery.isotope.min.js
+│   │   │   │   │       ├── jquery.prettyPhoto.js
+│   │   │   │   │       └── retina-1.1.0.js
+│   │   │   │   ├── bottom_menu_functs.js
+│   │   │   │   ├── bottom_menu.js
+│   │   │   │   ├── food_menus.js
+│   │   │   │   ├── load_base_css.js
+│   │   │   │   ├── load_base.js
+│   │   │   │   ├── load_helios.js
+│   │   │   │   ├── portfolio_functs.js
+│   │   │   │   ├── portfolio.js
+│   │   │   │   ├── top_menu_functs.js
+│   │   │   │   └── top_menu.js
+│   │   │   ├── main-menu.html
+│   │   │   ├── new_page.html
+│   │   │   ├── news.html
+│   │   │   ├── restaurant-filter.html
+│   │   │   ├── restaurants-portfolio.html
+│   │   │   ├── rest_ind_template.html
+│   │   │   └── top-menu.html
+│   │   ├── Agency.zip
+│   │   ├── angular
+│   │   │   └── Angular
+│   │   │       ├── angular.min.js
+│   │   │       ├── apontamentos.html
+│   │   │       ├── app.js
+│   │   │       ├── call-to-action.html
+│   │   │       ├── index.html
+│   │   │       ├── main_assets
+│   │   │       │   ├── ajax_restaurants.js
+│   │   │       │   ├── assets
+│   │   │       │   │   ├── css
+│   │   │       │   │   │   ├── bootstrap.css
+│   │   │       │   │   │   ├── font-awesome.min.css
+│   │   │       │   │   │   ├── footer.css
+│   │   │       │   │   │   ├── main.css
+│   │   │       │   │   │   └── style_ap.css
+│   │   │       │   │   ├── fonts
+│   │   │       │   │   │   ├── FontAwesome.otf
+│   │   │       │   │   │   ├── fontawesome-webfont.eot
+│   │   │       │   │   │   ├── fontawesome-webfont.svg
+│   │   │       │   │   │   ├── fontawesome-webfont.ttf
+│   │   │       │   │   │   ├── fontawesome-webfont.woff
+│   │   │       │   │   │   ├── glyphicons-halflings-regular.eot
+│   │   │       │   │   │   ├── glyphicons-halflings-regular.svg
+│   │   │       │   │   │   ├── glyphicons-halflings-regular.ttf
+│   │   │       │   │   │   └── glyphicons-halflings-regular.woff
+│   │   │       │   │   ├── img
+│   │   │       │   │   │   ├── about-bg.jpg
+│   │   │       │   │   │   ├── chart.png
+│   │   │       │   │   │   ├── clients
+│   │   │       │   │   │   │   ├── c01.gif
+│   │   │       │   │   │   │   ├── c02.gif
+│   │   │       │   │   │   │   ├── c03.gif
+│   │   │       │   │   │   │   ├── c04.gif
+│   │   │       │   │   │   │   └── c05.gif
+│   │   │       │   │   │   ├── header-bg1.jpg
+│   │   │       │   │   │   ├── header-bg3.jpg
+│   │   │       │   │   │   ├── logo_um.jpg
+│   │   │       │   │   │   ├── portfolio
+│   │   │       │   │   │   │   ├── 10.png
+│   │   │       │   │   │   │   ├── 11.png
+│   │   │       │   │   │   │   ├── 12.png
+│   │   │       │   │   │   │   ├── 13.png
+│   │   │       │   │   │   │   ├── 14.png
+│   │   │       │   │   │   │   ├── 1.jpg
+│   │   │       │   │   │   │   ├── 2.jpg
+│   │   │       │   │   │   │   ├── 3.jpg
+│   │   │       │   │   │   │   ├── 4.jpg
+│   │   │       │   │   │   │   ├── 5.jpg
+│   │   │       │   │   │   │   ├── 6.jpg
+│   │   │       │   │   │   │   ├── 7.jpg
+│   │   │       │   │   │   │   ├── 8.jpg
+│   │   │       │   │   │   │   ├── 9.jpg
+│   │   │       │   │   │   │   ├── apontamentos400x640.png
+│   │   │       │   │   │   │   ├── apontamentos400x640.xcf
+│   │   │       │   │   │   │   ├── cafe400x300.png
+│   │   │       │   │   │   │   ├── ementas400x640.png
+│   │   │       │   │   │   │   ├── ementas400x640.xcf
+│   │   │       │   │   │   │   ├── map_linguas400x640.png
+│   │   │       │   │   │   │   ├── map_linguas.png
+│   │   │       │   │   │   │   ├── servicos400x250.png
+│   │   │       │   │   │   │   └── servicosdoc400x650.png
+│   │   │       │   │   │   ├── portfolio-bg.jpg
+│   │   │       │   │   │   ├── post01.jpg
+│   │   │       │   │   │   ├── post02.jpg
+│   │   │       │   │   │   ├── post03.jpg
+│   │   │       │   │   │   ├── process
+│   │   │       │   │   │   │   ├── pro01.png
+│   │   │       │   │   │   │   ├── pro02.png
+│   │   │       │   │   │   │   ├── pro03.png
+│   │   │       │   │   │   │   └── pro04.png
+│   │   │       │   │   │   ├── restaurantes
+│   │   │       │   │   │   │   ├── cantina.jpg
+│   │   │       │   │   │   │   ├── dieci.jpg
+│   │   │       │   │   │   │   ├── griil.jpg
+│   │   │       │   │   │   │   ├── montealegrense.png
+│   │   │       │   │   │   │   ├── sabor_fruta.jpg
+│   │   │       │   │   │   │   ├── tasq_bracacrense_main.jpg
+│   │   │       │   │   │   │   └── tasq_bracarense_after.jpg
+│   │   │       │   │   │   ├── services-bg.jpg
+│   │   │       │   │   │   ├── sp
+│   │   │       │   │   │   │   ├── p01.png
+│   │   │       │   │   │   │   ├── p02.png
+│   │   │       │   │   │   │   ├── p03.png
+│   │   │       │   │   │   │   └── p04.png
+│   │   │       │   │   │   ├── spot.png
+│   │   │       │   │   │   ├── sp-standout-bg.jpg
+│   │   │       │   │   │   └── team
+│   │   │       │   │   │       ├── gianni.png
+│   │   │       │   │   │       ├── rebecca.png
+│   │   │       │   │   │       └── william.png
+│   │   │       │   │   └── js
+│   │   │       │   │       ├── AnimOnScroll.js
+│   │   │       │   │       ├── bootstrap.min.js
+│   │   │       │   │       ├── classie.js
+│   │   │       │   │       ├── flip
+│   │   │       │   │       │   ├── jquery.flip.js
+│   │   │       │   │       │   ├── jquery.flip.min.js
+│   │   │       │   │       │   └── README
+│   │   │       │   │       ├── imagesloaded.js
+│   │   │       │   │       ├── main.js
+│   │   │       │   │       ├── masonry.pkgd.min.js
+│   │   │       │   │       └── modernizr.custom.js
+│   │   │       │   ├── assets_helios
+│   │   │       │   │   ├── css
+│   │   │       │   │   │   ├── font-awesome.min.css
+│   │   │       │   │   │   ├── ie
+│   │   │       │   │   │   │   ├── backgroundsize.min.htc
+│   │   │       │   │   │   │   ├── html5shiv.js
+│   │   │       │   │   │   │   ├── PIE.htc
+│   │   │       │   │   │   │   └── v8.css
+│   │   │       │   │   │   ├── images
+│   │   │       │   │   │   │   └── arrow.svg
+│   │   │       │   │   │   ├── skel.css
+│   │   │       │   │   │   ├── style.css
+│   │   │       │   │   │   ├── style-mobile.css
+│   │   │       │   │   │   ├── style-narrow.css
+│   │   │       │   │   │   ├── style-narrower.css
+│   │   │       │   │   │   ├── style-normal.css
+│   │   │       │   │   │   ├── style-noscript.css
+│   │   │       │   │   │   └── style-wide.css
+│   │   │       │   │   ├── fonts
+│   │   │       │   │   │   ├── FontAwesome.otf
+│   │   │       │   │   │   ├── fontawesome-webfont.eot
+│   │   │       │   │   │   ├── fontawesome-webfont.svg
+│   │   │       │   │   │   ├── fontawesome-webfont.ttf
+│   │   │       │   │   │   └── fontawesome-webfont.woff
+│   │   │       │   │   ├── images
+│   │   │       │   │   │   ├── beer368x256.png
+│   │   │       │   │   │   ├── burger368x256.jpg
+│   │   │       │   │   │   ├── chips368x256.jpg
+│   │   │       │   │   │   ├── header.jpg
+│   │   │       │   │   │   ├── pic01.jpg
+│   │   │       │   │   │   ├── pic02.jpg
+│   │   │       │   │   │   ├── pic03.jpg
+│   │   │       │   │   │   ├── pic04.jpg
+│   │   │       │   │   │   ├── pic05.jpg
+│   │   │       │   │   │   ├── pic06.jpg
+│   │   │       │   │   │   ├── pic07.jpg
+│   │   │       │   │   │   ├── pic08.jpg
+│   │   │       │   │   │   ├── pic09.jpg
+│   │   │       │   │   │   ├── pic10.jpg
+│   │   │       │   │   │   ├── pic11.jpg
+│   │   │       │   │   │   ├── pic12.jpg
+│   │   │       │   │   │   ├── pic13.jpg
+│   │   │       │   │   │   ├── pic14.jpg
+│   │   │       │   │   │   └── pic15.jpg
+│   │   │       │   │   └── js
+│   │   │       │   │       ├── init.js
+│   │   │       │   │       ├── jquery.dropotron.min.js
+│   │   │       │   │       ├── jquery.min.js
+│   │   │       │   │       ├── jquery.onvisible.min.js
+│   │   │       │   │       ├── jquery.scrolly.min.js
+│   │   │       │   │       ├── skel-layers.min.js
+│   │   │       │   │       └── skel.min.js
+│   │   │       │   ├── assets_shield
+│   │   │       │   │   ├── css
+│   │   │       │   │   │   ├── animate-custom.css
+│   │   │       │   │   │   ├── bootstrap.css
+│   │   │       │   │   │   ├── icomoon
+│   │   │       │   │   │   │   ├── icomoon-.eot
+│   │   │       │   │   │   │   ├── icomoon.eot
+│   │   │       │   │   │   │   ├── icomoon.svg
+│   │   │       │   │   │   │   ├── icomoon.ttf
+│   │   │       │   │   │   │   └── icomoon.woff
+│   │   │       │   │   │   ├── icomoon.css
+│   │   │       │   │   │   └── main.css
+│   │   │       │   │   ├── fonts
+│   │   │       │   │   │   ├── glyphicons-halflings-regular.eot
+│   │   │       │   │   │   ├── glyphicons-halflings-regular.svg
+│   │   │       │   │   │   ├── glyphicons-halflings-regular.ttf
+│   │   │       │   │   │   └── glyphicons-halflings-regular.woff
+│   │   │       │   │   ├── img
+│   │   │       │   │   │   ├── bg
+│   │   │       │   │   │   │   ├── divider1.jpg
+│   │   │       │   │   │   │   ├── divider2.jpg
+│   │   │       │   │   │   │   ├── divider3.jpg
+│   │   │       │   │   │   │   ├── divider4.jpg
+│   │   │       │   │   │   │   └── divider6.jpg
+│   │   │       │   │   │   ├── header_bg.jpg
+│   │   │       │   │   │   ├── iphone.png
+│   │   │       │   │   │   ├── macbook.png
+│   │   │       │   │   │   ├── portfolio
+│   │   │       │   │   │   │   ├── folio01.jpg
+│   │   │       │   │   │   │   ├── folio02.jpg
+│   │   │       │   │   │   │   ├── folio03.jpg
+│   │   │       │   │   │   │   ├── folio04.jpg
+│   │   │       │   │   │   │   ├── folio05.jpg
+│   │   │       │   │   │   │   ├── folio06.jpg
+│   │   │       │   │   │   │   ├── folio07.jpg
+│   │   │       │   │   │   │   ├── folio08.jpg
+│   │   │       │   │   │   │   └── folio09.jpg
+│   │   │       │   │   │   └── team
+│   │   │       │   │   │       ├── team01.jpg
+│   │   │       │   │   │       ├── team02.jpg
+│   │   │       │   │   │       ├── team03.jpg
+│   │   │       │   │   │       └── team04.jpg
+│   │   │       │   │   └── js
+│   │   │       │   │       ├── bootstrap.js
+│   │   │       │   │       ├── bootstrap.min.js
+│   │   │       │   │       ├── interact.js
+│   │   │       │   │       ├── jquery.easing.1.3.js
+│   │   │       │   │       ├── jquery-func.js
+│   │   │       │   │       ├── jquery.min.js
+│   │   │       │   │       ├── modernizr.custom.js
+│   │   │       │   │       ├── retina.js
+│   │   │       │   │       └── smoothscroll.js
+│   │   │       │   ├── assets_solid
+│   │   │       │   │   ├── css
+│   │   │       │   │   │   ├── bootstrap.css
+│   │   │       │   │   │   ├── font-awesome.min.css
+│   │   │       │   │   │   ├── hoverex-all.css
+│   │   │       │   │   │   ├── images
+│   │   │       │   │   │   │   └── prettyPhoto
+│   │   │       │   │   │   │       ├── dark_rounded
+│   │   │       │   │   │   │       │   ├── btnNext.png
+│   │   │       │   │   │   │       │   ├── btnPrevious.png
+│   │   │       │   │   │   │       │   ├── contentPattern.png
+│   │   │       │   │   │   │       │   ├── loader.gif
+│   │   │       │   │   │   │       │   └── sprite.png
+│   │   │       │   │   │   │       ├── dark_square
+│   │   │       │   │   │   │       │   ├── btnNext.png
+│   │   │       │   │   │   │       │   ├── btnPrevious.png
+│   │   │       │   │   │   │       │   ├── loader.gif
+│   │   │       │   │   │   │       │   └── sprite.png
+│   │   │       │   │   │   │       ├── default
+│   │   │       │   │   │   │       │   ├── default_thumb.png
+│   │   │       │   │   │   │       │   ├── loader.gif
+│   │   │       │   │   │   │       │   ├── sprite_next.png
+│   │   │       │   │   │   │       │   ├── sprite.png
+│   │   │       │   │   │   │       │   ├── sprite_prev.png
+│   │   │       │   │   │   │       │   ├── sprite_x.png
+│   │   │       │   │   │   │       │   └── sprite_y.png
+│   │   │       │   │   │   │       ├── facebook
+│   │   │       │   │   │   │       │   ├── btnNext.png
+│   │   │       │   │   │   │       │   ├── btnPrevious.png
+│   │   │       │   │   │   │       │   ├── contentPatternBottom.png
+│   │   │       │   │   │   │       │   ├── contentPatternLeft.png
+│   │   │       │   │   │   │       │   ├── contentPatternRight.png
+│   │   │       │   │   │   │       │   ├── contentPatternTop.png
+│   │   │       │   │   │   │       │   ├── default_thumbnail.gif
+│   │   │       │   │   │   │       │   ├── loader.gif
+│   │   │       │   │   │   │       │   └── sprite.png
+│   │   │       │   │   │   │       ├── light_rounded
+│   │   │       │   │   │   │       │   ├── btnNext.png
+│   │   │       │   │   │   │       │   ├── btnPrevious.png
+│   │   │       │   │   │   │       │   ├── loader.gif
+│   │   │       │   │   │   │       │   └── sprite.png
+│   │   │       │   │   │   │       └── light_square
+│   │   │       │   │   │   │           ├── btnNext.png
+│   │   │       │   │   │   │           ├── btnPrevious.png
+│   │   │       │   │   │   │           └── sprite.png
+│   │   │       │   │   │   ├── prettyPhoto.css
+│   │   │       │   │   │   └── style.css
+│   │   │       │   │   ├── fonts
+│   │   │       │   │   │   ├── FontAwesome.otf
+│   │   │       │   │   │   ├── fontawesome-webfont.eot
+│   │   │       │   │   │   ├── fontawesome-webfont.svg
+│   │   │       │   │   │   ├── fontawesome-webfont.ttf
+│   │   │       │   │   │   ├── fontawesome-webfont.woff
+│   │   │       │   │   │   ├── glyphicons-halflings-regular.eot
+│   │   │       │   │   │   ├── glyphicons-halflings-regular.svg
+│   │   │       │   │   │   ├── glyphicons-halflings-regular.ttf
+│   │   │       │   │   │   └── glyphicons-halflings-regular.woff
+│   │   │       │   │   ├── img
+│   │   │       │   │   │   ├── agency.jpg
+│   │   │       │   │   │   ├── browser.png
+│   │   │       │   │   │   ├── clients
+│   │   │       │   │   │   │   ├── client01.png
+│   │   │       │   │   │   │   ├── client02.png
+│   │   │       │   │   │   │   ├── client03.png
+│   │   │       │   │   │   │   └── client04.png
+│   │   │       │   │   │   ├── contact.jpg
+│   │   │       │   │   │   ├── portfolio
+│   │   │       │   │   │   │   ├── portfolio_01.jpg
+│   │   │       │   │   │   │   ├── portfolio_02.jpg
+│   │   │       │   │   │   │   ├── portfolio_03.jpg
+│   │   │       │   │   │   │   ├── portfolio_04.jpg
+│   │   │       │   │   │   │   ├── portfolio_05.jpg
+│   │   │       │   │   │   │   ├── portfolio_06.jpg
+│   │   │       │   │   │   │   ├── portfolio_07.jpg
+│   │   │       │   │   │   │   ├── portfolio_08.jpg
+│   │   │       │   │   │   │   ├── portfolio_09.jpg
+│   │   │       │   │   │   │   ├── portfolio_10.jpg
+│   │   │       │   │   │   │   ├── single01.jpg
+│   │   │       │   │   │   │   ├── single02.jpg
+│   │   │       │   │   │   │   └── single03.jpg
+│   │   │       │   │   │   ├── post01.jpg
+│   │   │       │   │   │   ├── post02.jpg
+│   │   │       │   │   │   ├── post03.jpg
+│   │   │       │   │   │   ├── t-back.jpg
+│   │   │       │   │   │   ├── team
+│   │   │       │   │   │   │   ├── team01.jpg
+│   │   │       │   │   │   │   ├── team02.jpg
+│   │   │       │   │   │   │   ├── team03.jpg
+│   │   │       │   │   │   │   └── team04.jpg
+│   │   │       │   │   │   ├── thumb01.jpg
+│   │   │       │   │   │   ├── thumb02.jpg
+│   │   │       │   │   │   ├── thumb03.jpg
+│   │   │       │   │   │   └── thumb04.jpg
+│   │   │       │   │   └── js
+│   │   │       │   │       ├── bootstrap.min.js
+│   │   │       │   │       ├── custom.js
+│   │   │       │   │       ├── jquery.hoverdir.js
+│   │   │       │   │       ├── jquery.hoverex.min.js
+│   │   │       │   │       ├── jquery.isotope.min.js
+│   │   │       │   │       ├── jquery.prettyPhoto.js
+│   │   │       │   │       └── retina-1.1.0.js
+│   │   │       │   ├── bottom_menu_functs.js
+│   │   │       │   ├── bottom_menu.js
+│   │   │       │   ├── food_menus.js
+│   │   │       │   ├── load_base_css.js
+│   │   │       │   ├── load_base.js
+│   │   │       │   ├── load_helios.js
+│   │   │       │   ├── portfolio_functs.js
+│   │   │       │   ├── portfolio.js
+│   │   │       │   ├── top_menu_functs.js
+│   │   │       │   └── top_menu.js
+│   │   │       ├── main-menu.html
+│   │   │       ├── new_page.html
+│   │   │       ├── news.html
+│   │   │       ├── restaurant-filter.html
+│   │   │       ├── restaurants-portfolio.html
+│   │   │       ├── rest_ind_template.html
+│   │   │       └── top-menu.html
+│   │   ├── angular.min.js
+│   │   ├── app.js
+│   │   ├── bootstrap.min.css
+│   │   ├── calendarDemo.css
+│   │   ├── calendarDemo.html
+│   │   ├── calendarDemo.js
+│   │   ├── carhartl-jquery-cookie-92b7715
+│   │   │   ├── bower.json
+│   │   │   ├── CHANGELOG.md
+│   │   │   ├── component.json
+│   │   │   ├── CONTRIBUTING.md
+│   │   │   ├── cookie.jquery.json
+│   │   │   ├── Gruntfile.js
+│   │   │   ├── jquery.cookie.js
+│   │   │   ├── MIT-LICENSE.txt
+│   │   │   ├── package.json
+│   │   │   ├── README.md
+│   │   │   └── test
+│   │   │       ├── index.html
+│   │   │       ├── malformed_cookie.html
+│   │   │       ├── server.js
+│   │   │       └── tests.js
+│   │   ├── carhartl-jquery-cookie-92b7715 (2)
+│   │   │   ├── bower.json
+│   │   │   ├── CHANGELOG.md
+│   │   │   ├── component.json
+│   │   │   ├── CONTRIBUTING.md
+│   │   │   ├── cookie.jquery.json
+│   │   │   ├── Gruntfile.js
+│   │   │   ├── jquery.cookie.js
+│   │   │   ├── MIT-LICENSE.txt
+│   │   │   ├── package.json
+│   │   │   ├── README.md
+│   │   │   └── test
+│   │   │       ├── index.html
+│   │   │       ├── malformed_cookie.html
+│   │   │       ├── server.js
+│   │   │       └── tests.js
+│   │   ├── cok
+│   │   │   ├── carhartl-jquery-cookie-v1.4.1-0-g7f88a4e.zip
+│   │   │   └── cokie
+│   │   │       ├── bower.json
+│   │   │       ├── CHANGELOG.md
+│   │   │       ├── component.json
+│   │   │       ├── CONTRIBUTING.md
+│   │   │       ├── cookie.jquery.json
+│   │   │       ├── Gruntfile.js
+│   │   │       ├── jquery.cookie.js
+│   │   │       ├── MIT-LICENSE.txt
+│   │   │       ├── package.json
+│   │   │       ├── README.md
+│   │   │       └── test
+│   │   │           ├── index.html
+│   │   │           ├── malformed_cookie.html
+│   │   │           ├── server.js
+│   │   │           └── tests.js
+│   │   ├── favicon.ico
+│   │   ├── goToMap
+│   │   │   ├── ContextMenu.js
+│   │   │   ├── goToMap.htm
+│   │   │   └── image
+│   │   │       ├── greenMk.png
+│   │   │       └── redMk.png
+│   │   ├── index2.html
+│   │   ├── index.html
+│   │   ├── level01.pdf
+│   │   ├── level02.pdf
+│   │   ├── level03.pdf
+│   │   ├── level04.pdf
+│   │   ├── level05.pdf
+│   │   ├── __MACOSX
+│   │   │   └── agency
+│   │   │       └── main_assets
+│   │   │           ├── assets
+│   │   │           │   └── img
+│   │   │           │       ├── portfolio
+│   │   │           │       ├── process
+│   │   │           │       └── team
+│   │   │           ├── assets_shield
+│   │   │           │   └── img
+│   │   │           │       ├── bg
+│   │   │           │       ├── portfolio
+│   │   │           │       └── team
+│   │   │           └── assets_solid
+│   │   │               └── img
+│   │   │                   ├── portfolio
+│   │   │                   └── team
+│   │   ├── product-description.html
+│   │   ├── product-gallery.html
+│   │   ├── product-reviews.html
+│   │   ├── products.js
+│   │   ├── product-specs.html
+│   │   ├── product-tabs.html
+│   │   ├── restaurantService.html
+│   │   ├── restaurantService.js
+│   │   └── ui-calendar-master
+│   │       ├── bower.json
+│   │       ├── demo
+│   │       │   ├── calendarDemo.css
+│   │       │   ├── calendarDemo.js
+│   │       │   ├── favicon.ico
+│   │       │   └── index.html
+│   │       ├── gruntFile.js
+│   │       ├── LICENSE
+│   │       ├── package.json
+│   │       ├── README.md
+│   │       ├── src
+│   │       │   └── calendar.js
+│   │       └── test
+│   │           ├── calendar.spec.js
+│   │           └── test.conf.js
+│   ├── test.py
+│   ├── test.py~
+│   ├── test.pyc
+│   ├── tests.py
+│   ├── tests.pyc
+│   ├── urls.py
+│   ├── urls.py~
+│   ├── urls.pyc
+│   ├── utils.py
+│   ├── utils.py~
+│   ├── utils.pyc
+│   ├── views.py
+│   ├── views.py~
+│   ├── views.pyc
+│   └── views.py.save
+├── static
+│   ├── admin
+│   │   ├── css
+│   │   │   ├── base.css
+│   │   │   ├── changelists.css
+│   │   │   ├── dashboard.css
+│   │   │   ├── forms.css
+│   │   │   ├── ie.css
+│   │   │   ├── login.css
+│   │   │   ├── rtl.css
+│   │   │   └── widgets.css
+│   │   ├── img
+│   │   │   ├── changelist-bg.gif
+│   │   │   ├── changelist-bg_rtl.gif
+│   │   │   ├── default-bg.gif
+│   │   │   ├── default-bg-reverse.gif
+│   │   │   ├── deleted-overlay.gif
+│   │   │   ├── gis
+│   │   │   │   ├── move_vertex_off.png
+│   │   │   │   └── move_vertex_on.png
+│   │   │   ├── icon_addlink.gif
+│   │   │   ├── icon_alert.gif
+│   │   │   ├── icon_calendar.gif
+│   │   │   ├── icon_changelink.gif
+│   │   │   ├── icon_clock.gif
+│   │   │   ├── icon_deletelink.gif
+│   │   │   ├── icon_error.gif
+│   │   │   ├── icon-no.gif
+│   │   │   ├── icon_searchbox.png
+│   │   │   ├── icon_success.gif
+│   │   │   ├── icon-unknown.gif
+│   │   │   ├── icon-yes.gif
+│   │   │   ├── inline-delete-8bit.png
+│   │   │   ├── inline-delete.png
+│   │   │   ├── inline-restore-8bit.png
+│   │   │   ├── inline-restore.png
+│   │   │   ├── inline-splitter-bg.gif
+│   │   │   ├── nav-bg.gif
+│   │   │   ├── nav-bg-grabber.gif
+│   │   │   ├── nav-bg-reverse.gif
+│   │   │   ├── nav-bg-selected.gif
+│   │   │   ├── selector-icons.gif
+│   │   │   ├── selector-search.gif
+│   │   │   ├── sorting-icons.gif
+│   │   │   ├── tooltag-add.png
+│   │   │   └── tooltag-arrowright.png
+│   │   └── js
+│   │       ├── actions.js
+│   │       ├── actions.min.js
+│   │       ├── admin
+│   │       │   ├── DateTimeShortcuts.js
+│   │       │   └── RelatedObjectLookups.js
+│   │       ├── calendar.js
+│   │       ├── collapse.js
+│   │       ├── collapse.min.js
+│   │       ├── core.js
+│   │       ├── inlines.js
+│   │       ├── inlines.min.js
+│   │       ├── jquery.init.js
+│   │       ├── jquery.js
+│   │       ├── jquery.min.js
+│   │       ├── LICENSE-JQUERY.txt
+│   │       ├── prepopulate.js
+│   │       ├── prepopulate.min.js
+│   │       ├── SelectBox.js
+│   │       ├── SelectFilter2.js
+│   │       ├── timeparse.js
+│   │       └── urlify.js
+│   ├── restaurants
+│   │   ├── css
+│   │   │   ├── bootstrap.css
+│   │   │   ├── bootstrap-tour.min.css
+│   │   │   ├── bootstrap-tour-standalone.css
+│   │   │   ├── bootstrap-tour-standalone.min.css
+│   │   │   ├── style.css
+│   │   │   ├── style-responsive.css
+│   │   │   ├── table-responsive.css
+│   │   │   ├── to-do.css
+│   │   │   └── zabuto_calendar.css
+│   │   ├── font-awesome
+│   │   │   ├── css
+│   │   │   │   └── font-awesome.css
+│   │   │   └── fonts
+│   │   │       ├── FontAwesome.otf
+│   │   │       ├── fontawesome-webfont.eot
+│   │   │       ├── fontawesome-webfont.svg
+│   │   │       ├── fontawesome-webfont.ttf
+│   │   │       └── fontawesome-webfont.woff
+│   │   ├── fonts
+│   │   │   ├── glyphicons-halflings-regular.eot
+│   │   │   ├── glyphicons-halflings-regular.svg
+│   │   │   ├── glyphicons-halflings-regular.ttf
+│   │   │   └── glyphicons-halflings-regular.woff
+│   │   ├── img
+│   │   │   ├── blog-bg.jpg
+│   │   │   ├── cantina.jpg
+│   │   │   ├── checkbox-gray.png
+│   │   │   ├── dieci.jpg
+│   │   │   ├── friends
+│   │   │   │   ├── fr-01.jpg
+│   │   │   │   ├── fr-02.jpg
+│   │   │   │   ├── fr-03.jpg
+│   │   │   │   ├── fr-04.jpg
+│   │   │   │   ├── fr-05.jpg
+│   │   │   │   ├── fr-06.jpg
+│   │   │   │   ├── fr-07.jpg
+│   │   │   │   ├── fr-08.jpg
+│   │   │   │   ├── fr-09.jpg
+│   │   │   │   ├── fr-10.jpg
+│   │   │   │   └── fr-11.jpg
+│   │   │   ├── griil.jpg
+│   │   │   ├── instagram.jpg
+│   │   │   ├── login-bg.jpg
+│   │   │   ├── logo.png
+│   │   │   ├── lorde.jpg
+│   │   │   ├── mask.png
+│   │   │   ├── montealegrense.png
+│   │   │   ├── ny.jpg
+│   │   │   ├── portfolio
+│   │   │   │   ├── port01.jpg
+│   │   │   │   ├── port02.jpg
+│   │   │   │   ├── port03.jpg
+│   │   │   │   ├── port04.jpg
+│   │   │   │   ├── port05.jpg
+│   │   │   │   └── port06.jpg
+│   │   │   ├── product.jpg
+│   │   │   ├── product.png
+│   │   │   ├── profile-01.jpg
+│   │   │   ├── profile-02.jpg
+│   │   │   ├── radio-gray.png
+│   │   │   ├── sabor_fruta.jpg
+│   │   │   ├── tasq_bracacrense_main.jpg
+│   │   │   ├── tasq_bracarense_after.jpg
+│   │   │   ├── ui-danro.jpg
+│   │   │   ├── ui-divya.jpg
+│   │   │   ├── ui-sam.jpg
+│   │   │   ├── ui-sherman.jpg
+│   │   │   ├── ui-zac.jpg
+│   │   │   ├── weather.jpg
+│   │   │   └── zoom.png
+│   │   ├── js
+│   │   │   ├── angular.min.js
+│   │   │   ├── bootstrap-inputmask
+│   │   │   │   └── bootstrap-inputmask.min.js
+│   │   │   ├── bootstrap.min.js
+│   │   │   ├── bootstrap-switch.js
+│   │   │   ├── bootstrap-tour.min.js
+│   │   │   ├── bootstrap-tour-standalone.js
+│   │   │   ├── bootstrap-tour-standalone.min.js
+│   │   │   ├── calendar-conf-events.js
+│   │   │   ├── chartjs-conf.js
+│   │   │   ├── chart-master
+│   │   │   │   └── Chart.js
+│   │   │   ├── common-scripts.js
+│   │   │   ├── dash.js
+│   │   │   ├── easy-pie-chart.js
+│   │   │   ├── fancybox
+│   │   │   │   ├── jquery.fancybox.css
+│   │   │   │   └── jquery.fancybox.js
+│   │   │   ├── form-component.js
+│   │   │   ├── fullcalendar
+│   │   │   │   ├── bootstrap-fullcalendar.css
+│   │   │   │   └── fullcalendar.min.js
+│   │   │   ├── gritter
+│   │   │   │   ├── css
+│   │   │   │   │   ├── jquery.gritter0.css
+│   │   │   │   │   └── jquery.gritter.css
+│   │   │   │   ├── images
+│   │   │   │   │   ├── gritter-light.png
+│   │   │   │   │   ├── gritter-long.png
+│   │   │   │   │   ├── gritter.png
+│   │   │   │   │   └── ie-spacer.gif
+│   │   │   │   └── js
+│   │   │   │       └── jquery.gritter.js
+│   │   │   ├── gritter-conf.js
+│   │   │   ├── jquery-1.8.3.min.js
+│   │   │   ├── jquery.backstretch.min.js
+│   │   │   ├── jquery.dcjqaccordion.2.7.js
+│   │   │   ├── jquery-easy-pie-chart
+│   │   │   │   ├── jquery.easy-pie-chart.css
+│   │   │   │   └── jquery.easy-pie-chart.js
+│   │   │   ├── jquery.js
+│   │   │   ├── jquery.nicescroll.js
+│   │   │   ├── jquery.scrollTo.min.js
+│   │   │   ├── jquery.sparkline.js
+│   │   │   ├── jquery.tagsinput.js
+│   │   │   ├── jquery-ui-1.9.2.custom.min.js
+│   │   │   ├── jquery.ui.touch-punch.min.js
+│   │   │   ├── morris-conf.js
+│   │   │   ├── script_for_tour.js
+│   │   │   ├── script.js
+│   │   │   ├── sparkline-chart.js
+│   │   │   ├── tasks.js
+│   │   │   └── zabuto_calendar.js
+│   │   └── lineicons
+│   │       ├── fonts
+│   │       │   ├── linecons.eot
+│   │       │   ├── linecons.svg
+│   │       │   ├── linecons.ttf
+│   │       │   └── linecons.woff
+│   │       ├── index.html
+│   │       ├── lte-ie7.js
+│   │       └── style.css
+│   └── restaurants.old
+│       ├── angular.min.js
+│       ├── cantina.jpg
+│       ├── dieci.jpg
+│       ├── griil.jpg
+│       ├── montealegrense.png
+│       ├── sabor_fruta.jpg
+│       ├── tasq_bracacrense_main.jpg
+│       └── tasq_bracarense_after.jpg
+└── tree.txt
 
-10 directories, 65 files
+425 directories, 2291 files
