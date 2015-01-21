@@ -1,0 +1,100 @@
+from django.shortcuts import render
+from django.http import HttpResponse
+from django.template import RequestContext, loader
+from models import Minor_restaurant
+import json
+# Create your views here.
+
+
+#def index(request):
+ #       template=loader.get_template('index.html')
+  #      context= RequestContext(request,{})
+#        print(request.META['HTTP_HOST'])
+ #       if request.method == 'POST':
+  #              print("OLA MEU")
+   #             a=request.POST.get('EMAIL')
+    #            print(a)
+     #           b=Mail(email=a)
+      #          print(type(b))
+       #         b.save()
+   #     return HttpResponse(template.render(context))
+
+#def geter(request):
+ #       print(request)
+  #      if request.method == 'POST':
+   #             a=request.POST.get('EMAIL')
+    #            template=loader.get_template('index.html')
+     #           b=Mail(email=a)
+      #          b.save()
+       #         context= RequestContext(request,{'XIT':a})
+        #        return HttpResponse(template.render(context))
+#def index(request):
+ #   alt = Minor_restaurant.objects.order_by('-Rstr_name')
+  #  out = ",".join(alt)
+   # return HttpResponse(out)
+
+def index(request):
+    db = Minor_restaurant.objects.order_by('-Rstr_name')
+    rst = []
+    for p in db:
+        buf={'name': p.Rstr_name,
+              'description': p.Rstr_desc,
+              'like':p.Rstr_like,
+              'dlike':p.Rstr_dlike,}
+        rst.append( buf )
+    return HttpResponse(json.dumps(rst),content_type="application/json")
+
+
+def getter(request):
+    alt = Minor_restaurant.objects.order_by('-Rstr_name')
+    rst = []
+    for p in alt:
+        cena={'name': p.Rstr_name,
+              'description': p.Rstr_desc,
+              'like':p.Rstr_like,
+              'dlike':p.Rstr_dlike,}
+        rst.append( cena )
+    return HttpResponse(json.dumps(rst),content_type="application/json")
+
+#@require_http_methods(["GET","POST"])
+#def index(request):
+ #      restaurants = [
+  #     {
+   #            'name': 'Cantina UMinho',
+    #           'price': 2.45,
+     #          'description': '. . .',
+      #         'image':'./Agency/main_assets/assets/img/restaurantes/cantina.jpg',
+       #},
+       #{
+               #'name': 'Restaurante GRIIL',
+               #'price': 2.45,
+               #'description': '. . .',
+               #'image':'./Agency/main_assets/assets/img/restaurantes/griil.jpg',
+       #},
+       #{
+               #'name': 'Tasquinha Bracarense',
+               #'price': 2.45,
+               #'description': '. . .',
+               #'image':'./Agency/main_assets/assets/img/restaurantes/tasq_bracarense_after.jpg',
+       #},
+       #{
+               #'name': 'Sabor da Fruta',
+               #'price': 2.45,
+               #'description': '. . .',
+               #'image':'./Agency/main_assets/assets/img/restaurantes/sabor_fruta.jpg',
+       #},
+       #{
+               #'name': 'Dieci',
+               #'price': 2.45,
+               #'description': '. . .',
+               #'image':'./Agency/main_assets/assets/img/restaurantes/dieci.jpg',
+       #},
+       #{
+               #'name': 'Montealegrense',
+               #'price': 2.45,
+               #'description': '. . .',
+               #'image':'./Agency/main_assets/assets/img/restaurantes/montealegrense.png',
+       #}
+       #]
+       #return HttpResponse(json.dumps(restaurants),content_type="application/json")
+#

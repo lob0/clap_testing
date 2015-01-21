@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="description" content=""/>
+        <meta name="author" content=""/>
+        <!-- favicon for Clap -->
+        <!-- <link rel="shortcut icon" href="assets/ico/favicon.png"/> -->
+                                
+        <title>CLAP :: Campus Life Application</title>
+                                
+       <!-- Custom styles and js for this template -->
+       <script type="text/javascript" src="/static/clap_uminho/main_assets/load_base_css.js"></script>
+
+        <!-- Shield css/font/... modals and restaurants presentation -->
+        <script type="text/javascript" src="/static/clap_uminho/main_assets/load_shield.js"></script>
+
+        <!-- Map scripts -->
+        <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+        <script type="text/javascript" src="/static/clap_uminho/map/map.js"></script>
+        <script type="text/javascript" src="/static/clap_uminho/map/ContextMenu.js"></script>
+        <script type="text/javascript" src="/static/clap_uminho/app.js"></script>
+
+    </head>
+
+    </script>
+    <body onload="load()">
+        
+        <!-- Menu -->
+        <div id="main_menu" >
+            <nav class="menu" id="theMenu">
+                <div class="menu-wrap">
+                    <i class="fa fa-arrow-right menu-close"></i>
+                    <h1 class="logo"><a href="#">CLAPUM</a></h1>
+                    <a href="index.html">Home</a>
+                    <a href="tenho_fome.html">Alimentação</a>
+                    <a href="apontamentos.html">Apontamentos</a>
+                    <a href="location.html">Localização</a>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-dribbble"></i></a>
+                    <a href="#"><i class="fa fa-envelope"></i></a>
+                </div>
+                <div id="menuToggle">
+                    <i class="fa fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+
+        <div id="top_menu">
+            <ul class="nav nav-justified ">
+                <li class="col-lg-5 centered">
+                        <img class="logo_imgs" src="/static/clap_uminho/main_assets/assets/img/logoclap.png">
+                        
+                </li>
+                <li class="col-lg-5 centered">
+                        
+                        <img class="logo_imgs" src="main_assets/assets/img/logo_aaum.png">
+                </li>
+                <li id="center_info" class="col-lg-5 centered">
+                    <center>
+                    <h1>Campus Life Application</h1>
+                    <h2>Universidade do Minho</h2>
+                    </center>
+                </li>
+                <li class="col-lg-2 centered">
+                    <p ><br><button type="button" class="btn btn-green">Faz login aqui!</button></p>
+
+                </li>
+            </ul>
+        </div>
+
+
+   <div id="services">
+   <ul id="center_title">
+   <h1 class="centered">O QUE TE APETECE COMER?</h1><hr></ul>
+    <ul class="nav nav-pills nav-justified ">
+    <!--  OPÇOES de controlo-->
+  	<li role="presentation"><a href="#" onclick="test()">Os melhor cotado</a></li>
+  	<li role="presentation"><a href="#">Os mais próximos</a></li>
+  	<li role="presentation"><a href="#">Os mais económicos</a></li>
+  	<li role="presentation"><a href="#">Os mais económicos</a></li>
+	</ul>
+	<ul class="nav nav-pills nav-justified">
+  	<li role="presentation"><a href="#">Menus entre 5-10€</a></li>
+  	<li role="presentation"><a href="#">Menus vegetarianos</a></li>
+  	<li role="presentation"><a href="#">Estabelecimentos com wifi</a></li>
+  	<li role="presentation"><a href="#">Coffe shops</a></li>
+	</ul>
+</div>
+
+                    
+        
+        <!-- ==== RESTAURANTES ==== -->
+        <div class="container" name="portfolio">
+        <!-- app.JS>
+        </div>
+
+        <!-- PUBLICITY BOX Nº1 -->
+        <section class="section-divider textdivider divider2">
+            <div class="container">
+                <h1>PUBLICITY BOX Nº1</h1>
+                <hr>
+                <p>To develop a deeper and more meaningful connection with consumers, we believe design must invite them to take part in the conversation.</p>
+            </div><!-- container -->
+        </section>
+        
+        <!-- POSTS -->
+        <div class="container">
+            <div class="row mt">
+                <div class="col-lg-12">
+                    <h1>Novidades Recentes</h1>
+                </div><!-- col-lg-12 -->
+                <div class="col-lg-8">
+                    <p>As nossas novidades e que realmente te interessam...</p>
+                </div><!-- col-lg-8-->
+                <div class="col-lg-4 goright">
+                    <p><a href="#"><i class="fa fa-angle-right"></i> Ver todas</a></p>
+                </div>
+            </div><!-- row -->
+            
+            <div class="row mt">
+                <div class="col-lg-4">
+                    <img class="img-responsive" src="main_assets/assets/img/post01.jpg" alt="">
+                        <h3><a href="#">Nova aplicação móvel CLAP</a></h3>
+                        <p>Já se encontra disponível uma versão CLAP útil e simples, para utilizares no teu smatphone.</p>
+                        <p><a href="#"><i class="fa fa-link"></i> Ler Mais</a></p>
+                </div>
+                <div class="col-lg-4">
+                    <img class="img-responsive" src="main_assets/assets/img/post02.jpg" alt="">
+                        <h3><a href="#">University Fashion</a></h3>
+                        <p>Está aberto o concurso deste ano do University Fashion. Increve-te!</p>
+                        <p><a href="#"><i class="fa fa-link"></i> Ler Mais</a></p>
+                </div>
+                <div class="col-lg-4">
+                    <img class="img-responsive" src="main_assets/assets/img/post03.jpg" alt="">
+                        <h3><a href="#">Startup Uminho</a></h3>
+                        <p>Durante o próximo mês ...</p>
+                        <p><a href="#"><i class="fa fa-link"></i> Ler Mais</a></p>
+                </div>		
+            </div><!-- row -->
+        </div><!-- container -->
+
+        <!-- PUBLICITY BOX Nº2 -->
+        <section class="section-divider textdivider divider3">
+            <div class="container">
+                <h1>PUBLICITY BOX Nº2</h1>
+                <hr>
+                <p>From the purely practical to the richly philosophical, design is the solution to a host of challenges.</p>
+            </div><!-- container -->
+        </section>
+
+        
+        <div class="container">
+            <div id="greywrap">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 centered">
+                            <img class="img-responsive" src="main_assets/assets_shield/img/macbook.png" align="">
+                        </div>
+                        <div class="col-lg-4">
+                            <h2>Continua ligado a nós!</h2>
+                            <p>Queres falar com os CLAPERS da tua Universidade? Dar ideias ou apenas ajudar ?!</p>
+                            <p><a class="btn btn-green">Diz qualquer coisa</a></p>
+                        </div>
+                    </div><!-- row -->
+                </div>
+                <br>
+                <br>
+            </div>
+        </div><!-- container -->
+
+        <!-- CHAMADA A AÇÃO -->
+        <div id="call">
+            <div class="container">
+                <div class="row">
+                    <h3>AINDA NÃO ÉS MEMBRO DO CLAP?!</h3>
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <p>O CLAP é uma comunidade muito grande e pode trazer-te inumeras vantagens, basta para isso que te registes.</p>
+                        <p><button type="button" class="btn btn-green btn-lg">REGISTA-TE</button></p>
+                    </div>
+                </div><!-- row -->
+            </div><!-- container -->
+        </div><!-- Call to action -->
+        
+        
+        
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+
+        <script src="/static/clap_uminho/main_assets/portfolio_functs.js"></script>
+        <script src="/static/clap_uminho/main_assets/portfolio.js"></script>
+
+       <script type="text/javascript" src="/static/clap_uminho/main_assets/load_base_js.js"></script>
+
+        <!-- Solid Theme -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="/static/clap_uminho/main_assets/assets_solid/js/jquery.hoverex.min.js"></script>
+        <script src="/static/clap_uminho/main_assets/assets_solid/js/jquery.isotope.min.js"></script>
+        
+        <script>
+		new AnimOnScroll( document.getElementById( 'grid' ), {
+			minDuration : 0.4,
+			maxDuration : 0.7,
+			viewportFactor : 0.2
+		} );
+	   </script>
+       <script>        
+        // Portfolio
+        (function($) {
+        "use strict";
+        var $container = $('.portfolio'),
+        $items = $container.find('.portfolio-item'),
+        portfolioLayout = 'fitRows';
+        
+        if( $container.hasClass('portfolio-centered') ) {
+        portfolioLayout = 'masonry';
+        }
+        
+        $container.isotope({
+        filter: '*',
+        animationEngine: 'best-available',
+        layoutMode: portfolioLayout,
+        animationOptions: {
+        duration: 750,
+        easing: 'linear',
+        queue: false
+        },
+        masonry: {
+        }
+        }, refreshWaypoints());
+        
+        function refreshWaypoints() {
+        setTimeout(function() {
+        }, 1000);   
+        }
+        
+        $('nav.portfolio-filter ul a').on('click', function() {
+        var selector = $(this).attr('data-filter');
+        $container.isotope({ filter: selector }, refreshWaypoints());
+        $('nav.portfolio-filter ul a').removeClass('active');
+        $(this).addClass('active');
+        return false;
+        });
+        
+        function getColumnNumber() { 
+        var winWidth = $(window).width(), 
+        columnNumber = 1;
+        
+        if (winWidth > 1200) {
+        columnNumber = 5;
+        } else if (winWidth > 950) {
+        columnNumber = 4;
+        } else if (winWidth > 600) {
+        columnNumber = 3;
+        } else if (winWidth > 400) {
+        columnNumber = 2;
+        } else if (winWidth > 250) {
+        columnNumber = 1;
+        }
+        return columnNumber;
+        }       
+        
+        function setColumns() {
+        var winWidth = $(window).width(), 
+        columnNumber = getColumnNumber(), 
+        itemWidth = Math.floor(winWidth / columnNumber);
+        
+        $container.find('.portfolio-item').each(function() { 
+        $(this).css( { 
+        width : itemWidth + 'px' 
+        });
+        });
+        }
+        
+        function setPortfolio() { 
+        setColumns();
+        $container.isotope('reLayout');
+        }
+        
+        $container.imagesLoaded(function () { 
+        setPortfolio();
+        });
+        
+        $(window).on('resize', function () { 
+        setPortfolio();          
+        });
+        })(jQuery);
+        </script>
+        <!-- // Solid Theme -->
+        
+    </body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="clap">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="description" content=""/>
+        <meta name="author" content=""/>
+        <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+
+
+        <link href="./main_assets/assets/css/bootstrap.css" rel="stylesheet" />
+        <link href="./main_assets/assets/css/main.css" rel="stylesheet" /> 
+        <link href="./main_assets/assets/css/font-awesome.min.css" rel="stylesheet" />
+        <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic" rel="stylesheet" type="text/css" /> 
+        <link href="http://fonts.googleapis.com/css?family=Raleway:400,300,700" rel="stylesheet" type="text/css" /> 
+        <script src="./main_assets/assets/js/modernizr.custom.js"></script>             
+        
+        <title>CLAP - index</title>
+                                
+       <!-- Custom styles and js for this template -->
+
+        <script type="text/javascript" src="angular.min.js"></script>
+        <script type="text/javascript" src="app.js"></script>
+        
+        <!-- Shield css/font/... -->
+        <link href="./main_assets/assets_shield/css/main.css" rel="stylesheet" />
+        <link rel="stylesheet" href="./main_assets/assets_shield/css/icomoon.css" />
+        <link href="./main_assets/assets_shield/css/animate-custom.css" rel="stylesheet" />
+        <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic" rel="stylesheet" type="text/css" /> 
+        <link href="http://fonts.googleapis.com/css?family=Raleway:400,300,700" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="./main_assets/assets_shield/js/modernizr.custom.js"></script>'
+         <script src="./main_assets/assets_shield/js/jquery.min.js"></script>
+
+                                                                                               
+      <!-- Custom styles for this template (SOLID) -->
+        <link href="./main_assets/assets_solid/css/style.css" rel="stylesheet"/>
+
+                                                    
+    </head>
+    
+    <body>
+        
+        <!-- MAIN MENU SECTION -->
+        <main-menu></main-menu>
+
+        <!-- TOP MENU SECTION -->
+        <top-menu></top-menu>
+        
+        <!-- FILTER SECTION -->
+        <restaurant-filter></restaurant-filter>
+                    
+        
+        <!-- ==== RESTAURANTS PORTFOLIO SECTION ==== -->
+        <restaurants-portfolio></restaurants-portfolio>
+        
+        
+        <!-- NEWS SECTION -->
+        <news></news>
+        
+        <!-- CALL TO ACTION SECTION -->
+        <call-to-action></call-to-action>
+        
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+
+
+       <script src="./main_assets/assets/js/main.js"></script>
+       <script src="./main_assets/assets/js/masonry.pkgd.min.js"></script>
+       <script src="./main_assets/assets/js/imagesloaded.js"></script>
+       <script src="./main_assets/assets/js/classie.js"></script>
+       <script src="./main_assets/assets/js/AnimOnScroll.js"></script>
+        
+        <!-- Solid Theme -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="./main_assets/assets_solid/js/jquery.hoverex.min.js"></script>
+        <script src="./main_assets/assets_solid/js/jquery.isotope.min.js"></script>
+        
+        <script>
+		new AnimOnScroll( document.getElementById( 'grid' ), {
+			minDuration : 0.4,
+			maxDuration : 0.7,
+			viewportFactor : 0.2
+		} );
+	   </script>
+       <script>        
+        // Portfolio
+        (function($) {
+        "use strict";
+        var $container = $('.portfolio'),
+        $items = $container.find('.portfolio-item'),
+        portfolioLayout = 'fitRows';
+        
+        if( $container.hasClass('portfolio-centered') ) {
+        portfolioLayout = 'masonry';
+        }
+        
+        $container.isotope({
+        filter: '*',
+        animationEngine: 'best-available',
+        layoutMode: portfolioLayout,
+        animationOptions: {
+        duration: 750,
+        easing: 'linear',
+        queue: false
+        },
+        masonry: {
+        }
+        }, refreshWaypoints());
+        
+        function refreshWaypoints() {
+        setTimeout(function() {
+        }, 1000);   
+        }
+        
+        $('nav.portfolio-filter ul a').on('click', function() {
+        var selector = $(this).attr('data-filter');
+        $container.isotope({ filter: selector }, refreshWaypoints());
+        $('nav.portfolio-filter ul a').removeClass('active');
+        $(this).addClass('active');
+        return false;
+        });
+        
+        function getColumnNumber() { 
+        var winWidth = $(window).width(), 
+        columnNumber = 1;
+        
+        if (winWidth > 1200) {
+        columnNumber = 5;
+        } else if (winWidth > 950) {
+        columnNumber = 4;
+        } else if (winWidth > 600) {
+        columnNumber = 3;
+        } else if (winWidth > 400) {
+        columnNumber = 2;
+        } else if (winWidth > 250) {
+        columnNumber = 1;
+        }
+        return columnNumber;
+        }       
+        
+        function setColumns() {
+        var winWidth = $(window).width(), 
+        columnNumber = getColumnNumber(), 
+        itemWidth = Math.floor(winWidth / columnNumber);
+        
+        $container.find('.portfolio-item').each(function() { 
+        $(this).css( { 
+        width : itemWidth + 'px' 
+        });
+        });
+        }
+        
+        function setPortfolio() { 
+        setColumns();
+        $container.isotope('reLayout');
+        }
+        
+        $container.imagesLoaded(function () { 
+        setPortfolio();
+        });
+        
+        $(window).on('resize', function () { 
+        setPortfolio();          
+        });
+        })(jQuery);
+        </script>
+        <!-- // Solid Theme -->
+        
+    </body>
+</html>

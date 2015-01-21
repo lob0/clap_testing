@@ -1,0 +1,2 @@
+1-> Começa na pag do login: Se tiver pode alterar infos na pag; senao pode criar um novo clapzinho!
+2->Dashboard: Permite alterar UI, serviços a prestar, adicionar tarefas, adicionar gestores dos serviços, autorizar gestores de serviços etc..

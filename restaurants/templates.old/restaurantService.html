@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="Restaurants">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="description" content=""/>
+        <meta name="author" content=""/>
+        <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+                                
+        <title>USCA Restaurant Service</title>
+                                
+       <!-- Custom styles and js for this template -->
+        
+       <script type="text/javascript" src="./Agency/main_assets/load_base_css.js"></script>
+
+        <!-- Shield css/font/... -->
+        <script type="text/javascript" src="./Agency/main_assets/load_shield.js"></script>
+
+                                                                                               
+      <!-- Custom styles for this template (SOLID) -->
+        <link href="./Agency/main_assets/assets_solid/css/style.css" rel="stylesheet"/>
+
+                                                    
+    </head>
+    
+    <body>
+        
+        <!-- Menu -->
+        <div id="main_menu">
+        </div>
+
+        <div id="top_menu" class="container">
+        </div>
+        
+        <!-- SERVICES SECTION -->
+        <div id="services">
+            <div class="container">
+                <div class="row mt">
+                    <div class="col-lg-3">
+                        <h3>O mais próximo</h3>
+                    </div>
+                    <div class="col-lg-3">
+                        <h3><b>O melhor cotado</b></h3>
+                    </div>
+                    <div class="col-lg-3">
+                        <h3>O menos lotado</h3>
+                    </div>
+                    <div class="col-lg-3">
+                        <h3><u>O mais barato</u></h3>
+                    </div>
+                </div>
+                <div class="row mt">
+                    <div class="col-lg-4 centered">
+                        <h3>O mais próximo</h3>
+                    </div>
+                    <div class="col-lg-4">
+                        <h3><b>O melhor cotado</b></h3>
+                    </div>
+                    <div class="col-lg-4">
+                        <h3>O menos lotado</h3>
+                    </div>
+                </div>
+                <div class="row mt">
+                    <div class="col-lg-3">
+                        <h3>O mais próximo</h3>
+                    </div>
+                    <div class="col-lg-3">
+                        <h3><b>O melhor cotado</b></h3>
+                    </div>
+                    <div class="col-lg-3">
+                        <h3>O menos lotado</h3>
+                    </div>
+                    <div class="col-lg-3">
+                        <h3><u>O mais barato</u></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+                    
+        
+        <!-- ==== RESTAURANTES ==== -->
+        <div class="container" id="portfolio" name="portfolio">
+            <br>
+                <div class="row">
+                    <br>
+                        <h1 class="centered">ONDE QUERES PAPAR?!</h1>
+                        <hr>
+                            <br>
+                                <br>
+                </div><!-- /row -->
+                <div class="container">
+                    <div class="row" ng-controller="RestaurantsController">	
+                        
+                        <!-- PORTFOLIO IMAGE  -->
+                        <div class="col-md-4" ng-repeat="restaurant in restaurantList">
+                            <div class="grid mask">
+                                <figure>
+                                    <img class="img-responsive" src="{{restaurant.image}}" alt="">
+                                        <figcaption>
+                                            <h5>{{restaurant.name}}</h5>
+                                            <a data-toggle="modal" href="#modal_cantina" class="btn btn-primary btn-lg">Ver Mais</a>
+                                        </figcaption><!-- /figcaption -->
+                                </figure><!-- /figure -->
+                                
+                            </div><!-- /grid-mask -->
+                        </div><!-- /col -->
+                        
+                        <!-- Individuals Models for each restaurant -->
+                        
+                        <div class="modal fade" id="modal_cantina" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                        <h4 class="modal-title">Cantina</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <h2>Ementa:</h2>
+                                        <li>Panados de Porco, com massa de feijão vermelho</li>
+                                        <li>Sopa de Legumes</li>
+                                        <li>Gelatina</li>
+                                        <p>FALTA MAPA AQUI!</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" style="align:left"><a href="rest_ind_template.html">Detalhes Restaurante</a></button>
+                                        <button type="button" class="btn btn-default" data-dismiss="modal"><a>Fechar</a></button>
+                                    </div>
+                                </div><!-- /.modal-content -->
+                            </div><!-- /.modal-dialog -->
+                        </div><!-- /.modal -->
+                        
+                        <div class="modal fade" id="modal_griil" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                        <h4 class="modal-title">Restaurante Griil</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <h2>Ementa:</h2>
+                                        <li>Panados de Porco, com massa de feijão vermelho</li>
+                                        <li>Sopa de Legumes</li>
+                                        <li>Gelatina</li>
+                                        <p>FALTA MAPA AQUI!</p>
+                                        <p><b><a href="#">Detalhes do Restaurante</a></b></p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" style="align:left"><a href="rest_ind_template.html">Detalhes Restaurante</a></button>
+                                        <button type="button" class="btn btn-default" data-dismiss="modal"><a>Fechar</a></button>
+                                    </div>
+                                </div><!-- /.modal-content -->
+                            </div><!-- /.modal-dialog -->
+                        </div>
+                        
+                        <div class="modal fade" id="modal_tasquinha" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                        <h4 class="modal-title">Tasquinha Bracarense</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <h2>Ementa:</h2>
+                                        <li>Panados de Porco, com massa de feijão vermelho</li>
+                                        <li>Sopa de Legumes</li>
+                                        <li>Gelatina</li>
+                                        <p>FALTA MAPA AQUI!</p>
+                                        <p><b><a href="rest_ind_template.html">Detalhes do Restaurante</a></b></p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" style="align:left"><a href="rest_ind_template.html">Detalhes Restaurante</a></button>
+                                        <button type="button" class="btn btn-default" data-dismiss="modal"><a>Fechar</a></button>
+                                    </div>
+                                </div><!-- /.modal-content -->
+                            </div><!-- /.modal-dialog -->
+                        </div>
+                        
+                        <div class="modal fade" id="modal_sabor_fruta" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                        <h4 class="modal-title">Restaurante Sabor da Fruta</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <h2>Ementa:</h2>
+                                        <li>Panados de Porco, com massa de feijão vermelho</li>
+                                        <li>Sopa de Legumes</li>
+                                        <li>Gelatina</li>
+                                        <p>FALTA MAPA AQUI!</p>
+                                        <p><b><a href="#">Detalhes do Restaurante</a></b></p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" style="align:left"><a href="rest_ind_template.html">Detalhes Restaurante</a></button>
+                                        <button type="button" class="btn btn-default" data-dismiss="modal"><a>Fechar</a></button>
+                                    </div>
+                                </div><!-- /.modal-content -->
+                            </div><!-- /.modal-dialog -->
+                        </div>
+                        
+                        <div class="modal fade" id="modal_dieci" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                        <h4 class="modal-title">Restaurante Dieci</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <h2>Ementa:</h2>
+                                        <li>Panados de Porco, com massa de feijão vermelho</li>
+                                        <li>Sopa de Legumes</li>
+                                        <li>Gelatina</li>
+                                        <p>FALTA MAPA AQUI!</p>
+                                        <p><b><a href="#">Detalhes do Restaurante</a></b></p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" style="align:left"><a href="rest_ind_template.html">Detalhes Restaurante</a></button>
+                                        <button type="button" class="btn btn-default" data-dismiss="modal"><a>Fechar</a></button>
+                                    </div>
+                                </div><!-- /.modal-content -->
+                            </div><!-- /.modal-dialog -->
+                        </div>
+                        
+                        <div class="modal fade" id="modal_montealengrense" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                        <h4 class="modal-title">Montealegrense</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <h2>Ementa:</h2>
+                                        <li>Panados de Porco, com massa de feijão vermelho</li>
+                                        <li>Sopa de Legumes</li>
+                                        <li>Gelatina</li>
+                                        <p>FALTA MAPA AQUI!</p>
+                                        <p><b><a href="#">Detalhes do Restaurante</a></b></p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" style="align:left"><a href="rest_ind_template.html">Detalhes Restaurante</a></button>
+                                        <button type="button" class="btn btn-default" data-dismiss="modal"><a>Fechar</a></button>
+                                    </div>
+                                </div><!-- /.modal-content -->
+                            </div><!-- /.modal-dialog -->
+                        </div>
+                        
+                    </div><!-- /row -->
+                    <br>
+                        <br>
+                </div><!-- /row -->
+        </div>
+        
+        
+        <!-- POSTS -->
+        <div class="container">
+            <div class="row mt">
+                <div class="col-lg-12">
+                    <h1>Novidades Recentes</h1>
+                </div><!-- col-lg-12 -->
+                <div class="col-lg-8">
+                    <p>As nossas novidades e que realmente te interessam...</p>
+                </div><!-- col-lg-8-->
+                <div class="col-lg-4 goright">
+                    <p><a href="#"><i class="fa fa-angle-right"></i> Ver todas</a></p>
+                </div>
+            </div><!-- row -->
+            
+            <div class="row mt">
+                <div class="col-lg-4">
+                    <img class="img-responsive" src="main_assets/assets/img/post01.jpg" alt="">
+                        <h3><a href="#">Nova aplicação móvel CLAP</a></h3>
+                        <p>Já se encontra disponível uma versão CLAP útil e simples, para utilizares no teu smatphone.</p>
+                        <p><a href="#"><i class="fa fa-link"></i> Ler Mais</a></p>
+                </div>
+                <div class="col-lg-4">
+                    <img class="img-responsive" src="main_assets/assets/img/post02.jpg" alt="">
+                        <h3><a href="#">University Fashion</a></h3>
+                        <p>Está aberto o concurso deste ano do University Fashion. Increve-te!</p>
+                        <p><a href="#"><i class="fa fa-link"></i> Ler Mais</a></p>
+                </div>
+                <div class="col-lg-4">
+                    <img class="img-responsive" src="main_assets/assets/img/post03.jpg" alt="">
+                        <h3><a href="#">Startup Uminho</a></h3>
+                        <p>Durante o próximo mês ...</p>
+                        <p><a href="#"><i class="fa fa-link"></i> Ler Mais</a></p>
+                </div>		
+            </div><!-- row -->
+        </div><!-- container -->
+        
+        
+        
+        
+        <!-- CHAMADA A AÇÃO -->
+        <div id="call">
+            <div class="container">
+                <div class="row">
+                    <h3>AINDA NÃO TE REGISTAS-TE NO CLAP?!</h3>
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <p>O CLAP é uma comunidade muito grande e pode trazer-te inumeras vantagens, basta para isso que te registes.</p>
+                        <p><button type="button" class="btn btn-green btn-lg">REGISTA-TE</button></p>
+                    </div>
+                </div><!-- row -->
+            </div><!-- container -->
+        </div><!-- Call to action -->
+        
+        <div class="container">
+            <div class="row mt">
+                <div class="col-lg-12">
+                    <h1>Continua Ligando</h1>
+                    <p>Junta-te á nossa rede social e vê os últimos updates do CLAP, vê que universidades/instituições já usam a nossa aplicação. Sugere a amigos!</p>
+                    <br>
+                </div><!-- col-lg-12 -->
+            </div><!-- row -->
+        </div><!-- container -->
+        
+        
+        
+        
+        
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+       <script type="text/javascript" src="angular.min.js"></script>
+       <script type="text/javascript" src="restaurantService.js"></script>
+
+      <script src="./main_assets/top_menu_functs.js"></script>
+      <script src="./main_assets/top_menu.js"></script>
+      <script src="./main_assets/bottom_menu_functs.js"></script>
+      <script src="./main_assets/bottom_menu.js"></script>
+
+        <script src="./main_assets/portfolio_functs.js"></script>
+        <script src="./main_assets/portfolio.js"></script>
+
+       <script type="text/javascript" src="./main_assets/load_base_js.js"></script>
+
+        
+        
+        <!-- Solid Theme -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="./main_assets/assets_solid/js/jquery.hoverex.min.js"></script>
+        <script src="./main_assets/assets_solid/js/jquery.isotope.min.js"></script>
+        
+        <script>
+		new AnimOnScroll( document.getElementById( 'grid' ), {
+			minDuration : 0.4,
+			maxDuration : 0.7,
+			viewportFactor : 0.2
+		} );
+	   </script>
+       <script>        
+        // Portfolio
+        (function($) {
+        "use strict";
+        var $container = $('.portfolio'),
+        $items = $container.find('.portfolio-item'),
+        portfolioLayout = 'fitRows';
+        
+        if( $container.hasClass('portfolio-centered') ) {
+        portfolioLayout = 'masonry';
+        }
+        
+        $container.isotope({
+        filter: '*',
+        animationEngine: 'best-available',
+        layoutMode: portfolioLayout,
+        animationOptions: {
+        duration: 750,
+        easing: 'linear',
+        queue: false
+        },
+        masonry: {
+        }
+        }, refreshWaypoints());
+        
+        function refreshWaypoints() {
+        setTimeout(function() {
+        }, 1000);   
+        }
+        
+        $('nav.portfolio-filter ul a').on('click', function() {
+        var selector = $(this).attr('data-filter');
+        $container.isotope({ filter: selector }, refreshWaypoints());
+        $('nav.portfolio-filter ul a').removeClass('active');
+        $(this).addClass('active');
+        return false;
+        });
+        
+        function getColumnNumber() { 
+        var winWidth = $(window).width(), 
+        columnNumber = 1;
+        
+        if (winWidth > 1200) {
+        columnNumber = 5;
+        } else if (winWidth > 950) {
+        columnNumber = 4;
+        } else if (winWidth > 600) {
+        columnNumber = 3;
+        } else if (winWidth > 400) {
+        columnNumber = 2;
+        } else if (winWidth > 250) {
+        columnNumber = 1;
+        }
+        return columnNumber;
+        }       
+        
+        function setColumns() {
+        var winWidth = $(window).width(), 
+        columnNumber = getColumnNumber(), 
+        itemWidth = Math.floor(winWidth / columnNumber);
+        
+        $container.find('.portfolio-item').each(function() { 
+        $(this).css( { 
+        width : itemWidth + 'px' 
+        });
+        });
+        }
+        
+        function setPortfolio() { 
+        setColumns();
+        $container.isotope('reLayout');
+        }
+        
+        $container.imagesLoaded(function () { 
+        setPortfolio();
+        });
+        
+        $(window).on('resize', function () { 
+        setPortfolio();          
+        });
+        })(jQuery);
+        </script>
+        <!-- // Solid Theme -->
+        
+        <!-- Filp option -->
+        <script src="./main_assets/assets/js/flip/jquery.flip.js"></script>
+        <script src="./main_assets/assets/js/flip/jquery.flip.min.js"></script>  
+        <script>
+                function bigImg(x) {
+                    if(x==1){
+                        $('#flipbox'+x).flip({
+                       	    direction:'rl',
+                       	    content:'<h4 class="ml centered" style="color:#1abc9c">RESTAURANTES</h4><p><b><a href="#">> Cantina</a></p><p><a href="#">> Gril</a></p><p><a href="#">> Tasquinha Bracarense</a></p><p><a href="#">> Sabor da Fruta</a></p></b>',
+                       	    color:'#f2f2f2',
+                       	})
+                   }
+                }
+                
+                function normalImg(x) {
+                   if(x==1){
+                        $('#flipbox'+x).flip({
+                       	    direction:'rl',
+                       	    content:'<h4 class="ml">RESTAURANTES</h4><p class="centered"><a href="#"><i class="fa fa-user"></i></a></p><p class="ml">> Vê as tuas opções</p>',
+                       	    color:'#16a085',
+                       	})
+                   }
+                }
+        </script>
+        <!-- //Filp option -->
+        
+    </body>
+</html>
