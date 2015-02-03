@@ -14,7 +14,6 @@ Contents:
    tutorial
    project
    restaurants
-   _global_
 
 Indices and tables
 ==================
