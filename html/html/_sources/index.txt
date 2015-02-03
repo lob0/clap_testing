@@ -1,0 +1,30 @@
+.. temp documentation master file, created by
+   sphinx-quickstart on Mon Jan 26 17:41:14 2015.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+.. image:: /logoclapwsub.png
+	:width: 300px
+	:align: right
+	:height: 300px
+	:alt: alternate text
+
+Welcome to temp's documentation!
+================================
+
+Contents:
+
+.. toctree::
+   :maxdepth: 2
+   
+   tos
+   privacy
+
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
+
