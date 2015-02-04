@@ -1,0 +1,12 @@
+==============
+Is CLAP safe?
+==============
+
+We want our users to feel confident about the security of CLAP. Therefore, it was developed a cryptography module, that defines a series of function that ensures the security of the communications and of the server itself. This module is defined in the file crypto.py and uses the PyCypto API.
+
+.. todo::
+	meter aqui a referencia para as funções criptograficas
+
+In order to not to be exhaustive, it is not described how the security is made. However, one can always use the above reference to check by himself.
+
+This way, the team is offering to the clients and security level similar to the one provided by SSL, reasons more than enough for you to feel you are navigating safely.

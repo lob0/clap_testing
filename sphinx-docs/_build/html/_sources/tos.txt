@@ -1,0 +1,138 @@
+=================
+Terms of Service
+=================
+
+**Introduction**
+
+
+Last updated: January 28, 2015
+
+Please read these Terms of Use ("Terms", "Terms of Use") carefully before using the CLAP website (the "Service") operated by CLAP ("us", "we", or "our").
+
+Your access to and use of the Service is conditioned on your acceptance of and compliance with these Terms. These Terms apply to all visitors, users and others who access or use the Service.
+
+By accessing or using the Service you agree to be bound by these Terms. If you disagree with any part of the terms then you may not access the Service.
+
+**License to use website**
+
+All material and services available on the Site, and all material and services provided by or through CLAP, its affiliates, subsidiaries, employees, agents, licensors or other commercial partners including, but not limited to, software, all informational text, software documentation, design of and "look and feel," layout, photographs, graphics, audio, video, messages, interactive and instant messaging, design and functions, files, documents, images, or other materials, whether publicly posted or privately transmitted as well as all derivative works thereof (collectively, the "Materials"), are owned by us or other parties that have licensed their material or provided services to us, and are protected by copyright, trademark, trade secret and other intellectual property laws. 
+
+All CLAP trademarks and service marks, logos, slogans and taglines are the property of CLAP.  All other trademarks, service marks, logos, slogans and taglines are the property of their respective owners.
+
+Except as otherwise specifically provided herein, nothing should be construed as granting any license or right to use any trademarks, service marks, logos, slogans or taglines displayed on CLAP without our express written permission, or the express written permission of such third-party that may own the trademark, service mark, logo, slogan or tagline.
+
+Subject to this Agreement, CLAP hereby grants you a limited, revocable, non-transferable and non-exclusive license to use the Materials through a user identification reference provided by CLAP (“User ID”) to the extent, and only to the extent, necessary to access and use the Services in accordance with the terms of this Agreement.  This license does not permit you, and you agree not to: store, copy, reproduce, republish, modify, upload, post, translate, scrape, rent, lease, loan, sell, distribute, transfer, transmit, display, decompile, reverse engineer, reverse assemble, decipher or otherwise attempt to discover any programming code or any source code used in or with the Materials or otherwise distribute in any way the Materials other than as specifically permitted in this Agreement.  You may not sell, assign, sublicense, grant a security interest in or otherwise attempt to transfer any right in the Materials, create derivative works based on or in any manner commercially exploit the Materials, in whole or in part, other than as expressly permitted in this Agreement.  Any use of the Materials for any purpose other than as specifically permitted herein or without our prior consent or the prior written consent of our licensors, as applicable, is expressly prohibited. We reserve all rights not expressly granted in this Agreement.
+
+We will provide you one User ID for each account held by you, thereby permitting you access to the Materials on one computer at a time through the Site.  You agree to fully and accurately provide the information requested by us when setting up your accounts and to regularly update such information.  Your failure to do so may result in the cancellation of your account and loss of Services.  You further agree (a) not to provide User IDs to anyone who is not your employee, (b) to ensure all individuals permitted to use the User IDs are aware of and have agreed in writing to comply with the terms of this Agreement, and (c) to have no internal responsabilities on any service your USCA will provide, namely restaurants and so on, i.e, you cannot be managing a restaurant and be responsible for and USCA at the same time.
+
+As part of the Services, we may provide you a sample website which may be populated with sample content provided by us to illustrate how your final site might look (“Sample Content”).  You agree that you will not make this Sample Content publicly available and that you will remove all Sample Content from your site before permitting any third party users to access or view your site.
+
+**Acceptable use**
+
+
+#. You will ensure the email address provided in your account registration is valid at all times and will keep your contact information accurate and up-to-date.
+
+#. You will not use the Services or Materials for any unlawful purposes or to conduct any unlawful activity, including, but not limited to, fraud, embezzlement, money laundering or insider trading.
+
+#. You will not use the Services or Materials to impersonate another person. 
+
+#. You may not send unsolicited messages (also known as junk mail or SPAM) to promote any website published on the Site.
+
+#. You may not upload, post, email, transmit or otherwise make available or initiate any Content that contains software viruses, worms, Trojan horses or any other computer code, files or programs that interrupt, destroy or limit the functionality of the Services or the Materials or that may impact the ability of any CLAP user to access the Services.
+
+#. You will not share your password, let anyone else access your account, or do anything that might jeopardize the security of your account. You will not attempt to or actually access the Services or Materials by any means other than through the interfaces provided by CLAP. 
+
+#. You will not attempt to or actually override any security component included in or underlying the Materials or Services.
+
+#. You will not attempt or engage in any action that directly or indirectly interferes with the proper working of or places an unreasonable load on CLAP’s infrastructure.
+
+#. You will not publish Content, or links to Content, that is:
+	#. Pornographic, sexually explicit, or violent.
+
+	#. Illegal (including stolen copyrighted material and material that infringes or has the potential to infringe the intellectual property rights of another).
+
+	#. Reasonably likely to cause harm, or that could be reasonably considered as slanderous or libelous. 
+
+	#. Breaches another’s privacy.
+
+#. You verify that your country of residence is the same as your billing address. 
+
+CLAP may determine in its sole discretion whether or not an account is in violation of any of these policies.  Violation of any of these policies may result in user information tracking with such information being stored to identify the offending user.  Offending users may be permanently restricted from holding an account or using the Services.  If CLAP reasonably determines that your account is being used for illegal or fraudulent activity then your account may be immediately terminated and your financial data erased. We may also report you to law enforcement officials in the appropriate jurisdictions.
+
+**Restricted access**
+
+
+CLAP reserves the right to restrict access to areas of this website, or indeed this entire website, at CLAP's discretion.
+
+If CLAP provides you with a User ID and password to enable you to access restricted areas of this website or other content or services, you must ensure that the user ID and password are kept confidential.
+
+
+**User content**
+
+
+You are legally responsible for all information, data, text, software, music, sound, photographs, graphics, video, messages or other materials uploaded, posted or stored in connection with your use of the Services (“Content”).  CLAP is not responsible for your Content.  You hereby grant CLAP a worldwide, royalty-free, non-exclusive license to host and use the Content in order to provide you with the Services and hereby represent and warrant that you have all the rights necessary to grant us such license.  You are responsible for any Content that may be lost or unrecoverable through your use of the Services.  You are encouraged to archive your Content regularly and frequently.  
+
+Some of our Services may require you to give us access to or require you to provide login information and password information for accounts or services you may have with third party providers.  When you provide this information to us or give us access to these third party accounts you agree that you have read all contracts and written agreements governing such access, login information and passwords and that you have all the necessary contractual and legal rights to give us such access, login information and passwords.
+
+**No warranties**
+
+
+The site, services and materials are provided “as is,” “as available,” “with all faults” and without any warranty of any kind, express or implied. To the fullest extent permissible under applicable law, clap and its licensors disclaim all warranties of any kind, either express or implied, including, but not limited to, any implied warranties of title, merchantibility.
+Without limiting the foregoing, neither clap nor its licensors warrant that access to the site, the materials and/or the services available on or through the site will be uninterrupted or error-free, or that defects, if any, will be corrected; nor does CLAP or its licensors make any representations about the accuracy, reliability, currency, quality, completeness, usefulness, performance, security, legality or suitability of the services, the materials or the site. You expressly agree that your use of the site and your reliance upon the services and/or the materials is at your sole risk. In addition, clap is not responsible, and makes no representations or warranties for the delivery of any messages (such as emails, posting of answers or transmission of any other user generated content) sent through the site to anyone. 
+
+In addition, you acknowledge and agree that any data, information, content or materials contained in or made available in connection with the services is not intended as a substitute for, the knowledge, expertise, skill and judgment tax, legal or other professionals. The services do not provide tax or legal advice. You are responsible for obtaining such advice.
+
+Further, CLAP and its licensors make no representation or warranties that the services or the materials or the site are appropriate or available for use in all geographic locations. If you use the site, the services or the materials outside the united states of america, you are solely responsible for compliance with all applicable laws, including without limitation export and import regulations of other countries. Neither clap nor any third party providers, partners or affiliates warrant that the site,its servers the materials or the services or any e-mail sent from the site or any third party providers, partners or affiliates are free of viruses or other harmful components.
+
+**Limitations of liability**
+
+
+We are not liable to you or any other person for damages of any kind, including without limitation any punitive, exemplary, consequential, incidental, indirect or special damages (including, without limitation, any personal injury, lost profits, business interruption, loss of programs or other data on your computer or otherwise) arising from or in connection with use of the site, the services, the materials, your content, the commercial products or any third party user generated content available on or through the site, whether under a theory of breach of contract, negligence, strict liability, malpractice or otherwise, even if clap has been advised of the possibility of such damages. You hereby release CLAP and hold CLAP and its parents, subsidiaries, affiliates, licensors, and their officers, directors, trustees, affiliates, subcontractors, agents and employees, harmless from any and all claims, demands, and damages of every kind and nature (including, without limitation, actual, special, incidental and consequential), known and unknown, suspected and unsuspected, disclosed and undisclosed, arising out of or in any way connected with the use of the services, materials, site, your content, commercial products or any third party user generated content available on or throughthe site. You hereby waive the provisions of any state or local law limiting or prohibiting a general release.
+
+In the event of any problem with the site, the services, the materials, you agree that your sole and exclusive remedy is to cease using the site, the services and the materials. Under no circumstances shall clap, its affiliates, or licensors be liable in any way for your use of the site, the services, the materials, your content, the commercial products or third party user generated content available on or through the site, including, but not limited to, any errors or omissions, any infringement of the intellectual property rights or other rights of third parties, or for any loss or damage of any kind incurred as a result of, or related to, the use of the site, the services, the materials, your content, the commercial products or any third party user generated content availbale on or through the site.
+
+**Unenforceable provisions**
+    
+
+If any portion of this Agreement is found to be unenforceable, the remaining portion will remain in full force and effect.
+
+**Indemnity**
+
+
+You agree to indemnify, hold harmless, and defend CLAP and its licensors, suppliers, officers, directors, employees, agents, affiliates, subsidiaries, successors and assigns (collectively "Indemnified Parties") from and against any and all liability, loss, claim, damages, expense, or costs (including but not limited to attorneys' fees), incurred by or made against the Indemnified Parties in connection with any claim arising from or related to (i) your use (or anyone using your account’s) use of the Services, the Site or  the Materials, (ii) your Content, or (iii) any Commercial Products you offer on or through the Site or using our Services.  This includes, but is not limited to, any breach or violation of this Agreement by you or anyone utilizing your account.  You agree to fully cooperate at your expense as reasonably required by an Indemnified Party.  Each Indemnified Party may, at its election, assume the defense and control of any matter for which it is indemnified hereunder.  You shall not settle any matter involving an Indemnified Party without the consent of the applicable Indemnified Party.
+
+**Breaches of these terms and conditions**
+
+
+You acknowledge that a violation or attempted violation of any of this Agreement will cause such damage to CLAP as will be irreparable, the exact amount of which would be impossible to ascertain and for which there will be no adequate remedy at law.  Accordingly, you agree that CLAP shall be entitled as a matter of right to an injunction issued by any court of competent jurisdiction, restraining such violation or attempted violation of these terms and conditions by you, or your affiliates, partners, or agents, as well as to recover from you any and all costs and expenses sustained or incurred by CLAP in obtaining such an injunction, including, without limitation, reasonable attorney's fees. You agree that no bond or other security shall be required in connection with such injunction.
+
+In no event shall you be entitled to rescission, injunctive or other equitable relief, or to enjoin or restrain the operation of CLAP, the exploitation of any advertising or other materials issued in connection therewith, or the exploitation of the Site or any content used or displayed through the Site.
+
+**Variation**
+
+
+CLAP may revise these terms and conditions from time-to-time.  Revised terms and conditions will apply to the use of this website from the date of the publication of the revised terms and conditions on this website.  Please check this page regularly to ensure you are familiar with the current version.
+
+
+**Assignment**
+
+#. Services may be terminated by us, without cause, at any time.
+#. Services may be terminated by you, without cause, by following the further cancellation procedures:
+	#. At the end of the contract term, your contract will automatically renew for an additional contract term until explicitly cancelled by you. Cancellation must be issued via your website manager interface or via Squarespace's support addresses.  Any cancellation issued via your website manager interface must be done at least one (1) day prior to the end of the contract term. Any cancellation not issued via the website manager interface must be done three (3) days prior to the end of the contract term to allow for adequate processing time.
+#. CLAP may terminate Services at any time, without penalty and without notice, if you fail to comply with any of the terms of this Agreement or the intellectual property protections applicable to these Services. 
+#. Notice of termination of Services by CLAP may be sent to the contact e-mail associated with your account. Upon termination, CLAP has the right to delete all data, files, or other information that is stored in your account.
+
+**Privacy**
+
+
+We encourage you to read the Privacy Policy, and to use the information it contains to help you make informed decisions. Please also note that certain information, statements, data and content (such as photographs) which you post to the Site are likely to reveal your gender, ethnic origin, nationality, age, and/or other personal information about you.  You acknowledge and agree that your submission of such information is voluntary on your part.  Further, you acknowledge, consent and agree that we may access, preserve, and disclose your registration and any other information you provide if required to do so by law or in a good faith belief that such access preservation or disclosure is reasonably necessary in our opinion Disclosures of user information to third parties are further addressed in the Privacy Policy.
+    
+**Entire agreement**
+
+
+These terms and conditions constitute the entire agreement between you and CLAP in relation to your use of this website, and supersede all previous agreements in respect of your use of this website.
+
+**These website terms and conditions**
+
+    
+The Term of this Agreement is twelve (12) months. When you renew your services with us, this Agreement will be renewed for additional 12 month periods, coincident with the term of your services. On the day prior to the renewal date of your domain name, we will attempt to renew your services for an additional year. If our renewal is successful, this Agreement will be extended for an additional 12 months. If you do not wish to continue service for a domain name beyond its current period, you must explicitly cancel the service.

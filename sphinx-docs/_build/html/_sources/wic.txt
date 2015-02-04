@@ -1,0 +1,79 @@
+==============
+What's CLAP ?
+==============
+
+Many universities around the world are campus-based, i.e., all the academic life - student accommodation, classes and restaurants, e.g. - is concentrated in a portion of land. However, it is not easy to manage all the campus activities and this is a problem that can be solved with the use of information and communication technologies.
+
+Yet, suppose that a student wants to know the canteen menu or the menu of some other restaurant to decide where to go have lunch. Then, the student needs to check a restaurants application. Now, suppose that, in the afternoon, the student wants to go to the gym. In order to know the available activities at the gym for that day, the student would need to check the gym application. So, a student would need to have one application per campus service, which we identified to be a major overhead for students. Moreover, some campus based universities do not have any application at all.
+
+These are the problems that the CLAP project aims to solve. We want to provide an unified solution, that encompasses some important services to university students in one single application. Another important problem that the CLAP project aims to solve is the portability problem: we want to provide a solution that meets the needs of universities worldwide and that can be easily adapted from one university to another.
+
+The proposed idea presents itself as a system that aims to aid university students manage their life on campus in a comfortable and easy way.
+
+For a better understanding of what the system is about, lets divide it into halves: the CLAP Application and the university-specific CLAP applications.
+
+The CLAP Application (:doc:`ca`)  will be a cloud-based solution available to university representants that would like to have a CLAP solution in their university. In the CLAP Application, a university representant would register himself and ask for a CLAP solution to the respective university. This university representant is supposed to be an entity (Academic Associations, Erasmus Student Network, among others) that would manage the university-specific CLAP application (:doc:`/usca`).
+
+After the requirement of the university-specific CLAP application, a customisable template will be given to the university representant. This template will be a cloud-based application, that already has everything seted up in order to provide the services to the university students. The only thing that the university representant entity needs to do is to edit the template (with colours and logos of the university, for example) and to edit the services section, in order to match the specific context of the university in question.
+
+The university-specific CLAP applications will provide the following base services:
+	* Food information service
+	* Books and notes sharing service
+	* Queue control service
+	* University map service.
+
+
+We provide a more detailed explanation of the services to be provided.
+
+Food information service
+*************************
+
+The food information service will contemplate information about menus in campus restaurants, cafeterias and canteens. Additionally, this service will also provide information about campus-nearby restaurants. With this service, users can easily check the menus of every available restaurant, saving them the need to move to the restaurants to know the menu.
+
+Books and notes sharing service
+********************************
+
+The books and notes sharing service will work as a space where
+students can share their notes with the academic community and post
+announcements about books they are willing to lend or even to
+sell. This service will work as a Wiki, where students can
+post their announcements and create discussions about some topics. A
+service like this will reduce the need for students to spend a lot of
+money in books, since they can be borrowed or acquired at lower
+prices, and will provide more resources to students, since they can
+consult notes from their colleagues.
+
+Queque control service
+***********************
+
+The queue control service will provide information about the waiting
+line status at University services. These services typically work by
+tickets and students need to stay in the waiting line to keep track of
+the number of the ticket being answered. If we provide a service
+like this one, students no longer need to stay in a queque and
+can check the status of the waiting line online, releasing the waiting
+time for other activities.
+
+University map service
+***********************
+
+The university map service will consist in a service where students
+will be able to consult the location of important service providers,
+classrooms or other interest points inside the university campus, as well as
+get directions to their desired destination. This service will be
+particularly helpful for students attending the university for the
+first year, like fresh year students or Erasmus students.
+
+In addition to the cloud-based solutions, the CLAP project will also
+contemplate mobile applications. These mobile applications (one per
+USCA) will consist
+on a mobile interface for the CLAP project. In a more detailed way,
+a user will be able to use the CLAP mobile applications to log in the
+university-specific CLAP solution mobile interface and enjoy all the
+services provided by CLAP.
+
+In summary, the goal of CLAP is to solve two major problems about
+university lifestyle: the absence of some crucial information (or the
+difficulty in obtaining it) and the existence of an exaggerated number
+of applications to cover all the necessary services to university
+students.

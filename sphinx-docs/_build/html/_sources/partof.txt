@@ -1,0 +1,11 @@
+======================
+How to be a CLAPPer ?
+======================
+
+*It's easy!!*
+
+.. _website: http://weareclap.herokuapp.com
+
+All you have to do is to fill the form on our `website`_. We will contact you soon after receive the form.
+
+

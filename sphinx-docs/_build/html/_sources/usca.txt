@@ -1,0 +1,12 @@
+==================
+What is an USCA ?
+==================
+
+.. _USCA: http://weareclap.herokuapp.com/uminho
+
+
+`USCA`_ is where you can find the services we provide, which are at the moment, the food information and the map service.
+This includes all the information concerning the restaurants that are already partners of us, including the menus. 
+Furthermore, it is in `USCA`_ that you can sing up to enjoy our services. 
+
+Stay connected for we are constantly updating our services!

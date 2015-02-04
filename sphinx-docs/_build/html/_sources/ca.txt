@@ -1,0 +1,9 @@
+============
+What is CA?
+============
+
+.. _CA: http://weareclap.herokuapp.com
+
+.. _know: http://weareclap.herokuapp.com/#team
+
+The CA is where you will find the information about the CLAP. Once in the `CA`_, you can subscribe our services, you will find how to ask for an USCA for your university, and you will can get to `know`_ us a little more ;).
